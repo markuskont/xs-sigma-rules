@@ -1,0 +1,39 @@
+action: global
+author: Florian Roth
+date: 2018/03/20
+definition: 'Requirements: Audit Policy : Object Access > Audit Registry (Success)'
+description: Detects NetNTLM downgrade attack
+detection:
+  condition: 1 of them
+  selection1:
+    EventID: 13
+    winlog.event_data.TargetObject,:
+    - '*SYSTEM\\*ControlSet*\Control\Lsa\lmcompatibilitylevel'
+    - '*SYSTEM\\*ControlSet*\Control\Lsa*\NtlmMinClientSec'
+    - '*SYSTEM\\*ControlSet*\Control\Lsa*\RestrictSendingNTLMTraffic'
+  selection2:
+    EventID: 4657
+    winlog.event_data.ObjectName,: \REGISTRY\MACHINE\SYSTEM\\*ControlSet*\Control\Lsa*
+    winlog.event_data.ObjectValueName,:
+    - LmCompatibilityLevel
+    - NtlmMinClientSec
+    - RestrictSendingNTLMTraffic
+falsepositives:
+- Unknown
+id: 58c60fc6-49f3-402c-b14c-51f8fd807cd0
+level: critical
+logsource:
+  definition: 'Requirements: Audit Policy : Object Access > Audit Registry (Success)'
+  product: windows
+  service: security
+modified: 2020/08/23
+product: windows
+references:
+- https://www.optiv.com/blog/post-exploitation-using-netntlm-downgrade-attacks
+service: security
+tags:
+- attack.defense_evasion
+- attack.t1089
+- attack.t1562.001
+- attack.t1112
+title: NetNTLM Downgrade Attack

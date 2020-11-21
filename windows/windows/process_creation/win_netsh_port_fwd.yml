@@ -1,0 +1,27 @@
+author: Florian Roth
+category: process_creation
+date: 2019/01/29
+description: Detects netsh commands that configure a port forwarding
+detection:
+  condition: selection
+  selection:
+    winlog.event_data.CommandLine,:
+    - netsh interface portproxy add v4tov4 *
+falsepositives:
+- Legitimate administration
+id: 322ed9ec-fcab-4f67-9a34-e7c6aef43614
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+modified: 2020/09/01
+product: windows
+references:
+- https://www.fireeye.com/blog/threat-research/2019/01/bypassing-network-restrictions-through-rdp-tunneling.html
+status: experimental
+tags:
+- attack.lateral_movement
+- attack.defense_evasion
+- attack.command_and_control
+- attack.t1090
+title: Netsh Port Forwarding

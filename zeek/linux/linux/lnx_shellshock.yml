@@ -1,0 +1,18 @@
+author: Florian Roth
+date: 2017/03/14
+description: Detects shellshock expressions in log files
+detection:
+  condition: expression
+  expression:
+  - /\(\)\s*\t*\{.*;\s*\}\s*;/
+falsepositives:
+- Unknown
+id: c67e0c98-4d39-46ee-8f6b-437ebf6b950e
+level: high
+logsource:
+  product: linux
+product: linux
+references:
+- http://rubular.com/r/zxBfjWfFYs
+status: experimental
+title: Shellshock Expression

@@ -1,0 +1,35 @@
+action: global
+author: Markus Neis
+category: process_creation
+date: 2017/11/07
+description: Detects automated lateral movement by Turla group
+detection:
+  condition: selection
+  selection:
+    winlog.event_data.CommandLine,:
+    - net use \\%DomainController%\C$ "P@ssw0rd" *
+    - dir c:\\*.doc* /s
+    - dir %TEMP%\\*.exe
+falsepositives:
+- Unknown
+id: 22b3f299-43fe-41a3-8e09-2f1ae3517287
+level: critical
+logsource:
+  category: process_creation
+  product: windows
+modified: 2020/08/27
+product: windows
+references:
+- https://securelist.com/the-epic-turla-operation/65545/
+status: experimental
+tags:
+- attack.g0010
+- attack.execution
+- attack.t1059
+- attack.lateral_movement
+- attack.t1077
+- attack.t1021.002
+- attack.discovery
+- attack.t1083
+- attack.t1135
+title: Turla Group Lateral Movement

@@ -1,0 +1,32 @@
+action: global
+author: Florian Roth
+category: process_creation
+date: 2017/06/01
+description: Detects Pandemic Windows Implant
+detection:
+  condition: 1 of them
+  selection2:
+    winlog.event_data.CommandLine,|contains: 'loaddll -a '
+falsepositives:
+- unknown
+fields:
+- winlog.event_data.EventID
+- winlog.event_data.CommandLine,
+- winlog.event_data.ParentCommandLine,
+- winlog.event_data.Image,
+- winlog.event_data.User,
+- winlog.event_data.TargetObject,
+id: 6779cd03-2d20-40f8-ad8e-3d1ff0489084
+level: critical
+logsource:
+  category: process_creation
+  product: windows
+product: windows
+references:
+- https://wikileaks.org/vault7/#Pandemic
+- https://twitter.com/MalwareJake/status/870349480356454401
+status: experimental
+tags:
+- attack.lateral_movement
+- attack.t1105
+title: Pandemic Registry Key

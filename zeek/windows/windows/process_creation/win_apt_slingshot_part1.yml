@@ -1,0 +1,26 @@
+action: global
+author: Florian Roth
+category: process_creation
+date: 2019/03/04
+description: Detects the deactivation of the Scheduled defragmentation task as seen
+  by Slingshot APT group
+detection:
+  condition: 1 of them
+  selection1:
+    winlog.event_data.CommandLine,:
+    - '*schtasks* /delete *Defrag\ScheduledDefrag*'
+falsepositives:
+- Unknown
+id: e6c8a002-003c-439e-91a9-9b3a1901ccc3
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+modified: 2020/08/27
+product: windows
+references:
+- https://securelist.com/apt-slingshot/84312/
+tags:
+- attack.persistence
+- attack.s0111
+title: Defrag Deactivation

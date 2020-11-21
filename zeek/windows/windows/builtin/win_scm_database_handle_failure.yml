@@ -1,0 +1,26 @@
+author: Roberto Rodriguez @Cyb3rWard0g
+date: 2019/08/12
+description: Detects non-system users failing to get a handle of the SCM database.
+detection:
+  condition: selection
+  selection:
+    EventID: 4656
+    Keywords: Audit Failure
+    winlog.event_data.ObjectName,: servicesactive
+    winlog.event_data.ObjectType,: SC_MANAGER OBJECT
+    winlog.event_data.SubjectLogonId,: '0x3e4'
+falsepositives:
+- Unknown
+id: 13addce7-47b2-4ca0-a98f-1de964d1d669
+level: critical
+logsource:
+  product: windows
+  service: security
+product: windows
+references:
+- https://github.com/Cyb3rWard0g/ThreatHunter-Playbook/tree/master/playbooks/windows/07_discovery/T1000_local_admin_check/local_admin_remote_check_openscmanager.md
+service: security
+status: experimental
+tags:
+- attack.discovery
+title: SCM Database Handle Failure

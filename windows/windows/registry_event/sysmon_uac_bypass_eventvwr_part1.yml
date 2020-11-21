@@ -1,0 +1,29 @@
+action: global
+author: Florian Roth
+category: registry_event
+date: 2017/03/19
+description: Detects UAC bypass method using Windows event viewer
+detection:
+  condition: methregistry
+  methregistry:
+    winlog.event_data.TargetObject,: HKU\\*\mscfile\shell\open\command
+falsepositives:
+- unknown
+id: 44efcabc-99f8-49d1-94cc-40c03b5e046b
+level: critical
+logsource:
+  category: registry_event
+  product: windows
+modified: 2020/09/06
+product: windows
+references:
+- https://enigma0x3.net/2016/08/15/fileless-uac-bypass-using-eventvwr-exe-and-registry-hijacking/
+- https://www.hybrid-analysis.com/sample/e122bc8bf291f15cab182a5d2d27b8db1e7019e4e96bb5cdbd1dfe7446f3f51f?environmentId=100
+status: experimental
+tags:
+- attack.defense_evasion
+- attack.privilege_escalation
+- attack.t1088
+- attack.t1548.002
+- car.2019-04-001
+title: UAC Bypass via Event Viewer

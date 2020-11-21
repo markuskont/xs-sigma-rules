@@ -1,0 +1,23 @@
+action: global
+author: Markus Neis
+category: registry_event
+date: 2017/08/28
+description: Detects the usage of Sysinternals Tools due to accepteula key being added
+  to Registry
+detection:
+  condition: 1 of them
+  selection1:
+    winlog.event_data.TargetObject,: '*\EulaAccepted'
+falsepositives:
+- Legitimate use of SysInternals tools
+- Programs that use the same Registry Key
+id: d04082e2-2cf4-413b-be57-7f5ceadab1b1
+level: low
+logsource:
+  category: registry_event
+  product: windows
+product: windows
+references:
+- https://twitter.com/Moti_B/status/1008587936735035392
+status: experimental
+title: Usage of Sysinternals Tools

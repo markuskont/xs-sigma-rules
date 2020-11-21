@@ -1,0 +1,34 @@
+action: global
+author: Florian Roth
+category: process_creation
+date: 2017/03/19
+description: Detects UAC bypass method using Windows event viewer
+detection:
+  condition: methprocess and not filterprocess
+  filterprocess:
+    winlog.event_data.Image,: '*\mmc.exe'
+  methprocess:
+    winlog.event_data.ParentImage,: '*\eventvwr.exe'
+falsepositives:
+- unknown
+fields:
+- winlog.event_data.CommandLine,
+- winlog.event_data.ParentCommandLine,
+id: 0ec4e1e9-f970-445b-aa6c-082187cbc640
+level: critical
+logsource:
+  category: process_creation
+  product: windows
+modified: 2020/09/06
+product: windows
+references:
+- https://enigma0x3.net/2016/08/15/fileless-uac-bypass-using-eventvwr-exe-and-registry-hijacking/
+- https://www.hybrid-analysis.com/sample/e122bc8bf291f15cab182a5d2d27b8db1e7019e4e96bb5cdbd1dfe7446f3f51f?environmentId=100
+status: experimental
+tags:
+- attack.defense_evasion
+- attack.privilege_escalation
+- attack.t1088
+- attack.t1548.002
+- car.2019-04-001
+title: UAC Bypass via Event Viewer

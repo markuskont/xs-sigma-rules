@@ -1,0 +1,53 @@
+action: global
+author: Florian Roth, Teymur Kheirkhabarov, Daniil Yugoslavskiy, oscd.community
+date: 2017/03/05
+description: Detects well-known credential dumping tools execution via service execution
+  events
+detection:
+  condition: selection and selection_1
+  selection:
+    EventID: 4697
+  selection_1:
+  - ServiceName|contains:
+    - fgexec
+    - wceservice
+    - wce service
+    - pwdump
+    - gsecdump
+    - cachedump
+    - mimikatz
+    - mimidrv
+  - ImagePath|contains:
+    - fgexec
+    - dumpsvc
+    - cachedump
+    - mimidrv
+    - gsecdump
+    - servpw
+    - pwdump
+  - ImagePath|re: ((\\\\.*\\.*|.*\\)([{]?[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}[}])?\.(exe|scr|cpl|bat|js|cmd|vbs).*)
+falsepositives:
+- Legitimate Administrator using credential dumping tool for password recovery
+id: 32641481-fc20-4d96-90b4-8278f8b9d0ea
+level: high
+logsource:
+  product: windows
+  service: security
+modified: 2020/08/23
+product: windows
+references:
+- https://www.slideshare.net/heirhabarov/hunting-for-credentials-dumping-in-windows-environment
+service: security
+tags:
+- attack.credential_access
+- attack.execution
+- attack.t1003
+- attack.t1003.001
+- attack.t1003.002
+- attack.t1003.004
+- attack.t1003.005
+- attack.t1003.006
+- attack.t1035
+- attack.t1569.002
+- attack.s0005
+title: Credential Dumping Tools Service Execution

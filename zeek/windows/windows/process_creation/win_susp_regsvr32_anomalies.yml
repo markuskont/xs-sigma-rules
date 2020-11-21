@@ -1,0 +1,49 @@
+author: Florian Roth
+category: process_creation
+date: 2019/01/16
+description: Detects various anomalies in relation to regsvr32.exe
+detection:
+  condition: 1 of them
+  selection1:
+    winlog.event_data.CommandLine,: '*\Temp\\*'
+    winlog.event_data.Image,: '*\regsvr32.exe'
+  selection2:
+    winlog.event_data.Image,: '*\regsvr32.exe'
+    winlog.event_data.ParentImage,: '*\powershell.exe'
+  selection3:
+    winlog.event_data.Image,: '*\regsvr32.exe'
+    winlog.event_data.ParentImage,: '*\cmd.exe'
+  selection4:
+    winlog.event_data.CommandLine,:
+    - '*/i:http* scrobj.dll'
+    - '*/i:ftp* scrobj.dll'
+    winlog.event_data.Image,: '*\regsvr32.exe'
+  selection5:
+    winlog.event_data.Image,: '*\wscript.exe'
+    winlog.event_data.ParentImage,: '*\regsvr32.exe'
+  selection6:
+    winlog.event_data.CommandLine,: '*..\..\..\Windows\System32\regsvr32.exe *'
+    winlog.event_data.Image,: '*\EXCEL.EXE'
+falsepositives:
+- Unknown
+fields:
+- winlog.event_data.CommandLine,
+- winlog.event_data.ParentCommandLine,
+id: 8e2b24c9-4add-46a0-b4bb-0057b4e6187d
+level: high
+logsource:
+  category: process_creation
+  product: windows
+modified: 2020/08/28
+product: windows
+references:
+- https://subt0x10.blogspot.de/2017/04/bypass-application-whitelisting-script.html
+status: experimental
+tags:
+- attack.defense_evasion
+- attack.t1218.010
+- attack.execution
+- attack.t1117
+- car.2019-04-002
+- car.2019-04-003
+title: Regsvr32 Anomaly

@@ -1,0 +1,42 @@
+action: global
+author: Nik Seetharaman
+category: registry_event
+date: 2018/07/16
+description: Detects various indicators of Microsoft Connection Manager Profile Installer
+  execution
+detection:
+  condition: 1 of them
+  selection2:
+    winlog.event_data.EventType,: CreateKey
+    winlog.event_data.TargetObject,: '*\cmmgr32.exe*'
+  selection3:
+    winlog.event_data.TargetObject,: '*\cmmgr32.exe*'
+  selection4:
+    winlog.event_data.CallTrace,: '*cmlua.dll*'
+falsepositives:
+- Legitimate CMSTP use (unlikely in modern enterprise environments)
+fields:
+- winlog.event_data.CommandLine,
+- winlog.event_data.ParentCommandLine,
+- winlog.event_data.Details,
+id: 9f4d06e4-de07-4d74-b310-7c033c854754
+level: high
+logsource:
+  category: registry_event
+  product: windows
+modified: 2020/08/24
+product: windows
+references:
+- https://web.archive.org/web/20190720093911/http://www.endurant.io/cmstp/detecting-cmstp-enabled-code-execution-and-uac-bypass-with-sysmon/
+status: stable
+tags:
+- attack.defense_evasion
+- attack.t1218.003
+- attack.t1191
+- attack.execution
+- attack.t1559.001
+- attack.t1175
+- attack.g0069
+- attack.g0080
+- car.2019-04-001
+title: CMSTP Execution

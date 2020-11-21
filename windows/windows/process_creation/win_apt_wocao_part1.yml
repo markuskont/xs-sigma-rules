@@ -1,0 +1,37 @@
+action: global
+author: Florian Roth
+date: 2019/12/20
+description: Detects activity mentioned in Operation Wocao report
+detection:
+  condition: selection
+  selection:
+    EventID: 4799
+    winlog.event_data.GroupName,: Administrators
+    winlog.event_data.ProcessName,: '*\checkadmin.exe'
+falsepositives:
+- Administrators that use checkadmin.exe tool to enumerate local administrators
+id: ed74c929-bc28-4118-a332-848a9b9925c6
+level: high
+logsource:
+  product: windows
+  service: security
+modified: 2020/08/26
+product: windows
+references:
+- https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/
+- https://twitter.com/SBousseaden/status/1207671369963646976
+service: security
+status: experimental
+tags:
+- attack.discovery
+- attack.t1012
+- attack.defense_evasion
+- attack.t1036.004
+- attack.t1036
+- attack.t1027
+- attack.execution
+- attack.t1053.005
+- attack.t1053
+- attack.t1059.001
+- attack.t1086
+title: Operation Wocao Activity

@@ -1,0 +1,30 @@
+author: Sean Metcalf (source), Florian Roth (rule)
+date: 2017/03/05
+definition: It is recommended to use the new "Script Block Logging" of PowerShell
+  v5 https://adsecurity.org/?p=2277
+description: Detects the use of PSAttack PowerShell hack tool
+detection:
+  condition: all of them
+  keyword:
+  - PS ATTACK!!!
+  selection:
+    EventID: 4103
+falsepositives:
+- Pentesters
+id: b7ec41a4-042c-4f31-a5db-d0fcde9fa5c5
+level: high
+logsource:
+  definition: It is recommended to use the new "Script Block Logging" of PowerShell
+    v5 https://adsecurity.org/?p=2277
+  product: windows
+  service: powershell
+product: windows
+references:
+- https://adsecurity.org/?p=2921
+service: powershell
+status: experimental
+tags:
+- attack.execution
+- attack.t1059.001
+- attack.t1086
+title: PowerShell PSAttack

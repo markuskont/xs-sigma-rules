@@ -1,0 +1,30 @@
+action: global
+author: Florian Roth
+date: 2018/03/20
+description: Detects NetNTLM downgrade attack
+detection:
+  condition: 1 of them
+  selection1:
+    EventID: 13
+    winlog.event_data.TargetObject,:
+    - '*SYSTEM\\*ControlSet*\Control\Lsa\lmcompatibilitylevel'
+    - '*SYSTEM\\*ControlSet*\Control\Lsa*\NtlmMinClientSec'
+    - '*SYSTEM\\*ControlSet*\Control\Lsa*\RestrictSendingNTLMTraffic'
+falsepositives:
+- Unknown
+id: a1d006c1-35a4-4137-82fe-a90dd29a532b
+level: critical
+logsource:
+  product: windows
+  service: sysmon
+modified: 2020/08/23
+product: windows
+references:
+- https://www.optiv.com/blog/post-exploitation-using-netntlm-downgrade-attacks
+service: sysmon
+tags:
+- attack.defense_evasion
+- attack.t1089
+- attack.t1562.001
+- attack.t1112
+title: NetNTLM Downgrade Attack

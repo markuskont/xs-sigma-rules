@@ -1,0 +1,31 @@
+author: Trent Liffick (@tliffick)
+category: registry_event
+date: 2020/05/22
+description: Detects registry changes to Office macro settings
+detection:
+  condition: sec_settings
+  sec_settings:
+    winlog.event_data.EventType,:
+    - SetValue
+    - DeleteValue
+    - CreateValue
+    winlog.event_data.TargetObject,|endswith:
+    - '*\Security\Trusted Documents\TrustRecords'
+    - '*\Security\AccessVBOM'
+    - '*\Security\VBAWarnings'
+falsepositives:
+- Valid Macros and/or internal documents
+id: a166f74e-bf44-409d-b9ba-ea4b2dd8b3cd
+level: high
+logsource:
+  category: registry_event
+  product: windows
+modified: 2020/07/01
+product: windows
+references:
+- Internal Research
+status: experimental
+tags:
+- attack.defense_evasion
+- attack.t1112
+title: Office Security Settings Changed

@@ -1,0 +1,27 @@
+action: global
+author: Florian Roth
+date: 2019/12/22
+description: 'PoC rule to detect malicious activity - following the principle: if
+  you had only one shot, what would you look for?'
+detection:
+  condition: 1 of them
+  selection:
+    EventID: 7045
+    winlog.event_data.ServiceName,|contains:
+    - WCESERVICE
+    - WCE SERVICE
+    - winexesvc
+    - DumpSvc
+    - pwdump
+    - gsecdump
+    - cachedump
+id: 7afb4ece-09cc-4b52-b457-e0b509b4fb09
+level: high
+logsource:
+  product: windows
+  service: system
+modified: 2020/05/18
+product: windows
+service: system
+status: experimental
+title: Godmode Sigma Rule

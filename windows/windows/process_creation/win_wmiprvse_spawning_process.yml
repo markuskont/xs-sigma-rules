@@ -1,0 +1,30 @@
+author: Roberto Rodriguez @Cyb3rWard0g
+category: process_creation
+date: 2019/08/15
+description: Detects wmiprvse spawning processes
+detection:
+  condition: selection and not filter
+  filter:
+  - LogonId: '0x3e7'
+  - User: NT AUTHORITY\SYSTEM
+  - Image|endswith:
+    - \WmiPrvSE.exe
+    - \WerFault.exe
+  selection:
+    winlog.event_data.ParentImage,|endswith: \WmiPrvSe.exe
+falsepositives:
+- Unknown
+id: d21374ff-f574-44a7-9998-4a8c8bf33d7d
+level: high
+logsource:
+  category: process_creation
+  product: windows
+modified: 2020/11/05
+product: windows
+references:
+- https://github.com/Cyb3rWard0g/ThreatHunter-Playbook/tree/master/playbooks/windows/02_execution/T1047_windows_management_instrumentation/wmi_win32_process_create_remote.md
+status: experimental
+tags:
+- attack.execution
+- attack.t1047
+title: Wmiprvse Spawning Process
