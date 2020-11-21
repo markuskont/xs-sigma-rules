@@ -1,0 +1,33 @@
+author: Roberto Rodriguez @Cyb3rWard0g
+date: 2019/08/12
+description: Detects handle requests and access operations to specific registry keys
+  to calculate the SysKey
+detection:
+  condition: selection
+  selection:
+    EventID:
+    - 4656
+    - 4663
+    winlog.event_data.ObjectName|endswith:
+    - lsa\JD
+    - lsa\GBG
+    - lsa\Skew1
+    - lsa\Data
+    winlog.event_data.ObjectType: key
+falsepositives:
+- Unknown
+id: 9a4ff3b8-6187-4fd2-8e8b-e0eae1129495
+level: critical
+logsource:
+  product: windows
+  service: security
+modified: 2019/11/10
+product: windows
+references:
+- https://github.com/hunters-forge/ThreatHunter-Playbook/blob/master/playbooks/windows/07_discovery/T1012_query_registry/syskey_registry_keys_access.md
+service: security
+status: experimental
+tags:
+- attack.discovery
+- attack.t1012
+title: SysKey Registry Keys Access

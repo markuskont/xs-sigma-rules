@@ -1,0 +1,34 @@
+author: Jakob Weinzettl, oscd.community
+category: process_creation
+date: 2019/10/23
+description: Detects a file or folder permissions modifications
+detection:
+  condition: selection
+  selection:
+  - CommandLine|contains: /grant
+    Image|endswith:
+    - \takeown.exe
+    - \cacls.exe
+    - \icacls.exe
+  - CommandLine|contains: -r
+    Image|endswith: \attrib.exe
+falsepositives:
+- Users interacting with the files on their own (unlikely unless power users)
+fields:
+- winlog.ComputerName
+- winlog.event_data.User
+- winlog.event_data.CommandLine
+id: 37ae075c-271b-459b-8d7b-55ad5f993dd8
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+modified: 2019/11/08
+product: windows
+references:
+- https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1222/T1222.yaml
+status: experimental
+tags:
+- attack.defense_evasion
+- attack.t1222
+title: File or Folder Permissions Modifications

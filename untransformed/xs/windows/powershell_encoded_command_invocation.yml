@@ -1,0 +1,23 @@
+title: PowerShell Encoded Command Invocation
+id: 4c4417a8-05e5-41c5-8dd5-2a732d9ee6ea
+status: experimental
+description: Detects suspicious PowerShell invocation command parameters
+tags:
+    - attack.execution
+    - attack.t1086
+author: Florian Roth (rule)
+logsource:
+    product: windows
+    service: powershell
+fields:
+        - CommandLine
+detection:
+    selection:
+        CommandLine:
+            - ' -EncodedCommand'
+    condition: selection
+falsepositives:
+    - Penetration tests
+    - Very special / sneaky PowerShell scripts
+level: high
+

@@ -1,0 +1,23 @@
+action: global
+author: Markus Neis
+category: process_creation
+date: 2017/08/28
+description: Detects the usage of Sysinternals Tools due to accepteula key being added
+  to Registry
+detection:
+  condition: 1 of them
+  selection2:
+    winlog.event_data.CommandLine: '* -accepteula*'
+falsepositives:
+- Legitimate use of SysInternals tools
+- Programs that use the same Registry Key
+id: d879cf84-852f-4005-a93b-f46dba7ee8e3
+level: low
+logsource:
+  category: process_creation
+  product: windows
+product: windows
+references:
+- https://twitter.com/Moti_B/status/1008587936735035392
+status: experimental
+title: Usage of Sysinternals Tools

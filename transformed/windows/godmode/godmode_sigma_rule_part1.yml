@@ -1,0 +1,83 @@
+action: global
+author: Florian Roth
+category: process_creation
+date: 2019/12/22
+description: 'PoC rule to detect malicious activity - following the principle: if
+  you had only one shot, what would you look for?'
+detection:
+  condition: 1 of them
+  selection_parent_child:
+    winlog.event_data.Image|contains:
+    - \cmd.exe
+    - \powershell.exe
+    - \wscript.exe
+    - \cscript.exe
+    - \schtasks.exe
+    - '*\scrcons.exe'
+    - \regsvr32.exe
+    - \hh.exe
+    - \wmic.exe
+    - \mshta.exe
+    - \msiexec.exe
+    - \forfiles.exe
+    - \AppData\
+    winlog.event_data.ParentImage|contains:
+    - \WINWORD.EXE
+    - \EXCEL.EXE
+    - \POWERPNT.exe
+    - \MSPUB.exe
+    - \VISIO.exe
+    - \OUTLOOK.EXE
+  selection_plain:
+    winlog.event_data.CommandLine|contains:
+    - ' -NoP '
+    - ' -W Hidden '
+    - ' -decode '
+    - ' /decode '
+    - ' -e* JAB'
+    - ' -e* SUVYI'
+    - ' -e* SQBFAFgA'
+    - ' -e* aWV4I'
+    - ' -e* IAB'
+    - ' -e* PAA'
+    - ' -e* aQBlAHgA'
+    - vssadmin delete shadows
+    - reg SAVE HKLM\SAM
+    - ' -ma '
+    - Microsoft\Windows\CurrentVersion\Run
+    - .downloadstring(
+    - .downloadfile(
+    - ' /ticket:'
+    - ' sekurlsa'
+    - ' p::d '
+    - ;iex(
+    - schtasks* /create *AppData
+    - ' comsvcs.dll,MiniDump'
+    - ' comsvcs.dll,#24'
+  selection_webshells:
+    winlog.event_data.CommandLine|contains:
+    - whoami
+    - 'net user '
+    - 'ping -n '
+    - systeminfo
+    - '&cd&echo'
+    - 'cd /d '
+    winlog.event_data.Image|contains:
+    - \apache*
+    - \tomcat*
+    - \w3wp.exe
+    - \php-cgi.exe
+    - \nginx.exe
+    - \httpd.exe
+  selection_whoami:
+    winlog.event_data.Image|contains: \whoami.exe
+    winlog.event_data.User: NT AUTHORITY\SYSTEM
+id: 6b9d66d8-6110-4e56-b019-3efc6626893d
+level: high
+logsource:
+  category: process_creation
+  product: windows
+modified: 2020/05/18
+product: windows
+status: experimental
+title: Godmode Sigma Rule

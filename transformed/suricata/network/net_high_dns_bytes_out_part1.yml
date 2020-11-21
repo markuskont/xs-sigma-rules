@@ -1,0 +1,27 @@
+action: global
+author: Daniil Yugoslavskiy, oscd.community
+category: dns
+date: 2019/10/24
+description: High DNS queries bytes amount from host per short period of time
+detection:
+  condition: selection | sum(question_length) by src_ip > 300000
+  selection:
+    query: '*'
+  timeframe: 1m
+falsepositives:
+- Legitimate high DNS bytes out rate to domain name which should be added to whitelist
+id: 042a842f-1428-4a75-8146-59d381649c03
+level: medium
+logsource:
+  category: dns
+  product: suricata
+  service: dns
+modified: 2020/08/27
+product: suricata
+service: dns
+status: experimental
+tags:
+- attack.exfiltration
+- attack.t1048
+- attack.t1048.003
+title: High DNS Bytes Out

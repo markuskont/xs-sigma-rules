@@ -1,0 +1,31 @@
+author: Florian Roth
+category: process_creation
+date: 2019/11/18
+description: Detects the execution of a renamed ProcDump executable often used by
+  attackers or malware
+detection:
+  condition: selection and not filter
+  filter:
+    winlog.event_data.Image:
+    - '*\procdump.exe'
+    - '*\procdump64.exe'
+  selection:
+    winlog.event_data.OriginalFileName: procdump
+falsepositives:
+- Procdump illegaly bundled with legitimate software
+- Weird admins who renamed binaries
+id: 4a0b2c7e-7cb2-495d-8b63-5f268e7bfd67
+level: critical
+logsource:
+  category: process_creation
+  product: windows
+modified: 2020/09/06
+product: windows
+references:
+- https://docs.microsoft.com/en-us/sysinternals/downloads/procdump
+status: experimental
+tags:
+- attack.defense_evasion
+- attack.t1036
+- attack.t1036.003
+title: Renamed ProcDump

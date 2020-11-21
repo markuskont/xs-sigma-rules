@@ -1,0 +1,24 @@
+title: Encoded ScriptBlock Command Invocation
+id: 697e4279-4b0d-4b14-b233-9596bc1cacda
+status: experimental
+description: Detects suspicious PowerShell invocation command parameters
+tags:
+    - attack.execution
+    - attack.defense-evasion
+    - attack.t1064
+author: Mauno Pihelgas
+logsource:
+    product: windows
+    service: powershell
+fields:
+    - ScriptBlockText
+detection:
+    selection:
+        ScriptBlockText:
+            - ' -FromBase64String'
+    condition: selection
+falsepositives:
+    - Penetration tests
+    - Very special / sneaky PowerShell scripts
+level: high
+

@@ -1,0 +1,36 @@
+author: Teymur Kheirkhabarov
+category: process_creation
+date: 2019/10/26
+description: Detection of child processes spawned with SYSTEM privileges by parents
+  with LOCAL SERVICE or NETWORK SERVICE privileges
+detection:
+  condition: selection and not rundllexception
+  rundllexception:
+    winlog.event_data.CommandLine|contains: DavSetCookie
+    winlog.event_data.Image|endswith: \rundll32.exe
+  selection:
+    ParentUser:
+    - NT AUTHORITY\NETWORK SERVICE
+    - NT AUTHORITY\LOCAL SERVICE
+    winlog.event_data.User: NT AUTHORITY\SYSTEM
+enrichment:
+- EN_0001_cache_sysmon_event_id_1_info
+- EN_0002_enrich_sysmon_event_id_1_with_parent_info
+falsepositives:
+- Unknown
+id: 6c5808ee-85a2-4e56-8137-72e5876a5096
+level: high
+logsource:
+  category: process_creation
+  product: windows
+modified: 2020/09/01
+product: windows
+references:
+- https://speakerdeck.com/heirhabarov/hunting-for-privilege-escalation-in-windows-environment
+- https://foxglovesecurity.com/2016/09/26/rotten-potato-privilege-escalation-from-service-accounts-to-system/
+status: experimental
+tags:
+- attack.privilege_escalation
+- attack.t1134
+- attack.t1134.002
+title: Detection of Possible Rotten Potato

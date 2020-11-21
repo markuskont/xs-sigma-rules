@@ -1,0 +1,33 @@
+author: Florian Roth
+category: process_creation
+date: 2019/01/16
+description: Detects a suspicious exection from an uncommon folder
+detection:
+  condition: selection
+  selection:
+    winlog.event_data.Image:
+    - '*\$Recycle.bin'
+    - '*\Users\All Users\\*'
+    - '*\Users\Default\\*'
+    - '*\Users\Public\\*'
+    - C:\Perflogs\\*
+    - '*\config\systemprofile\\*'
+    - '*\Windows\Fonts\\*'
+    - '*\Windows\IME\\*'
+    - '*\Windows\addins\\*'
+falsepositives:
+- Unknown
+fields:
+- winlog.event_data.CommandLine
+- winlog.event_data.ParentCommandLine
+id: 3dfd06d2-eaf4-4532-9555-68aca59f57c4
+level: high
+logsource:
+  category: process_creation
+  product: windows
+product: windows
+status: experimental
+tags:
+- attack.defense_evasion
+- attack.t1036
+title: Execution in Non-Executable Folder

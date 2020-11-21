@@ -1,0 +1,32 @@
+action: global
+author: Florian Roth
+category: registry_event
+date: 2017/06/01
+description: Detects Pandemic Windows Implant
+detection:
+  condition: 1 of them
+  selection1:
+    winlog.event_data.TargetObject|contains: \SYSTEM\CurrentControlSet\services\null\Instance
+falsepositives:
+- unknown
+fields:
+- winlog.event_data.EventID
+- winlog.event_data.CommandLine
+- winlog.event_data.ParentCommandLine
+- winlog.event_data.Image
+- winlog.event_data.User
+- winlog.event_data.TargetObject
+id: 23dd4ebe-b46d-4e34-be4d-6de1f0003ed1
+level: critical
+logsource:
+  category: registry_event
+  product: windows
+product: windows
+references:
+- https://wikileaks.org/vault7/#Pandemic
+- https://twitter.com/MalwareJake/status/870349480356454401
+status: experimental
+tags:
+- attack.lateral_movement
+- attack.t1105
+title: Pandemic Registry Key

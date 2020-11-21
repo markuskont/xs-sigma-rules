@@ -1,0 +1,36 @@
+author: Roberto Rodriguez @Cyb3rWard0g
+date: 2019/09/12
+description: Detects alternate PowerShell hosts potentially bypassing detections looking
+  for powershell.exe
+detection:
+  condition: selection and not filter
+  filter:
+    winlog.event_data.Image|endswith:
+    - \powershell.exe
+    - \powershell_ise.exe
+  selection:
+    EventID: 17
+    winlog.event_data.PipeName|startswith: \PSHost
+falsepositives:
+- Programs using PowerShell directly without invocation of a dedicated interpreter.
+fields:
+- winlog.ComputerName
+- winlog.event_data.User
+- winlog.event_data.Image
+- winlog.event_data.PipeName
+id: 58cb02d5-78ce-4692-b3e1-dce850aae41a
+level: medium
+logsource:
+  product: windows
+  service: sysmon
+modified: 2019/11/10
+product: windows
+references:
+- https://github.com/Cyb3rWard0g/ThreatHunter-Playbook/tree/master/playbooks/windows/02_execution/T1086_powershell/alternate_signed_powershell_hosts.md
+service: sysmon
+status: experimental
+tags:
+- attack.execution
+- attack.t1086
+- attack.t1059.001
+title: Alternate PowerShell Hosts Pipe

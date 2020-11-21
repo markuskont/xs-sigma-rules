@@ -1,0 +1,34 @@
+action: global
+author: James Pemberton / @4A616D6573
+category: process_creation
+date: 2019/10/24
+description: Detects the use of various web request methods (including aliases) via
+  Windows PowerShell
+detection:
+  condition: selection
+  selection:
+    winlog.event_data.CommandLine|contains:
+    - Invoke-WebRequest
+    - 'iwr '
+    - 'wget '
+    - 'curl '
+    - Net.WebClient
+    - Start-BitsTransfer
+falsepositives:
+- Use of Get-Command and Get-Help modules to reference Invoke-WebRequest and Start-BitsTransfer.
+id: 53624cea-e5fa-4d77-8c39-b5451e032e4a
+level: medium
+logsource:
+  category: process_creation
+  product: windows
+modified: 2020/08/24
+product: windows
+references:
+- https://4sysops.com/archives/use-powershell-to-download-a-file-with-http-https-and-ftp/
+- https://blog.jourdant.me/post/3-ways-to-download-files-with-powershell
+status: experimental
+tags:
+- attack.execution
+- attack.t1059.001
+- attack.t1086
+title: Windows PowerShell Web Request

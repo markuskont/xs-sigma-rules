@@ -1,0 +1,49 @@
+action: global
+author: Florian Roth, Markus Neis
+date: 2018/03/23
+description: Detects Chafer activity attributed to OilRig as reported in Nyotron report
+  in March 2018
+detection:
+  condition: 1 of them
+  selection_reg1:
+    EventID: 13
+    winlog.event_data.EventType: SetValue
+    winlog.event_data.TargetObject:
+    - '*SOFTWARE\Microsoft\Windows\CurrentVersion\UMe'
+    - '*SOFTWARE\Microsoft\Windows\CurrentVersion\UT'
+  selection_reg2:
+    EventID: 13
+    winlog.event_data.Details: DWORD (0x00000001)
+    winlog.event_data.EventType: SetValue
+    winlog.event_data.TargetObject: '*\Control\SecurityProviders\WDigest\UseLogonCredential'
+  selection_service:
+    EventID: 4698
+    TaskName:
+    - SC Scheduled Scan
+    - UpdatMachine
+falsepositives:
+- Unknown
+id: b2893335-a48c-4508-b95f-b14a73aedc58
+level: critical
+logsource:
+  product: windows
+  service: sysmon
+modified: 2020/08/26
+product: windows
+references:
+- https://nyotron.com/nyotron-discovers-next-generation-oilrig-attacks/
+service: sysmon
+tags:
+- attack.persistence
+- attack.g0049
+- attack.t1053
+- attack.t1053.005
+- attack.s0111
+- attack.t1050
+- attack.t1543.003
+- attack.defense_evasion
+- attack.t1112
+- attack.command_and_control
+- attack.t1071
+- attack.t1071.004
+title: Chafer Activity
