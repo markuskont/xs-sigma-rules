@@ -10,7 +10,7 @@ detection:
   timeframe: 1m
 falsepositives:
 - Legitimate high DNS bytes out rate to domain name which should be added to whitelist
-id: 042a842f-1428-4a75-8146-59d381649c03
+id: 026c670f-c703-4320-a4cd-e0fb80d6a530
 level: medium
 logsource:
   category: dns

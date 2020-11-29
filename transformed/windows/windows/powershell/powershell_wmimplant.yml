@@ -6,7 +6,6 @@ detection:
   condition: selection
   selection:
     winlog.event_data.ScriptBlockText|contains:
-    - WMImplant
     - ' change_user '
     - ' gen_cli '
     - ' command_exec '
@@ -24,6 +23,7 @@ detection:
     - ' power_off '
     - ' vacant_system '
     - ' logon_events '
+    - winlog.event_data.WMImplant
 falsepositives:
 - Administrative scripts that use the same keywords.
 id: 8028c2c3-e25a-46e3-827f-bbb5abf181d7

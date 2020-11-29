@@ -6,8 +6,8 @@ description: Detects Access to LSASS Process
 detection:
   condition: selection
   selection:
-    EventID: 1121
     winlog.event_data.Path: '*\lsass.exe'
+    winlog.event_id: 1121
 falsepositives:
 - Google Chrome GoogleUpdate.exe
 - Some Taskmgr.exe related activity

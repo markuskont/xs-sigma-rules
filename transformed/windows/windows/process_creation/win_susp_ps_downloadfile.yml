@@ -9,7 +9,7 @@ detection:
     winlog.event_data.CommandLine|contains|all:
     - powershell
     - .DownloadFile
-    - System.Net.WebClient
+    - winlog.event_data.System.Net.WebClient
 falsepositives:
 - Unknown
 id: 8f70ac5f-1f6f-4f8e-b454-db19561216c5

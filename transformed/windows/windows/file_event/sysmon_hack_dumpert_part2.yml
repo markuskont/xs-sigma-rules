@@ -10,7 +10,7 @@ detection:
     winlog.event_data.TargetFilename: C:\Windows\Temp\dumpert.dmp
 falsepositives:
 - Very unlikely
-id: 5e056b29-ca61-4cc5-9732-98333fa2abc1
+id: e6feffd8-8859-4964-872b-55a7ead36a9c
 level: critical
 logsource:
   category: file_event

@@ -7,15 +7,15 @@ detection:
     winlog.ComputerName: '%Workstations%'
     winlog.event_data.LogonProcessName: Advapi
   selection:
-    EventID:
-    - 528
-    - 529
-    - 4624
-    - 4625
     winlog.ComputerName:
     - '%ServerSystems%'
     - '%DomainControllers%'
     winlog.event_data.LogonType: 2
+    winlog.event_id:
+    - 528
+    - 529
+    - 4624
+    - 4625
 falsepositives:
 - Administrative activity via KVM or ILO board
 id: 3ff152b2-1388-4984-9cd9-a323323fdadf

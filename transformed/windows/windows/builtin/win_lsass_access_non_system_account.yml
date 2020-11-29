@@ -7,11 +7,11 @@ detection:
   filter:
     winlog.event_data.SubjectUserName|endswith: $
   selection:
-    EventID:
-    - 4663
-    - 4656
     winlog.event_data.ObjectName|endswith: \lsass.exe
     winlog.event_data.ObjectType: Process
+    winlog.event_id:
+    - 4663
+    - 4656
 falsepositives:
 - Unknown
 fields:

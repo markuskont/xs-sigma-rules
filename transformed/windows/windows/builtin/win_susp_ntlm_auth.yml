@@ -6,8 +6,8 @@ description: Detects logons using NTLM, which could be caused by a legacy source
 detection:
   condition: selection
   selection:
-    EventID: 8002
     winlog.event_data.CallingProcessName: '*'
+    winlog.event_id: 8002
 falsepositives:
 - Legacy hosts
 id: 98c3bcf1-56f2-49dc-9d8d-c66cf190238b

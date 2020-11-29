@@ -5,7 +5,7 @@ detection:
   condition: selection
   selection:
     DetectionSource: AMSI
-    EventID: 1116
+    winlog.event_id: 1116
 falsepositives:
 - unlikely
 id: ea9bf0fa-edec-4fb8-8b78-b119f2528186

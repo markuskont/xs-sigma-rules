@@ -8,8 +8,8 @@ detection:
   selection1:
     winlog.event_data.Image|startswith: C:\ProgramData\DRM
     winlog.event_data.ParentImage|contains:
-    - C:\Windows\Temp
     - \hpqhvind.exe
+    - winlog.event_data.C:\Windows\Temp
   selection2:
     winlog.event_data.Image|endswith: \wmplayer.exe
     winlog.event_data.ParentImage|startswith: C:\ProgramData\DRM

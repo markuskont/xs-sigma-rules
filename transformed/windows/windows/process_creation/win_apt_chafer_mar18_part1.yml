@@ -6,13 +6,13 @@ description: Detects Chafer activity attributed to OilRig as reported in Nyotron
 detection:
   condition: 1 of them
   selection_service:
-    EventID: 7045
     winlog.event_data.ServiceName:
-    - SC Scheduled Scan
-    - UpdatMachine
+    - winlog.event_data.SC Scheduled Scan
+    - winlog.event_data.UpdatMachine
+    winlog.event_id: 7045
 falsepositives:
 - Unknown
-id: d7711f22-e7eb-4774-8b6f-5fc815f7cdbe
+id: ab017094-c960-47a3-ab74-1e925f7f79cd
 level: critical
 logsource:
   product: windows

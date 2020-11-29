@@ -27,12 +27,12 @@ detection:
     - '127.'
     - 169.254.
   privatev6:
-  - IpAddress: ::1
-  - IpAddress|startswith:
+  - winlog.event_data.IpAddress: ::1
+  - winlog.event_data.IpAddress|startswith:
     - 'fe80::'
     - 'fc00::'
   selection:
-    EventID: 4625
+    winlog.event_id: 4625
   unknown:
     winlog.event_data.IpAddress|contains: '-'
 falsepositives:

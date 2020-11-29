@@ -5,9 +5,9 @@ description: Detects access to a protected_storage service over the network. Pot
 detection:
   condition: selection
   selection:
-    EventID: 5145
     RelativeTargetName: protected_storage
     winlog.event_data.ShareName|contains: IPC
+    winlog.event_id: 5145
 falsepositives:
 - Unknown
 id: 45545954-4016-43c6-855e-eae8f1c369dc

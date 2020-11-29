@@ -9,14 +9,14 @@ detection:
   filter:
     winlog.event_data.AccountName: ANONYMOUS LOGON
   selection:
-  - EventID: 4624
-    KeyLength: '0'
-    LogonProcessName: NtLmSsp
-    LogonType: '3'
-    SubjectUserSid: S-1-0-0
-  - EventID: 4624
-    LogonProcessName: seclogo
-    LogonType: '9'
+  - winlog.event_data.KeyLength: '0'
+    winlog.event_data.LogonProcessName: NtLmSsp
+    winlog.event_data.LogonType: '3'
+    winlog.event_data.SubjectUserSid: S-1-0-0
+    winlog.event_id: 4624
+  - winlog.event_data.LogonProcessName: seclogo
+    winlog.event_data.LogonType: '9'
+    winlog.event_id: 4624
 falsepositives:
 - Administrator activity
 - Penetration tests

@@ -4,11 +4,11 @@ description: Detects non-system users failing to get a handle of the SCM databas
 detection:
   condition: selection
   selection:
-    EventID: 4656
     Keywords: Audit Failure
     winlog.event_data.ObjectName: servicesactive
     winlog.event_data.ObjectType: SC_MANAGER OBJECT
     winlog.event_data.SubjectLogonId: '0x3e4'
+    winlog.event_id: 4656
 falsepositives:
 - Unknown
 id: 13addce7-47b2-4ca0-a98f-1de964d1d669

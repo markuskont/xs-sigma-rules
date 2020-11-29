@@ -9,16 +9,16 @@ detection:
   filter:
     winlog.event_data.AccountName: ANONYMOUS LOGON
   selection:
-  - ComputerName: '%Workstations%'
-    EventID: 4624
-    LogonProcessName: NtLmSsp
-    LogonType: '3'
-    WorkstationName: '%Workstations%'
-  - ComputerName: '%Workstations%'
-    EventID: 4625
-    LogonProcessName: NtLmSsp
-    LogonType: '3'
-    WorkstationName: '%Workstations%'
+  - winlog.ComputerName: '%Workstations%'
+    winlog.event_data.LogonProcessName: NtLmSsp
+    winlog.event_data.LogonType: '3'
+    winlog.event_data.WorkstationName: '%Workstations%'
+    winlog.event_id: 4624
+  - winlog.ComputerName: '%Workstations%'
+    winlog.event_data.LogonProcessName: NtLmSsp
+    winlog.event_data.LogonType: '3'
+    winlog.event_data.WorkstationName: '%Workstations%'
+    winlog.event_id: 4625
 falsepositives:
 - Administrator activity
 - Penetration tests

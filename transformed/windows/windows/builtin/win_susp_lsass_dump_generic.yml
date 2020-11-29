@@ -17,7 +17,6 @@ detection:
     - \minionhost.exe
     - \VsTskMgr.exe
   selection_1:
-    EventID: 4656
     winlog.event_data.AccessMask|contains:
     - '0x40'
     - '0x1400'
@@ -33,12 +32,13 @@ detection:
     - '0x1f2fff'
     - '0x1f3fff'
     winlog.event_data.ObjectName|endswith: \lsass.exe
+    winlog.event_id: 4656
   selection_2:
     AccessList|contains:
     - '4484'
     - '4416'
-    EventID: 4663
     winlog.event_data.ObjectName|endswith: \lsass.exe
+    winlog.event_id: 4663
 falsepositives:
 - Legitimate software accessing LSASS process for legitimate reason; update the whitelist
   with it

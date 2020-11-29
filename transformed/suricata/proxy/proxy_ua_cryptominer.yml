@@ -7,8 +7,8 @@ detection:
   condition: selection
   selection:
     http.http_user_agent:
-    - XMRig *
     - ccminer*
+    - winlog.event_data.XMRig *
 falsepositives:
 - Unknown
 fields:

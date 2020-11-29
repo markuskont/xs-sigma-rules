@@ -5,8 +5,8 @@ description: This method detects malicious services mentioned in Turla PNG dropp
 detection:
   condition: selection
   selection:
-    EventID: 7045
     winlog.event_data.ServiceName: WerFaultSvc
+    winlog.event_id: 7045
 falsepositives:
 - unlikely
 id: 1228f8e2-7e79-4dea-b0ad-c91f1d5016c1

@@ -5,9 +5,9 @@ description: This method detects a service install of the malicious Microsoft Ne
 detection:
   condition: selection
   selection:
-    EventID: 7045
     winlog.event_data.ServiceFileName: '* LocalService'
     winlog.event_data.ServiceName: NtsSrv
+    winlog.event_id: 7045
 falsepositives:
 - Unlikely
 id: 9e987c6c-4c1e-40d8-bd85-dd26fba8fdd6

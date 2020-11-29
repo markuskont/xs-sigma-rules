@@ -6,11 +6,11 @@ description: Detects process access to LSASS which is typical for Mimikatz (0x10
 detection:
   condition: selection
   selection:
-    EventID: 10
     winlog.event_data.GrantedAccess:
     - '0x1410'
     - '0x1010'
     winlog.event_data.TargetImage: C:\windows\system32\lsass.exe
+    winlog.event_id: 10
 falsepositives:
 - Some security products access LSASS in this way.
 fields:

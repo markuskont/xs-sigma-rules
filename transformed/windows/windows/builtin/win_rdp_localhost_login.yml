@@ -4,11 +4,11 @@ description: RDP login with localhost source address may be a tunnelled login
 detection:
   condition: selection
   selection:
-    EventID: 4624
     SourceNetworkAddress:
     - ::1
     - 127.0.0.1
     winlog.event_data.LogonType: 10
+    winlog.event_id: 4624
 falsepositives:
 - Unknown
 id: 51e33403-2a37-4d66-a574-1fda1782cc31

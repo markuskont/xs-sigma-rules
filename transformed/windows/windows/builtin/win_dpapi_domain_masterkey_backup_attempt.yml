@@ -5,7 +5,7 @@ description: Detects anyone attempting a backup for the DPAPI Master Key. This e
 detection:
   condition: selection
   selection:
-    EventID: 4692
+    winlog.event_id: 4692
 falsepositives:
 - Unknown
 fields:

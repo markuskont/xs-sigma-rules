@@ -5,15 +5,15 @@ detection:
   condition: selection1 OR selection2
   selection1:
     AuthenticationPackage: NTLM
-    EventID:
-    - 4625
-    - 4624
     winlog.event_data.LogonType: 3
     winlog.event_data.WorkstationName|re: ^[A-Za-z0-9]{16}$
+    winlog.event_id:
+    - 4625
+    - 4624
   selection2:
-    EventID: 4776
     SourceWorkstation|re: ^[A-Za-z0-9]{16}$
     winlog.event_data.ProcessName: null
+    winlog.event_id: 4776
 falsepositives:
 - Linux hostnames composed of 16 characters.
 id: 72124974-a68b-4366-b990-d30e0b2a190d

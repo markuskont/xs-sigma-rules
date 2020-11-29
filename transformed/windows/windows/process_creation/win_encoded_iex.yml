@@ -6,10 +6,10 @@ detection:
   condition: selection
   selection:
     winlog.event_data.CommandLine|base64offset|contains:
-    - IEX ([
     - iex ([
     - iex (New
-    - IEX (New
+    - winlog.event_data.IEX ([
+    - winlog.event_data.IEX (New
 falsepositives:
 - unknown
 fields:

@@ -6,7 +6,7 @@ detection:
   condition: selection
   selection:
     winlog.event_data.CommandLine|contains:
-    - DataExchange.dll
+    - winlog.event_data.DataExchange.dll
     winlog.event_data.Image|endswith:
     - \powershell.exe
     winlog.event_data.ParentImage|endswith:

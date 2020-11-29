@@ -5,9 +5,6 @@ description: Detects the creation of a named pipe used by known APT malware
 detection:
   condition: selection
   selection:
-    EventID:
-    - 17
-    - 18
     winlog.event_data.PipeName:
     - \isapi_http
     - \isapi_dg
@@ -24,6 +21,9 @@ detection:
     - \pcheap_reuse
     - \msagent_*
     - \gruntsvc
+    winlog.event_id:
+    - 17
+    - 18
 falsepositives:
 - Unkown
 id: fe3ac066-98bb-432a-b1e7-a5229cb39d4a

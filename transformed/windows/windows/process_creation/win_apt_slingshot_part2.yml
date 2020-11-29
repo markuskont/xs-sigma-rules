@@ -10,11 +10,11 @@ detection:
     winlog.event_data.CommandLine:
     - '*schtasks* /delete *Defrag\ScheduledDefrag*'
   selection2:
-    EventID: 4701
     TaskName: \Microsoft\Windows\Defrag\ScheduledDefrag
+    winlog.event_id: 4701
 falsepositives:
 - Unknown
-id: e5dd0aab-c70f-435c-8fdb-0af5cf0405a2
+id: 72ebdd75-ad3b-48bf-af46-9e13ef739530
 level: medium
 logsource:
   definition: 'Requirements: Audit Policy : Audit Other Object Access Events > Success'

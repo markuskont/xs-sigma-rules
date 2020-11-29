@@ -8,9 +8,9 @@ detection:
   condition: selection
   selection:
     Accesses: '*WriteData*'
-    EventID: 5145
     RelativeTargetName: '*ScheduledTasks.xml'
     winlog.event_data.ShareName: \\*\SYSVOL
+    winlog.event_id: 5145
 falsepositives:
 - if the source IP is not localhost then it's super suspicious, better to monitor
   both local and remote changes to GPO scheduledtasks

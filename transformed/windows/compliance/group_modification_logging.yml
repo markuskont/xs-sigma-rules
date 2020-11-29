@@ -11,7 +11,7 @@ description: "Configure systems to issue a log entry and alert when an account i
 detection:
   condition: selection
   selection:
-    EventID:
+    winlog.event_id:
     - 4728
     - 4729
     - 4730

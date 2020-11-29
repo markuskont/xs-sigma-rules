@@ -8,9 +8,9 @@ description: Network sniffing refers to using the network interface on a system 
 detection:
   condition: selection
   selection:
-  - CommandLine|contains: -i
-    Image|endswith: \tshark.exe
-  - Image|endswith: \windump.exe
+  - winlog.event_data.CommandLine|contains: -i
+    winlog.event_data.Image|endswith: \tshark.exe
+  - winlog.event_data.Image|endswith: \windump.exe
 falsepositives:
 - Admin activity
 fields:

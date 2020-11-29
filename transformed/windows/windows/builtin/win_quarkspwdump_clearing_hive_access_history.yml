@@ -4,9 +4,9 @@ description: Detects QuarksPwDump clearing access history in hive
 detection:
   condition: selection
   selection:
-    EventID: 16
     winlog.event_data.HiveName|contains: \AppData\Local\Temp\SAM
     winlog.event_data.HiveName|endswith: .dmp
+    winlog.event_id: 16
 falsepositives:
 - Unknown
 id: 39f919f3-980b-4e6f-a975-8af7e507ef2b

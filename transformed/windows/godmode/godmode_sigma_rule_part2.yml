@@ -6,33 +6,33 @@ description: 'PoC rule to detect malicious activity - following the principle: i
 detection:
   condition: 1 of them
   selection_file_creation:
-    EventID: 11
     winlog.event_data.TargetFilename|contains:
     - .dmp
-    - Desktop\how
-    - Desktop\decrypt
+    - winlog.event_data.Desktop\how
+    - winlog.event_data.Desktop\decrypt
+    winlog.event_id: 11
   selection_registry_modifications:
-    EventID:
-    - 12
-    - 13
     winlog.event_data.TargetObject|contains:
-    - UserInitMprLogonScript
     - \CurrentVersion\Image File Execution Options\
-  selection_registry_run:
-    EventID:
+    - winlog.event_data.UserInitMprLogonScript
+    winlog.event_id:
     - 12
     - 13
+  selection_registry_run:
     winlog.event_data.Details|contains:
-    - AppData
     - \Users\Public\
     - \Temp\
     - powershell
     - wscript
     - cscript
+    - winlog.event_data.AppData
     winlog.event_data.TargetObject|contains:
     - \Microsoft\Windows\CurrentVersion\Run\
     - \Microsoft\Windows\CurrentVersion\RunOnce\
-id: 7ebc6040-48b7-4e99-a6d5-88fd2eb43365
+    winlog.event_id:
+    - 12
+    - 13
+id: e29d2dbc-3d08-4116-813a-1c0af4b7be28
 level: high
 logsource:
   product: windows

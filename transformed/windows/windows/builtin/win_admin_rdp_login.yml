@@ -7,10 +7,10 @@ description: Detect remote login by Administrator user depending on internal pat
 detection:
   condition: selection
   selection:
-    EventID: 4624
     winlog.event_data.AccountName: Admin-*
     winlog.event_data.AuthenticationPackageName: Negotiate
     winlog.event_data.LogonType: 10
+    winlog.event_id: 4624
 falsepositives:
 - Legitimate administrative activity
 id: 0f63e1ef-1eb9-4226-9d54-8927ca08520a

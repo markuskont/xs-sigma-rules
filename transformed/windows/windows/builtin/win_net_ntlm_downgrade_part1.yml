@@ -5,14 +5,14 @@ description: Detects NetNTLM downgrade attack
 detection:
   condition: 1 of them
   selection1:
-    EventID: 13
     winlog.event_data.TargetObject:
     - '*SYSTEM\\*ControlSet*\Control\Lsa\lmcompatibilitylevel'
     - '*SYSTEM\\*ControlSet*\Control\Lsa*\NtlmMinClientSec'
     - '*SYSTEM\\*ControlSet*\Control\Lsa*\RestrictSendingNTLMTraffic'
+    winlog.event_id: 13
 falsepositives:
 - Unknown
-id: 6f2e594a-2d42-4d89-b739-a12d4093d865
+id: 43fb7eee-0726-49e7-83e4-a224ff2205de
 level: critical
 logsource:
   product: windows

@@ -7,9 +7,9 @@ description: In Kaspersky's 2020 Incident Response Analyst Report they listed le
 detection:
   condition: selection
   selection:
-  - Product|contains: Mouse Lock
-  - Company|contains: Misc314
-  - CommandLine|contains: Mouse Lock_
+  - winlog.event_data.Product|contains: Mouse Lock
+  - winlog.event_data.Company|contains: Misc314
+  - winlog.event_data.CommandLine|contains: Mouse Lock_
 falsepositives:
 - Legitimate uses of Mouse Lock software
 fields:

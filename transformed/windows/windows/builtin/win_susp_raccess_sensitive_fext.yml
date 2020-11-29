@@ -4,8 +4,6 @@ description: Detects known sensitive file extensions accessed on a network share
 detection:
   condition: selection
   selection:
-    EventID:
-    - 5145
     RelativeTargetName:
     - '*.pst'
     - '*.ost'
@@ -19,6 +17,8 @@ detection:
     - '*.kirbi'
     - '*\groups.xml'
     - '*.rdp'
+    winlog.event_id:
+    - 5145
 falsepositives:
 - Help Desk operator doing backup or re-imaging end user machine or pentest or backup
   software

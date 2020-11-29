@@ -11,9 +11,9 @@ description: Detects the loading of drivers via 'SeLoadDriverPrivilege' required
 detection:
   condition: selection_1 and not selection_2
   selection_1:
-    EventID: 4673
     Service: '-'
     winlog.event_data.PrivilegeList: SeLoadDriverPrivilege
+    winlog.event_id: 4673
   selection_2:
     winlog.event_data.ProcessName|contains:
     - '*\Windows\System32\Dism.exe'

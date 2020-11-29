@@ -8,14 +8,14 @@ detection:
     winlog.event_data.Image:
     - '*:\RECYCLER\\*'
     - '*:\SystemVolumeInformation\\*'
-    - C:\\Windows\\Tasks\\*
-    - C:\\Windows\\debug\\*
-    - C:\\Windows\\fonts\\*
-    - C:\\Windows\\help\\*
-    - C:\\Windows\\drivers\\*
-    - C:\\Windows\\addins\\*
-    - C:\\Windows\\cursors\\*
-    - C:\\Windows\\system32\tasks\\*
+    - winlog.event_data.C:\\Windows\\Tasks\\*
+    - winlog.event_data.C:\\Windows\\debug\\*
+    - winlog.event_data.C:\\Windows\\fonts\\*
+    - winlog.event_data.C:\\Windows\\help\\*
+    - winlog.event_data.C:\\Windows\\drivers\\*
+    - winlog.event_data.C:\\Windows\\addins\\*
+    - winlog.event_data.C:\\Windows\\cursors\\*
+    - winlog.event_data.C:\\Windows\\system32\tasks\\*
 falsepositives:
 - False positives depend on scripts and administrative tools used in the monitored
   environment

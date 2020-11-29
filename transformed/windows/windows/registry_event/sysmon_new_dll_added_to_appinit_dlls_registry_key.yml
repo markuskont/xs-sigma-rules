@@ -7,7 +7,7 @@ description: DLLs that are specified in the AppInit_DLLs value in the Registry k
 detection:
   condition: selection
   selection:
-  - TargetObject:
+  - winlog.event_data.TargetObject:
     - '*\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_Dlls'
     - '*\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_Dlls'
   - NewName:
@@ -16,7 +16,7 @@ detection:
 falsepositives:
 - Unkown
 fields:
-- winlog.event_data.EventID
+- winlog.event_id
 - winlog.event_data.Image
 - winlog.event_data.TargetObject
 - winlog.event_data.NewName

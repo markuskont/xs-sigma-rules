@@ -6,10 +6,10 @@ description: Identifies execution of nltest.exe and dsquery.exe for domain trust
 detection:
   condition: selection
   selection:
-  - CommandLine|contains: domain_trusts
-    Image|endswith: \nltest.exe
-  - CommandLine|contains: trustedDomain
-    Image|endswith: \dsquery.exe
+  - winlog.event_data.CommandLine|contains: domain_trusts
+    winlog.event_data.Image|endswith: \nltest.exe
+  - winlog.event_data.CommandLine|contains: trustedDomain
+    winlog.event_data.Image|endswith: \dsquery.exe
 falsepositives:
 - Legitimate use of the utilities by legitimate user for legitimate reason
 id: 3bad990e-4848-4a78-9530-b427d854aac0

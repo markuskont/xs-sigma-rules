@@ -6,9 +6,9 @@ detection:
   condition: sec_settings
   sec_settings:
     winlog.event_data.EventType:
-    - SetValue
-    - DeleteValue
-    - CreateValue
+    - winlog.event_data.SetValue
+    - winlog.event_data.DeleteValue
+    - winlog.event_data.CreateValue
     winlog.event_data.TargetObject|endswith:
     - '*\Security\Trusted Documents\TrustRecords'
     - '*\Security\AccessVBOM'

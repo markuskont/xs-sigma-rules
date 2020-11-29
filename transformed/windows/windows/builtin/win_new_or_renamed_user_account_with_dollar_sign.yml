@@ -4,14 +4,14 @@ description: Detects possible bypass EDR and SIEM via abnormal user account name
 detection:
   condition: selection
   selection:
-    EventID:
+    UserName|contains: $
+    winlog.event_id:
     - 4720
     - 4781
-    UserName|contains: $
 falsepositives:
 - Unkown
 fields:
-- winlog.event_data.EventID
+- winlog.event_id
 - winlog.event_data.UserName
 - winlog.event_data.SubjectAccountName
 id: cfeed607-6aa4-4bbd-9627-b637deb723c8

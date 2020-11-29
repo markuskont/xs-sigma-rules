@@ -8,12 +8,13 @@ description: Dynamic-link libraries (DLLs) that are specified in the AppCertDLLs
 detection:
   condition: selection
   selection:
-  - TargetObject: HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\AppCertDlls
+  - winlog.event_data.TargetObject: HKLM\SYSTEM\CurrentControlSet\Control\Session
+      Manager\AppCertDlls
   - NewName: HKLM\SYSTEM\CurentControlSet\Control\Session Manager\AppCertDlls
 falsepositives:
 - Unkown
 fields:
-- winlog.event_data.EventID
+- winlog.event_id
 - winlog.event_data.Image
 - winlog.event_data.TargetObject
 - winlog.event_data.NewName

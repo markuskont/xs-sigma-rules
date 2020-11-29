@@ -4,9 +4,9 @@ description: Detects PowerShell remote thread creation in Rundll32.exe
 detection:
   condition: selection
   selection:
-    EventID: 8
     winlog.event_data.SourceImage: '*\powershell.exe'
     winlog.event_data.TargetImage: '*\rundll32.exe'
+    winlog.event_id: 8
 falsepositives:
 - Unkown
 id: 99b97608-3e21-4bfe-8217-2a127c396a0e

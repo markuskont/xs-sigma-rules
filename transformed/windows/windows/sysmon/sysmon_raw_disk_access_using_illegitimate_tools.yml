@@ -6,7 +6,7 @@ detection:
   filter_1:
     Device|contains: floppy
   filter_2:
-  - Image|endswith:
+  - winlog.event_data.Image|endswith:
     - \wmiprvse.exe
     - \sdiagnhost.exe
     - \searchindexer.exe
@@ -22,7 +22,7 @@ detection:
     - \vds.exe
     - \lsass.exe
   selection:
-    EventID: 9
+    winlog.event_id: 9
 falsepositives:
 - Legitimate Administrator using tool for raw access or ongoing forensic investigation
 fields:

@@ -8,8 +8,8 @@ detection:
     DestPort:
     - 5985
     - 5986
-    EventID: 5156
     LayerRTID: 44
+    winlog.event_id: 5156
 falsepositives:
 - Legitimate use of remote PowerShell execution
 id: 13acf386-b8c6-4fe0-9a6e-c4756b974698

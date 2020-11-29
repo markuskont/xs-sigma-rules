@@ -8,11 +8,11 @@ detection:
     winlog.event_data.Image:
     - '*\$Recycle.bin'
     - '*\Users\Public\\*'
-    - C:\Perflogs\\*
     - '*\Windows\Fonts\\*'
     - '*\Windows\IME\\*'
     - '*\Windows\addins\\*'
     - '*\Windows\debug\\*'
+    - winlog.event_data.C:\Perflogs\\*
 falsepositives:
 - unknown
 id: f50bfd8b-e2a3-4c15-9373-7900b5a4c6d5

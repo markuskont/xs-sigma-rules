@@ -5,9 +5,6 @@ description: This method uses uncommon error codes on failed logons to determine
 detection:
   condition: selection
   selection:
-    EventID:
-    - 4625
-    - 4776
     winlog.event_data.Status:
     - '0xC0000072'
     - '0xC000006F'
@@ -15,6 +12,9 @@ detection:
     - '0xC0000413'
     - '0xC000018C'
     - '0xC000015B'
+    winlog.event_id:
+    - 4625
+    - 4776
 falsepositives:
 - User using a disabled account
 id: 9eb99343-d336-4020-a3cd-67f3819e68ee

@@ -10,7 +10,7 @@ detection:
     - ::1
     winlog.event_data.DestinationPort: 3389
   selection:
-    EventID: 5156
+    winlog.event_id: 5156
   sourceRDP:
     DestinationAddress:
     - 127.*

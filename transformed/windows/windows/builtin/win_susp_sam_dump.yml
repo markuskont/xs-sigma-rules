@@ -6,9 +6,9 @@ description: Detects suspicious SAM dump activity as cause by QuarksPwDump and o
 detection:
   condition: selection
   selection:
-    EventID: 16
     Message:
     - '*\AppData\Local\Temp\SAM-*.dmp *'
+    winlog.event_id: 16
 falsepositives:
 - Penetration testing
 id: 839dd1e8-eda8-4834-8145-01beeee33acd

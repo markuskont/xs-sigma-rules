@@ -11,8 +11,8 @@ detection:
     - join
     - char
   selection:
-  - Description: Windows PowerShell
-  - Product: PowerShell Core 6
+  - winlog.event_data.Description: Windows PowerShell
+  - winlog.event_data.Product: PowerShell Core 6
 falsepositives:
 - unknown
 id: bb780e0c-16cf-4383-8383-1e5471db6cf9

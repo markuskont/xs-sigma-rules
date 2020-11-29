@@ -6,7 +6,7 @@ description: Detects local user creation on windows servers, which shouldn't hap
 detection:
   condition: selection
   selection:
-    EventID: 4720
+    winlog.event_id: 4720
 falsepositives:
 - Domain Controller Logs
 - Local accounts managed by privileged account management tools

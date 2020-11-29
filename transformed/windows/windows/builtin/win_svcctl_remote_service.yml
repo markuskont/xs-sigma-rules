@@ -8,9 +8,9 @@ detection:
   condition: selection
   selection:
     Accesses: '*WriteData*'
-    EventID: 5145
     RelativeTargetName: svcctl
     winlog.event_data.ShareName: \\*\IPC$
+    winlog.event_id: 5145
 falsepositives:
 - pentesting
 id: 586a8d6b-6bfe-4ad9-9d78-888cd2fe50c3

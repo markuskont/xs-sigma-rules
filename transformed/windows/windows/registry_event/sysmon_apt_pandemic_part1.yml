@@ -10,13 +10,13 @@ detection:
 falsepositives:
 - unknown
 fields:
-- winlog.event_data.EventID
+- winlog.event_id
 - winlog.event_data.CommandLine
 - winlog.event_data.ParentCommandLine
 - winlog.event_data.Image
 - winlog.event_data.User
 - winlog.event_data.TargetObject
-id: 23dd4ebe-b46d-4e34-be4d-6de1f0003ed1
+id: c399e8d5-9829-43c4-8153-410ba5347930
 level: critical
 logsource:
   category: registry_event

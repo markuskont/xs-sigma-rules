@@ -11,31 +11,31 @@ detection:
     - '*\Service.exe i'
     - '*\Service.exe u'
     - '*\microsoft\Taskbar\autoit3.exe'
-    - C:\wsc.exe*
+    - winlog.event_data.C:\wsc.exe*
   selection_process2:
     winlog.event_data.Image: '*\Windows\Temp\DB\\*.exe'
   selection_process3:
     winlog.event_data.CommandLine: '*\nslookup.exe -q=TXT*'
     winlog.event_data.ParentImage: '*\Autoit*'
   selection_reg1:
-    EventID: 13
     winlog.event_data.EventType: SetValue
     winlog.event_data.TargetObject:
     - '*SOFTWARE\Microsoft\Windows\CurrentVersion\UMe'
     - '*SOFTWARE\Microsoft\Windows\CurrentVersion\UT'
+    winlog.event_id: 13
   selection_reg2:
-    EventID: 13
     winlog.event_data.Details: DWORD (0x00000001)
     winlog.event_data.EventType: SetValue
     winlog.event_data.TargetObject: '*\Control\SecurityProviders\WDigest\UseLogonCredential'
+    winlog.event_id: 13
   selection_service:
-    EventID: 4698
     TaskName:
-    - SC Scheduled Scan
-    - UpdatMachine
+    - winlog.event_data.SC Scheduled Scan
+    - winlog.event_data.UpdatMachine
+    winlog.event_id: 4698
 falsepositives:
 - Unknown
-id: 511b00b6-de44-41ff-881f-fb871534d6b3
+id: 737cff4c-cf6f-4644-99a7-2260d985a36b
 level: critical
 logsource:
   category: process_creation

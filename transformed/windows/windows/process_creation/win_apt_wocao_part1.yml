@@ -5,12 +5,12 @@ description: Detects activity mentioned in Operation Wocao report
 detection:
   condition: selection
   selection:
-    EventID: 4799
     winlog.event_data.GroupName: Administrators
     winlog.event_data.ProcessName: '*\checkadmin.exe'
+    winlog.event_id: 4799
 falsepositives:
 - Administrators that use checkadmin.exe tool to enumerate local administrators
-id: e31aa521-78b1-475e-a5f2-bc045e8b207a
+id: c46d2030-7acc-4312-8d6c-7693dfa0448f
 level: high
 logsource:
   product: windows

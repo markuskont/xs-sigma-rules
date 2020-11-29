@@ -5,8 +5,8 @@ description: Detects a windows service to be stopped
 detection:
   condition: selection
   selection:
-  - CommandLine|contains: stop
-    Image|endswith:
+  - winlog.event_data.CommandLine|contains: stop
+    winlog.event_data.Image|endswith:
     - \sc.exe
     - \net.exe
     - \net1.exe

@@ -6,7 +6,7 @@ description: Detects rare service installs that only appear a few times per time
 detection:
   condition: selection | count() by ServiceFileName < 5
   selection:
-    EventID: 7045
+    winlog.event_id: 7045
   timeframe: 7d
 falsepositives:
 - Software installation

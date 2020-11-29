@@ -6,7 +6,7 @@ description: This rule detects rare scheduled task creations. Typically software
 detection:
   condition: selection | count() by TaskName < 5
   selection:
-    EventID: 106
+    winlog.event_id: 106
   timeframe: 7d
 falsepositives:
 - Software installation

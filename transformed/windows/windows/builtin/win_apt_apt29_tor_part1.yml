@@ -10,11 +10,11 @@ detection:
   condition: service_install | near process
   process:
     winlog.event_data.Image:
-    - C:\Program Files(x86)\Google\GoogleService.exe
-    - C:\Program Files(x86)\Google\GoogleUpdate.exe
+    - winlog.event_data.C:\Program Files(x86)\Google\GoogleService.exe
+    - winlog.event_data.C:\Program Files(x86)\Google\GoogleUpdate.exe
   service_install:
-    EventID: 7045
     winlog.event_data.ServiceName: Google Update
+    winlog.event_id: 7045
   timeframe: 5m
 falsepositives:
 - Unknown
@@ -22,7 +22,7 @@ fields:
 - winlog.ComputerName
 - winlog.event_data.User
 - winlog.event_data.CommandLine
-id: 2bab2f21-df92-45f8-952a-cec3659ffdd5
+id: 22624631-037f-40a3-9daf-5e9856496ea9
 level: high
 logsource:
   category: process_creation

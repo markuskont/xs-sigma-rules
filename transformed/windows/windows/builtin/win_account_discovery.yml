@@ -6,7 +6,6 @@ description: Detect priv users or groups recon based on 4661 eventid and known p
 detection:
   condition: selection
   selection:
-    EventID: 4661
     winlog.event_data.ObjectName:
     - '*-512'
     - '*-502'
@@ -19,8 +18,9 @@ detection:
     - '*-555'
     - '*admin*'
     winlog.event_data.ObjectType:
-    - SAM_USER
-    - SAM_GROUP
+    - winlog.event_data.SAM_USER
+    - winlog.event_data.SAM_GROUP
+    winlog.event_id: 4661
 falsepositives:
 - if source account name is not an admin then its super suspicious
 id: 35ba1d85-724d-42a3-889f-2e2362bcaf23

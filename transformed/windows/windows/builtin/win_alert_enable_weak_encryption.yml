@@ -17,7 +17,7 @@ detection:
     - '*Preauth*'
     - '*Encrypted*'
   selection:
-    EventID: 4738
+    winlog.event_id: 4738
 falsepositives:
 - Unknown
 id: f6de9536-0441-4b3f-a646-f4e00f300ffd

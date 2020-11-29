@@ -9,7 +9,7 @@ detection:
   condition: 1 of them
   selection1:
     winlog.event_data.CommandLine: '*cyzfc.dat, PointFunctionCall'
-id: f4e06ce2-9f7e-4220-a007-667286a26eb2
+id: ccf410b4-00fe-44f0-97cc-a8ea4400c753
 level: high
 logsource:
   category: process_creation

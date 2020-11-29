@@ -5,15 +5,15 @@ description: Detects potential abuse of Active Directory Replication Service (AD
 detection:
   condition: selection and not filter
   filter:
-  - SubjectUserName|endswith: $
-  - SubjectUserName|startswith: MSOL_
+  - winlog.event_data.SubjectUserName|endswith: $
+  - winlog.event_data.SubjectUserName|startswith: MSOL_
   selection:
-    EventID: 4662
     winlog.event_data.AccessMask: '0x100'
     winlog.event_data.Properties|contains:
     - 1131f6aa-9c07-11d1-f79f-00c04fc2dcd2
     - 1131f6ad-9c07-11d1-f79f-00c04fc2dcd2
     - 89e95b76-444d-4c62-991a-0facbeda640c
+    winlog.event_id: 4662
 falsepositives:
 - Unknown
 fields:

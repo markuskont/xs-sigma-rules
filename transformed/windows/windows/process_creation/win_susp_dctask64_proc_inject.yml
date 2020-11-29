@@ -6,7 +6,7 @@ detection:
   condition: selection and not filter
   filter:
     winlog.event_data.CommandLine|contains:
-    - DesktopCentral_Agent\agent
+    - winlog.event_data.DesktopCentral_Agent\agent
   selection:
     winlog.event_data.Image|endswith:
     - \dctask64.exe

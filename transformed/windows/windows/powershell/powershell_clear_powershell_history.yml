@@ -5,9 +5,9 @@ detection:
   condition: keywords
   keywords:
   - del (Get-PSReadlineOption).HistorySavePath
-  - "Set-PSReadlineOption \u2013HistorySaveStyle SaveNothing"
-  - Remove-Item (Get-PSReadlineOption).HistorySavePath
   - rm (Get-PSReadlineOption).HistorySavePath
+  - "winlog.event_data.Set-PSReadlineOption \u2013HistorySaveStyle SaveNothing"
+  - winlog.event_data.Remove-Item (Get-PSReadlineOption).HistorySavePath
 falsepositives:
 - some PS-scripts
 id: dfba4ce1-e0ea-495f-986e-97140f31af2d

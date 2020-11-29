@@ -4,8 +4,8 @@ description: Detects potential use of Rubeus via registered new trusted logon pr
 detection:
   condition: selection
   selection:
-  - EventID: 4611
-    LogonProcessName: User32LogonProcesss
+  - winlog.event_data.LogonProcessName: User32LogonProcesss
+    winlog.event_id: 4611
 falsepositives:
 - Unkown
 id: 12e6d621-194f-4f59-90cc-1959e21e69f7

@@ -7,7 +7,7 @@ detection:
   condition: selection and not filter
   filter:
     winlog.event_data.ImageLoaded|startswith:
-    - C:\Windows\WinSxS\
+    - winlog.event_data.C:\Windows\WinSxS\
   selection:
     winlog.event_data.ImageLoaded|endswith:
     - ualapi.dll

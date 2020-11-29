@@ -11,7 +11,7 @@ detection:
 falsepositives:
 - Legitimate use of SysInternals tools
 - Programs that use the same Registry Key
-id: fd2991e3-f357-4ae3-b87d-e980f2fe4eba
+id: d89658ae-b7ef-49e2-a010-fbba0a7963fe
 level: low
 logsource:
   category: registry_event

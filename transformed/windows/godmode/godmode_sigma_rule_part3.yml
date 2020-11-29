@@ -6,16 +6,16 @@ description: 'PoC rule to detect malicious activity - following the principle: i
 detection:
   condition: 1 of them
   selection:
-    EventID: 7045
     winlog.event_data.ServiceName|contains:
-    - WCESERVICE
-    - WCE SERVICE
     - winexesvc
-    - DumpSvc
     - pwdump
     - gsecdump
     - cachedump
-id: 59732f19-e718-450c-a70c-0a19f91e0ef5
+    - winlog.event_data.WCESERVICE
+    - winlog.event_data.WCE SERVICE
+    - winlog.event_data.DumpSvc
+    winlog.event_id: 7045
+id: d56322aa-45d7-4791-9ce9-28cb6bc33fed
 level: high
 logsource:
   product: windows

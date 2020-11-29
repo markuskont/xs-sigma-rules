@@ -7,8 +7,8 @@ detection:
   filter:
     winlog.event_data.HostVersion|startswith: '2.'
   selection:
-    EventID: 400
     winlog.event_data.EngineVersion|startswith: '2.'
+    winlog.event_id: 400
 falsepositives:
 - Penetration Test
 - Unknown

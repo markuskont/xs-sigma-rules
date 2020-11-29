@@ -4,7 +4,7 @@ description: Code integrity failures may indicate tampered executables.
 detection:
   condition: selection
   selection:
-    EventID:
+    winlog.event_id:
     - 5038
     - 6281
 falsepositives:

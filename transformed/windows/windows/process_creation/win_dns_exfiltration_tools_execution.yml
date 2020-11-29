@@ -5,8 +5,8 @@ description: Well-known DNS Exfiltration tools execution
 detection:
   condition: selection
   selection:
-  - Image|endswith: '*\iodine.exe'
-  - Image|contains: \dnscat2
+  - winlog.event_data.Image|endswith: '*\iodine.exe'
+  - winlog.event_data.Image|contains: \dnscat2
 falsepositives:
 - "Legitimate usage of iodine or dnscat2 \u2014 DNS Exfiltration tools (unlikely)"
 id: 98a96a5a-64a0-4c42-92c5-489da3866cb0

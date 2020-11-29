@@ -7,11 +7,11 @@ description: An adversary may compress data (e.g., sensitive documents) that is 
 detection:
   condition: selection
   selection:
-    EventID: 4104
     keywords|contains|all:
     - -Recurse
     - '|'
-    - Compress-Archive
+    - winlog.event_data.Compress-Archive
+    winlog.event_id: 4104
 falsepositives:
 - highly likely if archive ops are done via PS
 id: 6dc5d284-69ea-42cf-9311-fb1c3932a69a

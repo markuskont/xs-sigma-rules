@@ -4,15 +4,15 @@ description: Detects a change in profile.ps1 of the Powershell profile
 detection:
   condition: event and (target1 or target2)
   event:
-    EventID: 11
+    winlog.event_id: 11
   target1:
     winlog.event_data.TargetFilename|contains|all:
     - \My Documents\PowerShell\
     - \profile.ps1
   target2:
     winlog.event_data.TargetFilename|contains|all:
-    - C:\Windows\System32\WindowsPowerShell\v1.0\
     - \profile.ps1
+    - winlog.event_data.C:\Windows\System32\WindowsPowerShell\v1.0\
 falsepositives:
 - System administrator create Powershell profile manually
 id: b5b78988-486d-4a80-b991-930eff3ff8bf

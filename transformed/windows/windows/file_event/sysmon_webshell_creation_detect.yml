@@ -24,8 +24,8 @@ detection:
   selection_5:
     winlog.event_data.TargetFilename|contains: .ph
   selection_6:
-  - TargetFilename|endswith: .jsp
-  - TargetFilename|contains|all:
+  - winlog.event_data.TargetFilename|endswith: .jsp
+  - winlog.event_data.TargetFilename|contains|all:
     - \cgi-bin\
     - .pl
 falsepositives:

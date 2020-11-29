@@ -5,11 +5,11 @@ description: Detects logon events that have characteristics of events generated 
 detection:
   condition: selection
   selection:
-    EventID: 4624
     SourceNetworkAddress: 127.0.0.1
     winlog.event_data.LogonType: 3
     winlog.event_data.TargetUserName: ANONYMOUS_LOGON
     winlog.event_data.WorkstationName: '-'
+    winlog.event_id: 4624
 falsepositives:
 - Unknown
 id: 16f5d8ca-44bd-47c8-acbe-6fc95a16c12f

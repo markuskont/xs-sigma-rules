@@ -8,10 +8,9 @@ description: This detection excludes known namped pipes accessible remotely and 
 detection:
   condition: selection1 and not selection2
   selection1:
-    EventID: 5145
     winlog.event_data.ShareName: \\*\IPC$
+    winlog.event_id: 5145
   selection2:
-    EventID: 5145
     RelativeTargetName:
     - atsvc
     - samr
@@ -26,11 +25,12 @@ detection:
     - svcctl
     - spoolss
     - ntsvcs
-    - LSM_API_service
-    - HydraLsPipe
-    - TermSrv_API_service
-    - MsFteWds
+    - winlog.event_data.LSM_API_service
+    - winlog.event_data.HydraLsPipe
+    - winlog.event_data.TermSrv_API_service
+    - winlog.event_data.MsFteWds
     winlog.event_data.ShareName: \\*\IPC$
+    winlog.event_id: 5145
 falsepositives:
 - update the excluded named pipe to filter out any newly observed legit named pipe
 id: 52d8b0c6-53d6-439a-9e41-52ad442ad9ad

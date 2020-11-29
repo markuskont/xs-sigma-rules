@@ -4,7 +4,7 @@ description: Detects creation of WMI event subscription persistence method
 detection:
   condition: selector
   selector:
-    EventID:
+    winlog.event_id:
     - 19
     - 20
     - 21

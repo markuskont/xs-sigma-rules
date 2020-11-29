@@ -10,8 +10,8 @@ detection:
     - join
     - char
   selection:
-    EventID: 400
     HostName: ConsoleHost
+    winlog.event_id: 400
 falsepositives:
 - unknown
 id: 812837bb-b17f-45e9-8bd0-0ec35d2e3bd6

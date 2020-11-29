@@ -6,21 +6,21 @@ description: Detects NetNTLM downgrade attack
 detection:
   condition: 1 of them
   selection1:
-    EventID: 13
     winlog.event_data.TargetObject:
     - '*SYSTEM\\*ControlSet*\Control\Lsa\lmcompatibilitylevel'
     - '*SYSTEM\\*ControlSet*\Control\Lsa*\NtlmMinClientSec'
     - '*SYSTEM\\*ControlSet*\Control\Lsa*\RestrictSendingNTLMTraffic'
+    winlog.event_id: 13
   selection2:
-    EventID: 4657
     winlog.event_data.ObjectName: \REGISTRY\MACHINE\SYSTEM\\*ControlSet*\Control\Lsa*
     winlog.event_data.ObjectValueName:
-    - LmCompatibilityLevel
-    - NtlmMinClientSec
-    - RestrictSendingNTLMTraffic
+    - winlog.event_data.LmCompatibilityLevel
+    - winlog.event_data.NtlmMinClientSec
+    - winlog.event_data.RestrictSendingNTLMTraffic
+    winlog.event_id: 4657
 falsepositives:
 - Unknown
-id: 5816bd0b-d966-46af-9ab2-dbaa23182b96
+id: 51daba1f-e6c2-4ce3-8057-2f04e5436bdc
 level: critical
 logsource:
   definition: 'Requirements: Audit Policy : Object Access > Audit Registry (Success)'

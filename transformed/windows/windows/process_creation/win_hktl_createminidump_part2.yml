@@ -6,11 +6,11 @@ description: Detects the use of CreateMiniDump hack tool used to dump the LSASS 
 detection:
   condition: 1 of them
   selection:
-    EventID: 11
     winlog.event_data.TargetFilename|contains: '*\lsass.dmp'
+    winlog.event_id: 11
 falsepositives:
 - Unknown
-id: cff3edcc-6b1b-46d4-8922-313fcf77d2e8
+id: 18b7c139-95b3-47d8-b9fa-7cce988a00a2
 level: high
 logsource:
   product: windows

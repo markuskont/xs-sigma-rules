@@ -9,22 +9,22 @@ detection:
   selection1:
     winlog.event_data.ParentImage: '*\cmstp.exe'
   selection2:
-    EventID: 12
     winlog.event_data.EventType: CreateKey
     winlog.event_data.TargetObject: '*\cmmgr32.exe*'
+    winlog.event_id: 12
   selection3:
-    EventID: 13
     winlog.event_data.TargetObject: '*\cmmgr32.exe*'
+    winlog.event_id: 13
   selection4:
-    EventID: 10
     winlog.event_data.CallTrace: '*cmlua.dll*'
+    winlog.event_id: 10
 falsepositives:
 - Legitimate CMSTP use (unlikely in modern enterprise environments)
 fields:
 - winlog.event_data.CommandLine
 - winlog.event_data.ParentCommandLine
 - winlog.event_data.Details
-id: 28275d34-71f5-4811-aa82-5461d9524e80
+id: 35588008-8b83-4906-8508-da17fffcdc2d
 level: high
 logsource:
   category: process_creation

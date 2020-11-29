@@ -14,10 +14,10 @@ detection:
     winlog.event_data.CommandLine:
     - '*/i:%APPDATA%\logs.txt scrobj.dll'
     winlog.event_data.Description:
-    - Microsoft(C) Registerserver
+    - winlog.event_data.Microsoft(C) Registerserver
 falsepositives:
 - Very Unlikely
-id: 74eef2e8-72bb-4cd9-908c-229c81c3ed66
+id: 703cab16-a5c4-4901-9b3e-a94e2b71f633
 level: critical
 logsource:
   category: process_creation

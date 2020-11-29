@@ -6,17 +6,17 @@ description: Detects the use of various web request methods (including aliases) 
 detection:
   condition: selection
   selection:
-    EventID: 4104
     winlog.event_data.ScriptBlockText|contains:
-    - Invoke-WebRequest
     - 'iwr '
     - 'wget '
     - 'curl '
-    - Net.WebClient
-    - Start-BitsTransfer
+    - winlog.event_data.Invoke-WebRequest
+    - winlog.event_data.Net.WebClient
+    - winlog.event_data.Start-BitsTransfer
+    winlog.event_id: 4104
 falsepositives:
 - Use of Get-Command and Get-Help modules to reference Invoke-WebRequest and Start-BitsTransfer.
-id: 80b04006-8f58-4eaf-8f0a-3de5314f1a3a
+id: 8d1f396f-d411-467b-9b30-2ff548a9c27e
 level: medium
 logsource:
   product: windows

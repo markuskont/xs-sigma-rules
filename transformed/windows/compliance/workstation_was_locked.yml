@@ -6,7 +6,7 @@ description: Automatically lock workstation sessions after a standard period of 
 detection:
   condition: selection
   selection:
-    EventID:
+    winlog.event_id:
     - 4800
 falsepositives:
 - unknown

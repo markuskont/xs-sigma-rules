@@ -9,8 +9,8 @@ detection:
     winlog.event_data.Image|endswith: \Dbgview.exe
   selection:
     winlog.event_data.Product:
-    - Sysinternals DebugView
-    - Sysinternals Debugview
+    - winlog.event_data.Sysinternals DebugView
+    - winlog.event_data.Sysinternals Debugview
 falsepositives:
 - Unknown
 id: cd764533-2e07-40d6-a718-cfeec7f2da7f

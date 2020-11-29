@@ -5,11 +5,11 @@ description: This rule detects a DHCP server error in which a specified Callout 
 detection:
   condition: selection
   selection:
-    EventID:
+    winlog.event_data.Source: Microsoft-Windows-DHCP-Server
+    winlog.event_id:
     - 1031
     - 1032
     - 1034
-    winlog.event_data.Source: Microsoft-Windows-DHCP-Server
 falsepositives:
 - Unknown
 id: 75edd3fd-7146-48e5-9848-3013d7f0282c

@@ -5,8 +5,8 @@ description: Detects the use of a scanner by zerosum0x0 that discovers targets v
 detection:
   condition: selection
   selection:
-    EventID: 4625
     winlog.event_data.AccountName: AAAAAAA
+    winlog.event_id: 4625
 falsepositives:
 - Unlikely
 id: 8400629e-79a9-4737-b387-5db940ab2367

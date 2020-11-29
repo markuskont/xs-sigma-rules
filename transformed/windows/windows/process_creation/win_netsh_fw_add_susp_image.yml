@@ -21,14 +21,6 @@ detection:
     - '*:\RECYCLER\\*'
     - '*C:\$Recycle.bin\\*'
     - '*:\SystemVolumeInformation\\*'
-    - C:\\Windows\\Tasks\\*
-    - C:\\Windows\\debug\\*
-    - C:\\Windows\\fonts\\*
-    - C:\\Windows\\help\\*
-    - C:\\Windows\\drivers\\*
-    - C:\\Windows\\addins\\*
-    - C:\\Windows\\cursors\\*
-    - C:\\Windows\\system32\tasks\\*
     - '*C:\Windows\Temp\\*'
     - '*C:\Temp\\*'
     - '*C:\Users\Public\\*'
@@ -38,6 +30,14 @@ detection:
     - '*\Downloads\\*'
     - '*\Temporary Internet Files\Content.Outlook\\*'
     - '*\Local Settings\Temporary Internet Files\\*'
+    - winlog.event_data.C:\\Windows\\Tasks\\*
+    - winlog.event_data.C:\\Windows\\debug\\*
+    - winlog.event_data.C:\\Windows\\fonts\\*
+    - winlog.event_data.C:\\Windows\\help\\*
+    - winlog.event_data.C:\\Windows\\drivers\\*
+    - winlog.event_data.C:\\Windows\\addins\\*
+    - winlog.event_data.C:\\Windows\\cursors\\*
+    - winlog.event_data.C:\\Windows\\system32\tasks\\*
 falsepositives:
 - Legitimate administration
 id: a35f5a72-f347-4e36-8895-9869b0d5fc6d

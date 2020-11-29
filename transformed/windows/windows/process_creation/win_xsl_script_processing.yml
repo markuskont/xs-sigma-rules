@@ -8,9 +8,9 @@ description: Extensible Stylesheet Language (XSL) files are commonly used to des
 detection:
   condition: selection
   selection:
-  - CommandLine|contains: /format
-    Image|endswith: \wmic.exe
-  - Image|endswith: \msxsl.exe
+  - winlog.event_data.CommandLine|contains: /format
+    winlog.event_data.Image|endswith: \wmic.exe
+  - winlog.event_data.Image|endswith: \msxsl.exe
 falsepositives:
 - WMIC.exe FP depend on scripts and administrative methods used in the monitored environment
 - msxsl.exe is not installed by default so unlikely.

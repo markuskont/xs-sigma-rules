@@ -5,7 +5,7 @@ detection:
   condition: selection or selection2
   selection:
     DeviceClassName: DiskDrive
-    EventID:
+    winlog.event_id:
     - 6416
   selection2:
     DeviceDescription: USB Mass Storage Device

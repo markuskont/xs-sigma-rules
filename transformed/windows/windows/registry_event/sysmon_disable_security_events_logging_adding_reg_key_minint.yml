@@ -6,13 +6,13 @@ description: Detects the addition of a key 'MiniNt' to the registry. Upon a rebo
 detection:
   condition: selection
   selection:
-  - EventType: CreateKey
-    TargetObject: HKLM\SYSTEM\CurrentControlSet\Control\MiniNt
+  - winlog.event_data.EventType: CreateKey
+    winlog.event_data.TargetObject: HKLM\SYSTEM\CurrentControlSet\Control\MiniNt
   - NewName: HKLM\SYSTEM\CurrentControlSet\Control\MiniNt
 falsepositives:
 - Unkown
 fields:
-- winlog.event_data.EventID
+- winlog.event_id
 - winlog.event_data.Image
 - winlog.event_data.TargetObject
 - winlog.event_data.NewName

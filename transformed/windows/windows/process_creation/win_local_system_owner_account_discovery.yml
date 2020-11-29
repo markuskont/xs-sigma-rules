@@ -19,21 +19,21 @@ detection:
     - /times
     - /workstations
   selection_1:
-  - Image|endswith: \whoami.exe
-  - CommandLine|contains|all:
+  - winlog.event_data.Image|endswith: \whoami.exe
+  - winlog.event_data.CommandLine|contains|all:
     - useraccount
     - get
-    Image|endswith: \wmic.exe
-  - Image|endswith:
+    winlog.event_data.Image|endswith: \wmic.exe
+  - winlog.event_data.Image|endswith:
     - \quser.exe
     - \qwinsta.exe
-  - CommandLine|contains: /list
-    Image|endswith: \cmdkey.exe
-  - CommandLine|contains|all:
+  - winlog.event_data.CommandLine|contains: /list
+    winlog.event_data.Image|endswith: \cmdkey.exe
+  - winlog.event_data.CommandLine|contains|all:
     - /c
     - 'dir '
     - \Users\
-    Image|endswith: \cmd.exe
+    winlog.event_data.Image|endswith: \cmd.exe
   selection_2:
     winlog.event_data.CommandLine|contains: user
     winlog.event_data.Image|endswith:

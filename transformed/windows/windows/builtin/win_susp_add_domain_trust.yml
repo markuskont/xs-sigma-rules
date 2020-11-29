@@ -4,7 +4,7 @@ description: Addition of domains is seldom and should be verified for legitimacy
 detection:
   condition: selection
   selection:
-    EventID: 4706
+    winlog.event_id: 4706
 falsepositives:
 - Legitimate extension of domain structure
 id: 0255a820-e564-4e40-af2b-6ac61160335c

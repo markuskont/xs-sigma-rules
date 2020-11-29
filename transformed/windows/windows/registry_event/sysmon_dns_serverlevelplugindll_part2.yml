@@ -12,13 +12,13 @@ detection:
 falsepositives:
 - unknown
 fields:
-- winlog.event_data.EventID
+- winlog.event_id
 - winlog.event_data.CommandLine
 - winlog.event_data.ParentCommandLine
 - winlog.event_data.Image
 - winlog.event_data.User
 - winlog.event_data.TargetObject
-id: 80ec0f10-6b6b-4f7f-9a71-a75967850979
+id: 7e962adb-76de-4c41-aa6e-ffbfbdf54102
 level: high
 logsource:
   category: process_creation

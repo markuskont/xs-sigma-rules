@@ -5,15 +5,15 @@ description: Detects handle requests and access operations to specific registry 
 detection:
   condition: selection
   selection:
-    EventID:
-    - 4656
-    - 4663
     winlog.event_data.ObjectName|endswith:
     - lsa\JD
     - lsa\GBG
     - lsa\Skew1
     - lsa\Data
     winlog.event_data.ObjectType: key
+    winlog.event_id:
+    - 4656
+    - 4663
 falsepositives:
 - Unknown
 id: 9a4ff3b8-6187-4fd2-8e8b-e0eae1129495

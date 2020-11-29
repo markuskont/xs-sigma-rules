@@ -12,7 +12,7 @@ detection:
     - '*.org'
   selection:
     http.http_user_agent:
-    - Microsoft BITS/*
+    - winlog.event_data.Microsoft BITS/*
 falsepositives:
 - Rare programs that use Bitsadmin and update from regional TLDs e.g. .uk or .ca
 fields:

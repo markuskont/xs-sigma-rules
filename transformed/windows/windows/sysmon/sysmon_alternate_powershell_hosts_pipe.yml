@@ -9,8 +9,8 @@ detection:
     - \powershell.exe
     - \powershell_ise.exe
   selection:
-    EventID: 17
     winlog.event_data.PipeName|startswith: \PSHost
+    winlog.event_id: 17
 falsepositives:
 - Programs using PowerShell directly without invocation of a dedicated interpreter.
 fields:

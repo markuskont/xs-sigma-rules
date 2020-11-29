@@ -4,13 +4,13 @@ description: Detects renaming of file while deletion with SDelete tool
 detection:
   condition: selection
   selection:
-    EventID:
-    - 4656
-    - 4663
-    - 4658
     winlog.event_data.ObjectName:
     - '*.AAA'
     - '*.ZZZ'
+    winlog.event_id:
+    - 4656
+    - 4663
+    - 4658
 falsepositives:
 - Legitime usage of SDelete
 id: 39a80702-d7ca-4a83-b776-525b1f86a36d

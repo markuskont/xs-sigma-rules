@@ -7,7 +7,7 @@ detection:
   filter:
     winlog.event_data.SubjectUserName: '*$'
   selection:
-    EventID: 4732
+    winlog.event_id: 4732
   selection_group1:
     winlog.event_data.GroupName: Administrators
   selection_group2:

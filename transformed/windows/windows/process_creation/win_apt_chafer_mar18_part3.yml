@@ -6,24 +6,24 @@ description: Detects Chafer activity attributed to OilRig as reported in Nyotron
 detection:
   condition: 1 of them
   selection_reg1:
-    EventID: 13
     winlog.event_data.EventType: SetValue
     winlog.event_data.TargetObject:
     - '*SOFTWARE\Microsoft\Windows\CurrentVersion\UMe'
     - '*SOFTWARE\Microsoft\Windows\CurrentVersion\UT'
+    winlog.event_id: 13
   selection_reg2:
-    EventID: 13
     winlog.event_data.Details: DWORD (0x00000001)
     winlog.event_data.EventType: SetValue
     winlog.event_data.TargetObject: '*\Control\SecurityProviders\WDigest\UseLogonCredential'
+    winlog.event_id: 13
   selection_service:
-    EventID: 4698
     TaskName:
-    - SC Scheduled Scan
-    - UpdatMachine
+    - winlog.event_data.SC Scheduled Scan
+    - winlog.event_data.UpdatMachine
+    winlog.event_id: 4698
 falsepositives:
 - Unknown
-id: b2893335-a48c-4508-b95f-b14a73aedc58
+id: fd402f3d-d339-47a4-b632-d695ce392002
 level: critical
 logsource:
   product: windows
