@@ -10,8 +10,8 @@ detection:
     - ' -Sta -Nop -Window Hidden -EncodedCommand '
     - 'sv o (New-Object IO.MemorySteam);sv d '
     - mshta file.hta
+    - GruntHTTP
     - -EncodedCommand cwB2ACAAbwAgA
-    - winlog.event_data.GruntHTTP
 id: c260b6db-48ba-4b4a-a76f-2f67644e99d2
 level: high
 logsource:

@@ -5,13 +5,13 @@ description: Detects a file or folder permissions modifications
 detection:
   condition: selection
   selection:
-  - winlog.event_data.CommandLine|contains: /grant
-    winlog.event_data.Image|endswith:
+  - CommandLine|contains: /grant
+    Image|endswith:
     - \takeown.exe
     - \cacls.exe
     - \icacls.exe
-  - winlog.event_data.CommandLine|contains: -r
-    winlog.event_data.Image|endswith: \attrib.exe
+  - CommandLine|contains: -r
+    Image|endswith: \attrib.exe
 falsepositives:
 - Users interacting with the files on their own (unlikely unless power users)
 fields:

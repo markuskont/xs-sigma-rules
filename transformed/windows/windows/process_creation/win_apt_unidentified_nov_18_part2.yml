@@ -9,10 +9,10 @@ detection:
   selection1:
     winlog.event_data.CommandLine: '*cyzfc.dat, PointFunctionCall'
   selection2:
+    EventID: 11
     winlog.event_data.TargetFilename:
     - '*ds7002.lnk*'
-    winlog.event_id: 11
-id: 9fdf077c-bd41-4726-87db-9ee7270872ce
+id: a7fd3d95-011a-40b3-bc11-88d814ee9088
 level: high
 logsource:
   product: windows

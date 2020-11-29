@@ -10,11 +10,11 @@ detection:
     - '*\Users\All Users\\*'
     - '*\Users\Default\\*'
     - '*\Users\Public\\*'
+    - C:\Perflogs\\*
     - '*\config\systemprofile\\*'
     - '*\Windows\Fonts\\*'
     - '*\Windows\IME\\*'
     - '*\Windows\addins\\*'
-    - winlog.event_data.C:\Perflogs\\*
 falsepositives:
 - Unknown
 fields:

@@ -5,9 +5,9 @@ description: Detects the exploitation of Microsoft Exchange vulnerability as des
 detection:
   condition: selection1 and selection2
   selection1:
+    EventID: 4
     Level: Error
     winlog.event_data.Source: MSExchange Control Panel
-    winlog.event_id: 4
   selection2:
   - '*&__VIEWSTATE=*'
 falsepositives:

@@ -5,6 +5,11 @@ description: This method triggers on rare Kerberos Failure Codes caused by manip
 detection:
   condition: selection
   selection:
+    EventID:
+    - 675
+    - 4768
+    - 4769
+    - 4771
     winlog.event_data.FailureCode:
     - '0x9'
     - '0xA'
@@ -36,11 +41,6 @@ detection:
     - '0x41'
     - '0x43'
     - '0x44'
-    winlog.event_id:
-    - 675
-    - 4768
-    - 4769
-    - 4771
 falsepositives:
 - Faulty legacy applications
 id: f7644214-0eb0-4ace-9455-331ec4c09253

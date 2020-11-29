@@ -5,11 +5,11 @@ description: Detects well-known credential dumping tools execution via specific 
 detection:
   condition: selection
   selection:
+    EventID: 17
     winlog.event_data.PipeName|contains:
     - \lsadump
     - \cachedump
     - \wceservicepipe
-    winlog.event_id: 17
 falsepositives:
 - Legitimate Administrator using tool for password recovery
 id: 961d0ba2-3eea-4303-a930-2cf78bbfcc5e

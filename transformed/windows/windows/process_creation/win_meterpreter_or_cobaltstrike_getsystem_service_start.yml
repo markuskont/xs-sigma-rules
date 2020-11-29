@@ -10,17 +10,17 @@ detection:
   selection_1:
     winlog.event_data.ParentImage|endswith: \services.exe
   selection_2:
-  - winlog.event_data.CommandLine|contains|all:
+  - CommandLine|contains|all:
     - cmd
     - /c
     - echo
     - \pipe\
-  - winlog.event_data.CommandLine|contains|all:
+  - CommandLine|contains|all:
     - '%COMSPEC%'
     - /c
     - echo
     - \pipe\
-  - winlog.event_data.CommandLine|contains|all:
+  - CommandLine|contains|all:
     - rundll32
     - .dll,a
     - '/p:'

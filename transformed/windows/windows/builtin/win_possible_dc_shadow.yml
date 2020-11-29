@@ -4,12 +4,12 @@ description: Detects DCShadow via create new SPN
 detection:
   condition: selection1 OR selection2
   selection1:
+    EventID: 4742
     ServicePrincipalNames: '*GC/*'
-    winlog.event_id: 4742
   selection2:
+    EventID: 5136
     LDAPDisplayName: servicePrincipalName
     Value: GC/*
-    winlog.event_id: 5136
 falsepositives:
 - Exclude known DCs
 id: 32e19d25-4aed-4860-a55a-be99cb0bf7ed

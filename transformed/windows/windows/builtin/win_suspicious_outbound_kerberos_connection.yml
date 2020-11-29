@@ -11,8 +11,8 @@ detection:
     - \chrome.exe
     - \firefox.exe
   selection:
+    EventID: 5156
     winlog.event_data.DestinationPort: 88
-    winlog.event_id: 5156
 falsepositives:
 - Other browsers
 id: eca91c7c-9214-47b9-b4c5-cb1d7e4f2350

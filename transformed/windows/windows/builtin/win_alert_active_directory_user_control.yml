@@ -12,7 +12,7 @@ detection:
     Message:
     - '*SeEnableDelegationPrivilege*'
   selection:
-    winlog.event_id: 4704
+    EventID: 4704
 falsepositives:
 - Unknown
 id: 311b6ce2-7890-4383-a8c2-663a9f6b43cd

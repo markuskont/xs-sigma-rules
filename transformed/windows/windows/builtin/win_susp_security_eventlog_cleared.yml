@@ -5,7 +5,7 @@ description: Some threat groups tend to delete the local 'Security' Eventlog usi
 detection:
   condition: selection
   selection:
-    winlog.event_id:
+    EventID:
     - 517
     - 1102
 falsepositives:

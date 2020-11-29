@@ -9,10 +9,10 @@ detection:
     winlog.event_data.CommandLine|contains: set
     winlog.event_data.Image|endswith: \bcdedit.exe
   selection2:
-  - winlog.event_data.CommandLine|contains|all:
+  - CommandLine|contains|all:
     - bootstatuspolicy
     - ignoreallfailures
-  - winlog.event_data.CommandLine|contains|all:
+  - CommandLine|contains|all:
     - recoveryenabled
     - 'no'
 falsepositives:

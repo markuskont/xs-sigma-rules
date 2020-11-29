@@ -8,10 +8,10 @@ description: Detects enumeration of the global catalog (that can be performed us
 detection:
   condition: selection | count() by SourceAddress > 2000
   selection:
+    EventID: 5156
     winlog.event_data.DestinationPort:
     - 3268
     - 3269
-    winlog.event_id: 5156
   timeframe: 1h
 falsepositives:
 - Exclude known DCs.

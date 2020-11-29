@@ -6,19 +6,19 @@ description: Detects the use of getsystem Meterpreter/Cobalt Strike command by d
 detection:
   condition: selection and selection_1
   selection:
-    winlog.event_id: 7045
+    EventID: 7045
   selection_1:
-  - winlog.event_data.ServiceFileName|contains|all:
+  - ServiceFileName|contains|all:
     - cmd
     - /c
     - echo
     - \pipe\
-  - winlog.event_data.ServiceFileName|contains|all:
+  - ServiceFileName|contains|all:
     - '%COMSPEC%'
     - /c
     - echo
     - \pipe\
-  - winlog.event_data.ServiceFileName|contains|all:
+  - ServiceFileName|contains|all:
     - rundll32
     - .dll,a
     - '/p:'
@@ -29,7 +29,7 @@ fields:
 - winlog.event_data.SubjectDomainName
 - winlog.event_data.SubjectUserName
 - winlog.event_data.ServiceFileName
-id: 5c3b7d29-d6b0-468f-abd1-c4bbbb7dbb3d
+id: 7c7f4089-55d7-4607-ade9-2e6741a67df9
 level: critical
 logsource:
   product: windows

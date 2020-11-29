@@ -10,7 +10,7 @@ detection:
   filter2:
     winlog.event_data.Imphash: null
   selection:
-    winlog.event_id: 15
+    EventID: 15
 falsepositives:
 - unknown
 fields:

@@ -6,8 +6,8 @@ detection:
   condition: selection_1 or selection_2 and selection_3
   selection_1:
     winlog.event_data.CommandLine|contains:
+    - DumpCreds
     - invoke-mimikatz
-    - winlog.event_data.DumpCreds
   selection_2:
     winlog.event_data.CommandLine|contains:
     - rpc

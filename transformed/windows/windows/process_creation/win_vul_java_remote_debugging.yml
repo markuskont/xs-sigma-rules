@@ -6,8 +6,8 @@ description: Detects a JAVA process running with remote debugging allowing more 
 detection:
   condition: selection and not exclusion
   exclusion:
-  - winlog.event_data.CommandLine: '*address=127.0.0.1*'
-  - winlog.event_data.CommandLine: '*address=localhost*'
+  - CommandLine: '*address=127.0.0.1*'
+  - CommandLine: '*address=localhost*'
   selection:
     winlog.event_data.CommandLine: '*transport=dt_socket,address=*'
 falsepositives:

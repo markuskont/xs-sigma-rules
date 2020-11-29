@@ -11,7 +11,7 @@ detection:
     - '*\excel.exe'
     - '*\outlook.exe'
     winlog.event_data.ImageLoaded:
-    - winlog.event_data.C:\Windows\assembly\\*
+    - C:\Windows\assembly\\*
 falsepositives:
 - Alerts on legitimate macro usage as well, will need to filter as appropriate
 id: ff0f2b05-09db-4095-b96d-1b75ca24894a

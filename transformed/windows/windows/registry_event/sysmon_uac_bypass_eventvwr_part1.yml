@@ -9,7 +9,7 @@ detection:
     winlog.event_data.TargetObject: HKU\\*\mscfile\shell\open\command
 falsepositives:
 - unknown
-id: e28b4d15-9db9-408a-9a90-1143099d3f89
+id: ab82e80d-32a7-4a07-8633-ba8a9c9a8f5a
 level: critical
 logsource:
   category: registry_event

@@ -4,8 +4,8 @@ description: Remote registry management using REG utility from non-admin worksta
 detection:
   condition: selection_1 and not selection_2
   selection_1:
+    EventID: 5145
     RelativeTargetName|contains: \winreg
-    winlog.event_id: 5145
   selection_2:
     winlog.event_data.IpAddress: '%Admins_Workstations%'
 falsepositives:

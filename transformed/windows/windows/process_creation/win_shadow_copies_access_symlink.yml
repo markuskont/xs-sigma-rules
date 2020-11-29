@@ -8,7 +8,7 @@ detection:
   selection:
     winlog.event_data.CommandLine|contains|all:
     - mklink
-    - winlog.event_data.HarddiskVolumeShadowCopy
+    - HarddiskVolumeShadowCopy
 falsepositives:
 - Legitimate administrator working with shadow copies, access for backup purposes
 id: 40b19fa6-d835-400c-b301-41f3a2baacaf

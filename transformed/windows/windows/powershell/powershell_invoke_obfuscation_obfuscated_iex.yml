@@ -6,17 +6,17 @@ description: "Detects all variations of obfuscated powershell IEX invocation cod
 detection:
   condition: ( selection_1 and selection_2 ) or ( selection_3 and selection_4 )
   selection_1:
-    winlog.event_id: 4104
+    EventID: 4104
   selection_2:
-  - winlog.event_data.ScriptBlockText|re: \$PSHome\[\s*\d{1,3}\s*\]\s*\+\s*\$PSHome\[
-  - winlog.event_data.ScriptBlockText|re: \$ShellId\[\s*\d{1,3}\s*\]\s*\+\s*\$ShellId\[
-  - winlog.event_data.ScriptBlockText|re: \$env:Public\[\s*\d{1,3}\s*\]\s*\+\s*\$env:Public\[
-  - winlog.event_data.ScriptBlockText|re: \$env:ComSpec\[(\s*\d{1,3}\s*,){2}
-  - winlog.event_data.ScriptBlockText|re: \*mdr\*\W\s*\)\.Name
-  - winlog.event_data.ScriptBlockText|re: \$VerbosePreference\.ToString\(
-  - winlog.event_data.ScriptBlockText|re: \String\]\s*\$VerbosePreference
+  - ScriptBlockText|re: \$PSHome\[\s*\d{1,3}\s*\]\s*\+\s*\$PSHome\[
+  - ScriptBlockText|re: \$ShellId\[\s*\d{1,3}\s*\]\s*\+\s*\$ShellId\[
+  - ScriptBlockText|re: \$env:Public\[\s*\d{1,3}\s*\]\s*\+\s*\$env:Public\[
+  - ScriptBlockText|re: \$env:ComSpec\[(\s*\d{1,3}\s*,){2}
+  - ScriptBlockText|re: \*mdr\*\W\s*\)\.Name
+  - ScriptBlockText|re: \$VerbosePreference\.ToString\(
+  - ScriptBlockText|re: \String\]\s*\$VerbosePreference
   selection_3:
-    winlog.event_id: 4103
+    EventID: 4103
   selection_4:
   - Payload|re: \$PSHome\[\s*\d{1,3}\s*\]\s*\+\s*\$PSHome\[
   - Payload|re: \$ShellId\[\s*\d{1,3}\s*\]\s*\+\s*\$ShellId\[

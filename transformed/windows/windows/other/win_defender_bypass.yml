@@ -7,12 +7,12 @@ description: Detects scenarios where an windows defender exclusion was added in 
 detection:
   condition: selection
   selection:
-    winlog.event_data.ObjectName|contains: \Microsoft\Windows Defender\Exclusions\
-    winlog.event_id:
+    EventID:
     - 4657
     - 4656
     - 4660
     - 4663
+    winlog.event_data.ObjectName|contains: \Microsoft\Windows Defender\Exclusions\
 falsepositives:
 - Intended inclusions by administrator
 id: e9c8808f-4cfb-4ba9-97d4-e5f3beaa244d

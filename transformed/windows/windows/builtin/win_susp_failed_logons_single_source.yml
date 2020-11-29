@@ -7,15 +7,15 @@ detection:
   - selection1 | count(UserName) by WorkstationName > 3
   - selection2 | count(UserName) by Workstation > 3
   selection1:
-    UserName: '*'
-    winlog.event_data.WorkstationName: '*'
-    winlog.event_id:
+    EventID:
     - 529
     - 4625
+    UserName: '*'
+    winlog.event_data.WorkstationName: '*'
   selection2:
+    EventID: 4776
     UserName: '*'
     winlog.event_data.Workstation: '*'
-    winlog.event_id: 4776
   timeframe: 24h
 falsepositives:
 - Terminal servers

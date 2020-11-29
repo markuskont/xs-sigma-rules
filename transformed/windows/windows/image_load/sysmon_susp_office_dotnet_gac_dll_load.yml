@@ -11,7 +11,7 @@ detection:
     - '*\excel.exe'
     - '*\outlook.exe'
     winlog.event_data.ImageLoaded:
-    - winlog.event_data.C:\Windows\Microsoft.NET\assembly\GAC_MSIL*
+    - C:\Windows\Microsoft.NET\assembly\GAC_MSIL*
 falsepositives:
 - Alerts on legitimate macro usage as well, will need to filter as appropriate
 id: 90217a70-13fc-48e4-b3db-0d836c5824ac

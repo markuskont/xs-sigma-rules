@@ -15,7 +15,7 @@ detection:
     - '* -noprofile *'
     - '* -decode *'
     - '* -enc *'
-    winlog.event_id: 20
+    EventID: 20
 falsepositives:
 - Administrative scripts
 fields:

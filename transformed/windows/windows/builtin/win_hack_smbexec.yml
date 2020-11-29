@@ -4,9 +4,9 @@ description: Detects the use of smbexec.py tool by detecting a specific service 
 detection:
   condition: service_installation
   service_installation:
+    EventID: 7045
     winlog.event_data.ServiceFileName: '*\execute.bat'
     winlog.event_data.ServiceName: BTOBTO
-    winlog.event_id: 7045
 falsepositives:
 - Penetration Test
 - Unknown

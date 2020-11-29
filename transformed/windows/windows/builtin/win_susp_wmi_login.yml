@@ -4,8 +4,8 @@ description: Detection of logins performed with WMI
 detection:
   condition: selection
   selection:
+    EventID: 4624
     winlog.event_data.ProcessName: '*\WmiPrvSE.exe'
-    winlog.event_id: 4624
 falsepositives:
 - Monitoring tools
 - Legitimate system administration

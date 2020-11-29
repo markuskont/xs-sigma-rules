@@ -7,14 +7,14 @@ description: Identifies use of various commands to query a systems time. This te
 detection:
   condition: selection
   selection:
-  - winlog.event_data.CommandLine|contains: time
-    winlog.event_data.Image|endswith:
+  - CommandLine|contains: time
+    Image|endswith:
     - \net.exe
     - \net1.exe
-  - winlog.event_data.CommandLine|contains: tz
-    winlog.event_data.Image|endswith: \w32tm.exe
-  - winlog.event_data.CommandLine|contains: Get-Date
-    winlog.event_data.Image|endswith: \powershell.exe
+  - CommandLine|contains: tz
+    Image|endswith: \w32tm.exe
+  - CommandLine|contains: Get-Date
+    Image|endswith: \powershell.exe
 falsepositives:
 - Legitimate use of the system utilities to discover system time for legitimate reason
 id: b243b280-65fe-48df-ba07-6ddea7646427

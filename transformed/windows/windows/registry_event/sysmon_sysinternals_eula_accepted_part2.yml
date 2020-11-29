@@ -11,7 +11,7 @@ detection:
 falsepositives:
 - Legitimate use of SysInternals tools
 - Programs that use the same Registry Key
-id: fde5badf-e718-4e00-9173-80c88d7c8a22
+id: d879cf84-852f-4005-a93b-f46dba7ee8e3
 level: low
 logsource:
   category: process_creation

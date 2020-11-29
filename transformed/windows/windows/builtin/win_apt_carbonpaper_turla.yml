@@ -5,11 +5,11 @@ description: This method detects a service install of malicious services mention
 detection:
   condition: selection
   selection:
+    EventID: 7045
     winlog.event_data.ServiceName:
     - srservice
     - ipvpn
     - hkmsvc
-    winlog.event_id: 7045
 falsepositives:
 - Unknown
 id: 1df8b3da-b0ac-4d8a-b7c7-6cb7c24160e4

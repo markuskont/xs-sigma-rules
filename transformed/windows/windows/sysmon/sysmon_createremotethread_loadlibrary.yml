@@ -5,9 +5,9 @@ description: Detects potential use of CreateRemoteThread api and LoadLibrary fun
 detection:
   condition: selection
   selection:
+    EventID: 8
     StartFunction: LoadLibraryA
     winlog.event_data.StartModule|endswith: \kernel32.dll
-    winlog.event_id: 8
 falsepositives:
 - Unknown
 id: 052ec6f6-1adc-41e6-907a-f1c813478bee

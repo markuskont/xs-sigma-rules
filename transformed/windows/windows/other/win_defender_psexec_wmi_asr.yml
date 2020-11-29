@@ -7,10 +7,10 @@ description: Detects blocking of process creations originating from PSExec and W
 detection:
   condition: selection
   selection:
+    EventID: 1121
     winlog.event_data.ProcessName|endswith:
     - \wmiprvse.exe
     - \psexesvc.exe
-    winlog.event_id: 1121
 falsepositives:
 - Unknown
 id: 97b9ce1e-c5ab-11ea-87d0-0242ac130003

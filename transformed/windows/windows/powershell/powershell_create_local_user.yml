@@ -4,9 +4,9 @@ description: Detects creation of a local user via PowerShell
 detection:
   condition: selection
   selection:
+    EventID: 4104
     Message|contains:
-    - winlog.event_data.New-LocalUser
-    winlog.event_id: 4104
+    - New-LocalUser
 falsepositives:
 - Legitimate user creation
 id: 243de76f-4725-4f2e-8225-a8a69b15ad61

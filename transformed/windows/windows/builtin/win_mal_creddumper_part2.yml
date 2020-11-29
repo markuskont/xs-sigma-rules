@@ -6,9 +6,9 @@ description: Detects well-known credential dumping tools execution via service e
 detection:
   condition: selection and selection_1
   selection:
-    winlog.event_id: 6
+    EventID: 6
   selection_1:
-  - winlog.event_data.ServiceName|contains:
+  - ServiceName|contains:
     - fgexec
     - wceservice
     - wce service
@@ -17,7 +17,7 @@ detection:
     - cachedump
     - mimikatz
     - mimidrv
-  - winlog.event_data.ImagePath|contains:
+  - ImagePath|contains:
     - fgexec
     - dumpsvc
     - cachedump
@@ -25,10 +25,10 @@ detection:
     - gsecdump
     - servpw
     - pwdump
-  - winlog.event_data.ImagePath|re: ((\\\\.*\\.*|.*\\)([{]?[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}[}])?\.(exe|scr|cpl|bat|js|cmd|vbs).*)
+  - ImagePath|re: ((\\\\.*\\.*|.*\\)([{]?[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}[}])?\.(exe|scr|cpl|bat|js|cmd|vbs).*)
 falsepositives:
 - Legitimate Administrator using credential dumping tool for password recovery
-id: bd5c97eb-62c7-454c-a2c5-05ce47deaaa6
+id: 1a049847-0b3a-4e78-9980-cbb016ee5185
 level: high
 logsource:
   product: windows

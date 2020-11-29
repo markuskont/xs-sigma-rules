@@ -17,6 +17,7 @@ detection:
     - '*dirbuster*'
     - '*domino hunter*'
     - '*dotdotpwn*'
+    - FHScan Core
     - '*floodgate*'
     - '*get-minimal*'
     - '*gootkit auto-rooter scanner*'
@@ -50,9 +51,8 @@ detection:
     - '*sqlninja*'
     - '*uil2pn*'
     - ruler
-    - winlog.event_data.FHScan Core
-    - winlog.event_data.Mozilla/5.0 (Windows; U; Windows NT 5.1; pt-PT; rv:1.9.1.2)
-      Gecko/20090729 Firefox/3.5.2 (.NET CLR 3.5.30729)
+    - Mozilla/5.0 (Windows; U; Windows NT 5.1; pt-PT; rv:1.9.1.2) Gecko/20090729 Firefox/3.5.2
+      (.NET CLR 3.5.30729)
 falsepositives:
 - Unknown
 fields:

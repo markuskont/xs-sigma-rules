@@ -4,14 +4,14 @@ description: This events that are generated when using the hacktool Ruler by Sen
 detection:
   condition: (1 of selection*)
   selection1:
-    winlog.event_data.Workstation: RULER
-    winlog.event_id:
+    EventID:
     - 4776
+    winlog.event_data.Workstation: RULER
   selection2:
-    winlog.event_data.WorkstationName: RULER
-    winlog.event_id:
+    EventID:
     - 4624
     - 4625
+    winlog.event_data.WorkstationName: RULER
 falsepositives:
 - Go utilities that use staaldraad awesome NTLM library
 id: 24549159-ac1b-479c-8175-d42aea947cae

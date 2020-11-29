@@ -44,6 +44,7 @@ detection:
     - vssadmin delete shadows
     - reg SAVE HKLM\SAM
     - ' -ma '
+    - Microsoft\Windows\CurrentVersion\Run
     - .downloadstring(
     - .downloadfile(
     - ' /ticket:'
@@ -53,7 +54,6 @@ detection:
     - schtasks* /create *AppData
     - ' comsvcs.dll,MiniDump'
     - ' comsvcs.dll,#24'
-    - winlog.event_data.Microsoft\Windows\CurrentVersion\Run
   selection_webshells:
     winlog.event_data.CommandLine|contains:
     - whoami
@@ -72,7 +72,7 @@ detection:
   selection_whoami:
     winlog.event_data.Image|contains: \whoami.exe
     winlog.event_data.User: NT AUTHORITY\SYSTEM
-id: 93f6ed38-0ab7-4cc4-a4a0-fe17c0831654
+id: 6b9d66d8-6110-4e56-b019-3efc6626893d
 level: high
 logsource:
   category: process_creation

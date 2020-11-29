@@ -8,9 +8,9 @@ detection:
   condition: selection and not filter
   filter:
     winlog.event_data.Image:
-    - winlog.event_data.C:\Windows\explorer.exe
-    - winlog.event_data.C:\Windows\System32\msiexec.exe
-    - winlog.event_data.C:\Windows\System32\mmc.exe
+    - C:\Windows\explorer.exe
+    - C:\Windows\System32\msiexec.exe
+    - C:\Windows\System32\mmc.exe
   selection:
     winlog.event_data.TargetFilename|endswith: \desktop.ini
 falsepositives:

@@ -8,7 +8,7 @@ detection:
     winlog.event_data.CommandLine|contains:
     - tracert -h 10 yahoo.com
     - .WSqmCons))|iex;
-    - winlog.event_data.Fr`omBa`se6`4Str`ing
+    - Fr`omBa`se6`4Str`ing
   selection2:
     winlog.event_data.CommandLine|contains|all:
     - net use https://docs.live.net

@@ -4,10 +4,10 @@ description: Detects process handle on LSASS process with certain access mask an
 detection:
   condition: selection
   selection:
+    EventID: 4656
     winlog.event_data.AccessMask: '0x705'
     winlog.event_data.ObjectType: SAM_DOMAIN
     winlog.event_data.ProcessName: C:\Windows\System32\lsass.exe
-    winlog.event_id: 4656
 falsepositives:
 - Unkown
 id: aa1697b7-d611-4f9a-9cb2-5125b4ccfd5c

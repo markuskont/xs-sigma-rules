@@ -5,9 +5,9 @@ description: Detects wmiprvse spawning processes
 detection:
   condition: selection and not filter
   filter:
-  - winlog.event_data.LogonId: '0x3e7'
-  - winlog.event_data.User: NT AUTHORITY\SYSTEM
-  - winlog.event_data.Image|endswith:
+  - LogonId: '0x3e7'
+  - User: NT AUTHORITY\SYSTEM
+  - Image|endswith:
     - \WmiPrvSE.exe
     - \WerFault.exe
   selection:

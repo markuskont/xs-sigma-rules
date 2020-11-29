@@ -7,9 +7,9 @@ detection:
   condition: 1 of selection_other_* or (selection_wevtutil_binary and selection_wevtutil_command)
   selection_other_ps:
     winlog.event_data.CommandLine|contains:
-    - winlog.event_data.Clear-EventLog
-    - winlog.event_data.Remove-EventLog
-    - winlog.event_data.Limit-EventLog
+    - Clear-EventLog
+    - Remove-EventLog
+    - Limit-EventLog
     winlog.event_data.Image|endswith: \powershell.exe
   selection_other_wmic:
     winlog.event_data.CommandLine|contains: ' ClearEventLog '

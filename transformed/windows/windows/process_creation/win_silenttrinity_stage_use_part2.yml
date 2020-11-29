@@ -5,10 +5,10 @@ description: Detects SILENTTRINITY stager use
 detection:
   condition: selection
   selection:
-    winlog.event_id: 7
+    EventID: 7
 falsepositives:
 - unknown
-id: ea6d32e3-af9a-45c8-87b9-6cf41879277d
+id: 8e4080e1-d607-405e-9264-b700c31821d1
 level: high
 logsource:
   product: windows

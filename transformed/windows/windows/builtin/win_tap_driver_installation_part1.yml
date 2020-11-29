@@ -6,12 +6,12 @@ description: Well-known TAP software installation. Possible preparation for data
 detection:
   condition: selection and selection_1
   selection:
-    winlog.event_id: 7045
+    EventID: 7045
   selection_1:
     winlog.event_data.ImagePath|contains: tap0901
 falsepositives:
 - Legitimate OpenVPN TAP insntallation
-id: 190e2076-c1e8-44be-bdcf-1b2e634ba8ff
+id: c19d536b-3b64-466f-a5f4-3f6c0b38ffe8
 level: medium
 logsource:
   product: windows

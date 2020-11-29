@@ -16,8 +16,8 @@ description: 'Detects scenarios where system auditing (ie: windows event log aud
 detection:
   condition: selection
   selection:
+    EventID: 4719
     winlog.event_data.AuditPolicyChanges: removed
-    winlog.event_id: 4719
 falsepositives:
 - Unknown
 id: 69aeb277-f15f-4d2d-b32a-55e883609563

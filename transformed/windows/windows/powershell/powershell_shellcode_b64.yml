@@ -10,7 +10,7 @@ detection:
   - '*OiCAAAAYInlM*'
   - '*OiJAAAAYInlM*'
   selection:
-    winlog.event_id: 4104
+    EventID: 4104
 falsepositives:
 - Unknown
 id: 16b37b70-6fcf-4814-a092-c36bd3aafcbd

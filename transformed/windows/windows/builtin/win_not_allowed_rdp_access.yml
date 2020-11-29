@@ -7,7 +7,7 @@ description: This event is generated when an authenticated user who is not allow
 detection:
   condition: selection
   selection:
-    winlog.event_id: 4825
+    EventID: 4825
 falsepositives:
 - Valid user was not added to RDP group
 fields:

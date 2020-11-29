@@ -8,9 +8,9 @@ detection:
   condition: selection
   selection:
     Accesses: '*WriteData*'
+    EventID: 5145
     RelativeTargetName: atsvc
     winlog.event_data.ShareName: \\*\IPC$
-    winlog.event_id: 5145
 falsepositives:
 - pentesting
 id: f6de6525-4509-495a-8a82-1f8b0ed73a00

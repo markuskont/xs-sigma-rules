@@ -12,7 +12,7 @@ detection:
   exec_exclusion2:
     winlog.event_data.CommandLine|contains:
     - netlogon.bat
-    - winlog.event_data.UsrLogon.cmd
+    - UsrLogon.cmd
   exec_selection:
     winlog.event_data.ParentImage: '*\userinit.exe'
 falsepositives:

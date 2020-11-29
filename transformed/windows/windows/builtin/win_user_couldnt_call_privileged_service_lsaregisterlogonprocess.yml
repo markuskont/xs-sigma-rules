@@ -6,9 +6,9 @@ description: The 'LsaRegisterLogonProcess' function verifies that the applicatio
 detection:
   condition: selection
   selection:
-  - Keywords: '0x8010000000000000'
+  - EventID: 4673
+    Keywords: '0x8010000000000000'
     Service: LsaRegisterLogonProcess()
-    winlog.event_id: 4673
 falsepositives:
 - Unkown
 id: 6daac7fc-77d1-449a-a71a-e6b4d59a0e54

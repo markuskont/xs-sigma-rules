@@ -5,12 +5,12 @@ description: Detect the use of Windows Defender to download payloads
 detection:
   condition: selection1 and selection2
   selection1:
-  - winlog.event_data.CommandLine|contains: MpCmdRun.exe
-  - winlog.event_data.Description: Microsoft Malware Protection Command Line Utility
+  - CommandLine|contains: MpCmdRun.exe
+  - Description: Microsoft Malware Protection Command Line Utility
   selection2:
     winlog.event_data.CommandLine|contains|all:
+    - DownloadFile
     - url
-    - winlog.event_data.DownloadFile
 falsepositives:
 - Unknown
 fields:

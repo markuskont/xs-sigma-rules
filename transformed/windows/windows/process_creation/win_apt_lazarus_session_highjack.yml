@@ -7,8 +7,8 @@ detection:
   condition: selection and not filter
   filter:
     winlog.event_data.Image:
-    - winlog.event_data.C:\Windows\System32\\*
-    - winlog.event_data.C:\Windows\SysWOW64\\*
+    - C:\Windows\System32\\*
+    - C:\Windows\SysWOW64\\*
   selection:
     winlog.event_data.Image:
     - '*\msdtc.exe'

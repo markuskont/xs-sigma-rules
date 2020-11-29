@@ -8,14 +8,14 @@ description: Detects activity as "net user administrator /domain" and "net group
 detection:
   condition: selection
   selection:
-  - winlog.event_data.AccessMask: '0x2d'
-    winlog.event_data.ObjectName: S-1-5-21-*-500
-    winlog.event_data.ObjectType: SAM_USER
-    winlog.event_id: 4661
-  - winlog.event_data.AccessMask: '0x2d'
-    winlog.event_data.ObjectName: S-1-5-21-*-512
-    winlog.event_data.ObjectType: SAM_GROUP
-    winlog.event_id: 4661
+  - AccessMask: '0x2d'
+    EventID: 4661
+    ObjectName: S-1-5-21-*-500
+    ObjectType: SAM_USER
+  - AccessMask: '0x2d'
+    EventID: 4661
+    ObjectName: S-1-5-21-*-512
+    ObjectType: SAM_GROUP
 falsepositives:
 - Administrator activity
 - Penetration tests

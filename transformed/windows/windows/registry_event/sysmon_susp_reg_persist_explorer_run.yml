@@ -7,13 +7,13 @@ detection:
   condition: selection
   selection:
     winlog.event_data.Details:
+    - C:\Windows\Temp\\*
+    - C:\ProgramData\\*
     - '*\AppData\\*'
-    - winlog.event_data.C:\Windows\Temp\\*
-    - winlog.event_data.C:\ProgramData\\*
-    - winlog.event_data.C:\$Recycle.bin\\*
-    - winlog.event_data.C:\Temp\\*
-    - winlog.event_data.C:\Users\Public\\*
-    - winlog.event_data.C:\Users\Default\\*
+    - C:\$Recycle.bin\\*
+    - C:\Temp\\*
+    - C:\Users\Public\\*
+    - C:\Users\Default\\*
     winlog.event_data.TargetObject: '*\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run'
 falsepositives:
 - Unknown

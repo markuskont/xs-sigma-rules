@@ -7,9 +7,9 @@ detection:
   condition: (dns_answer and filter_int_ip) and (dns_answer and not filter_int_ip)
     | count(QueryName) by ComputerName > 3
   dns_answer:
+    EventID: 22
     QueryName: '*'
     QueryStatus: '0'
-    winlog.event_id: 22
   filter_int_ip:
     QueryResults|startswith:
     - (::ffff:)?10.

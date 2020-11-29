@@ -6,22 +6,22 @@ description: Detects various indicators of Microsoft Connection Manager Profile 
 detection:
   condition: 1 of them
   selection2:
+    EventID: 12
     winlog.event_data.EventType: CreateKey
     winlog.event_data.TargetObject: '*\cmmgr32.exe*'
-    winlog.event_id: 12
   selection3:
+    EventID: 13
     winlog.event_data.TargetObject: '*\cmmgr32.exe*'
-    winlog.event_id: 13
   selection4:
+    EventID: 10
     winlog.event_data.CallTrace: '*cmlua.dll*'
-    winlog.event_id: 10
 falsepositives:
 - Legitimate CMSTP use (unlikely in modern enterprise environments)
 fields:
 - winlog.event_data.CommandLine
 - winlog.event_data.ParentCommandLine
 - winlog.event_data.Details
-id: 7daa9ae9-ae62-4db6-bffa-9baf12308cfa
+id: 8e4a3c7a-d4f8-4ced-8415-e0e792750e15
 level: high
 logsource:
   product: windows

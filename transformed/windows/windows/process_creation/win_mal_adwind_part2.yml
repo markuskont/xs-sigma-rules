@@ -5,11 +5,11 @@ description: Detects javaw.exe in AppData folder as used by Adwind / JRAT
 detection:
   condition: selection
   selection:
+    EventID: 11
     winlog.event_data.TargetFilename:
     - '*\AppData\Roaming\Oracle\bin\java*.exe'
     - '*\Retrive*.vbs'
-    winlog.event_id: 11
-id: e058c37e-4098-4fcf-8695-4ea53087c1f4
+id: d62aa883-4630-44dc-86eb-64d1cbaf7ed6
 level: high
 logsource:
   product: windows

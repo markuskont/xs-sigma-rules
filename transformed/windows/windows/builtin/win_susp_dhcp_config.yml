@@ -5,8 +5,8 @@ description: This rule detects a DHCP server in which a specified Callout DLL (i
 detection:
   condition: selection
   selection:
+    EventID: 1033
     winlog.event_data.Source: Microsoft-Windows-DHCP-Server
-    winlog.event_id: 1033
 falsepositives:
 - Unknown
 id: 13fc89a9-971e-4ca6-b9dc-aa53a445bf40

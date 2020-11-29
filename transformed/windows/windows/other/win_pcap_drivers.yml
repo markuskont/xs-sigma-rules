@@ -5,6 +5,7 @@ description: Detects Windows Pcap driver installation based on a list of associa
 detection:
   condition: selection
   selection:
+    EventID: 4697
     winlog.event_data.ServiceFileName:
     - '*pcap*'
     - '*npcap*'
@@ -15,15 +16,14 @@ detection:
     - '*windivert*'
     - '*USBPcap*'
     - '*pktmon*'
-    winlog.event_id: 4697
 falsepositives:
 - unknown
 fields:
-- winlog.event_id
+- winlog.event_data.EventID
 - winlog.event_data.ServiceFileName
-- winlog.event_data.AccountName
-- winlog.ComputerName
-- winlog.event_data.OriginatingComputer
+- winlog.event_data.Account_Name
+- winlog.event_data.Computer_Name
+- winlog.event_data.Originating_Computer
 - winlog.event_data.ServiceName
 id: 7b687634-ab20-11ea-bb37-0242ac130002
 level: medium

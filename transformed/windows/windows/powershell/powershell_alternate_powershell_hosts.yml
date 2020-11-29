@@ -9,7 +9,7 @@ detection:
   - Message: powershell.exe
   selection:
     ContextInfo: '*'
-    winlog.event_id:
+    EventID:
     - 4103
     - 400
 falsepositives:

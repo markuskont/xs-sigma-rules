@@ -8,8 +8,8 @@ detection:
   filter:
     winlog.event_data.SubjectUserName: '*$'
   selection:
+    EventID: 5140
     winlog.event_data.ShareName: Admin$
-    winlog.event_id: 5140
 falsepositives:
 - Legitimate administrative activity
 id: 098d7118-55bc-4912-a836-dc6483a8d150

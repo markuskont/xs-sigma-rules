@@ -4,6 +4,7 @@ description: Detects remote thread creation from CACTUSTORCH as described in ref
 detection:
   condition: selection
   selection:
+    EventID: 8
     winlog.event_data.SourceImage:
     - '*\System32\cscript.exe'
     - '*\System32\wscript.exe'
@@ -12,7 +13,6 @@ detection:
     - '*\excel.exe'
     winlog.event_data.StartModule: null
     winlog.event_data.TargetImage: '*\SysWOW64\\*'
-    winlog.event_id: 8
 falsepositives:
 - unknown
 id: 2e4e488a-6164-4811-9ea1-f960c7359c40

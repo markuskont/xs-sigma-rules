@@ -6,8 +6,8 @@ description: Detects remote PowerShell sections by monitoring for wsmprovhost as
 detection:
   condition: selection
   selection:
-  - winlog.event_data.Image|endswith: \wsmprovhost.exe
-  - winlog.event_data.ParentImage|endswith: \wsmprovhost.exe
+  - Image|endswith: \wsmprovhost.exe
+  - ParentImage|endswith: \wsmprovhost.exe
 falsepositives:
 - Legitimate usage of remote Powershell, e.g. for monitoring purposes
 fields:

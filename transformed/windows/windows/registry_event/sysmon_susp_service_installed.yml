@@ -8,8 +8,8 @@ detection:
   condition: selection_1 and not selection_2 and not selection_3
   selection_1:
     winlog.event_data.TargetObject:
-    - winlog.event_data.HKLM\System\CurrentControlSet\Services\NalDrv\ImagePath
-    - winlog.event_data.HKLM\System\CurrentControlSet\Services\PROCEXP152\ImagePath
+    - HKLM\System\CurrentControlSet\Services\NalDrv\ImagePath
+    - HKLM\System\CurrentControlSet\Services\PROCEXP152\ImagePath
   selection_2:
     winlog.event_data.Image|contains:
     - '*\procexp64.exe'

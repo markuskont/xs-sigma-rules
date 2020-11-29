@@ -4,9 +4,9 @@ description: Detects handles requested to SAM registry hive
 detection:
   condition: selection
   selection:
+    EventID: 4656
     winlog.event_data.ObjectName|endswith: \SAM
     winlog.event_data.ObjectType: Key
-    winlog.event_id: 4656
 falsepositives:
 - Unknown
 fields:

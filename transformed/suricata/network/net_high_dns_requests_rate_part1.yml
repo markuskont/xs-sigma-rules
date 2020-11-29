@@ -10,7 +10,7 @@ detection:
   timeframe: 1m
 falsepositives:
 - Legitimate high DNS requests rate to domain name which should be added to whitelist
-id: a03f65dc-91c5-4536-9a70-2d59f41c23bd
+id: 6ea62622-8277-44fc-b940-6ce00eea8563
 level: medium
 logsource:
   category: dns

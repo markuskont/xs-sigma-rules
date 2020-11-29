@@ -11,7 +11,7 @@ detection:
   malsvc_wannacry:
     winlog.event_data.ServiceName: mssecsvc2.0
   selection:
-    winlog.event_id: 7045
+    EventID: 7045
 falsepositives:
 - Penetration testing
 id: 5a105d34-05fc-401e-8553-272b45c1522d

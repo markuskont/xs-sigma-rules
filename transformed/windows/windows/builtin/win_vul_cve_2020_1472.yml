@@ -5,7 +5,7 @@ description: Detects that a vulnerable Netlogon secure channel connection was al
 detection:
   condition: selection
   selection:
-    winlog.event_id:
+    EventID:
     - 5829
 falsepositives:
 - Unknown

@@ -10,6 +10,7 @@ detection:
   filter:
     winlog.event_data.SourceImage|contains: Visual Studio
   selection:
+    EventID: 8
     winlog.event_data.SourceImage|endswith:
     - \bash.exe
     - \cvtres.exe
@@ -58,7 +59,6 @@ detection:
     - \wmic.exe
     - \word.exe
     - \wscript.exe
-    winlog.event_id: 8
 falsepositives:
 - Unknown
 fields:

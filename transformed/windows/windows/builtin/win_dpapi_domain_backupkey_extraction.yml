@@ -5,10 +5,10 @@ description: Detects tools extracting LSA secret DPAPI domain backup key from Do
 detection:
   condition: selection
   selection:
+    EventID: 4662
     winlog.event_data.AccessMask: '0x2'
     winlog.event_data.ObjectName: BCKUPKEY
     winlog.event_data.ObjectType: SecretObject
-    winlog.event_id: 4662
 falsepositives:
 - Unknown
 id: 4ac1f50b-3bd0-4968-902d-868b4647937e

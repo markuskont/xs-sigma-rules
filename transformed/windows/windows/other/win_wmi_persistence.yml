@@ -10,9 +10,9 @@ detection:
     - '*CommandLineEventConsumer*'
     - '*CommandLineTemplate*'
   selection:
-    winlog.event_id: 5861
+    EventID: 5861
   selection2:
-    winlog.event_id: 5859
+    EventID: 5859
 falsepositives:
 - Unknown (data set is too small; further testing needed)
 id: 0b7889b4-5577-4521-a60a-3376ee7f9f7b

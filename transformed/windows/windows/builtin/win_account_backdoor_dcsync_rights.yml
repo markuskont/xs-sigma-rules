@@ -6,12 +6,12 @@ description: backdooring domain object to grant the rights associated with DCSyn
 detection:
   condition: selection
   selection:
+    EventID: 5136
     LDAPDisplayName: ntSecurityDescriptor
     Value|contains:
     - 1131f6ad-9c07-11d1-f79f-00c04fc2dcd2
     - 1131f6aa-9c07-11d1-f79f-00c04fc2dcd2
     - 89e95b76-444d-4c62-991a-0facbeda640c
-    winlog.event_id: 5136
 falsepositives:
 - New Domain Controller computer account, check user SIDs witin the value attribute
   of event 5136 and verify if it's a regular user or DC computer account.

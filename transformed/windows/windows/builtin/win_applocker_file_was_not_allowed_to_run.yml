@@ -6,7 +6,7 @@ description: Detect run not allowed files. Applocker is a very useful tool, espe
 detection:
   condition: selection
   selection:
-    winlog.event_id:
+    EventID:
     - 8004
     - 8007
 falsepositives:

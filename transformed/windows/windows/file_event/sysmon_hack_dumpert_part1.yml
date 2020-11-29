@@ -10,7 +10,7 @@ detection:
     winlog.event_data.Imphash: 09D278F9DE118EF09163C6140255C690
 falsepositives:
 - Very unlikely
-id: 99171572-0afa-4cf9-8be7-46030d694357
+id: 1a448514-c5c3-4a77-9ce7-974715ede608
 level: critical
 logsource:
   category: process_creation

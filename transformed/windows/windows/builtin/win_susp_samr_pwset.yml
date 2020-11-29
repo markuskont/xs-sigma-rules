@@ -7,12 +7,12 @@ description: Detects a possible remote NTLM hash change through SAMR API SamiCha
 detection:
   condition: ( passwordchanged and not passwordchanged_filter ) | near samrpipe
   passwordchanged:
-    winlog.event_id: 4738
+    EventID: 4738
   passwordchanged_filter:
     PasswordLastSet: null
   samrpipe:
+    EventID: 5145
     RelativeTargetName: samr
-    winlog.event_id: 5145
   timeframe: 15s
 id: 7818b381-5eb1-4641-bea5-ef9e4cfb5951
 level: medium

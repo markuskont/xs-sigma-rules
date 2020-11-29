@@ -4,11 +4,11 @@ description: Detects service ticket requests using RC4 encryption type
 detection:
   condition: selection and not reduction
   reduction:
-  - winlog.event_data.ServiceName: $*
+  - ServiceName: $*
   selection:
+    EventID: 4769
     winlog.event_data.TicketEncryptionType: '0x17'
     winlog.event_data.TicketOptions: '0x40810000'
-    winlog.event_id: 4769
 falsepositives:
 - Service accounts used on legacy systems (e.g. NetApp)
 - Windows Domains with DFL 2003 and legacy systems

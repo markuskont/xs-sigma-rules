@@ -7,11 +7,11 @@ detection:
   condition: selection
   selection:
     AttributeValue: '*'
+    EventID: 5136
     winlog.event_data.AttributeLDAPDisplayName:
     - primaryInternationalISDNNumber
     - otherFacsimileTelephoneNumber
     - primaryTelexNumber
-    winlog.event_id: 5136
 falsepositives:
 - Companies, who may use these default LDAP-Attributes for personal information
 id: d00a9a72-2c09-4459-ad03-5e0a23351e36

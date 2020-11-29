@@ -13,8 +13,8 @@ detection:
     winlog.event_data.CommandLine|contains:
     - ' -CollectionMethod All '
     - '.exe -c All -d '
-    - winlog.event_data.Invoke-Bloodhound
-    - winlog.event_data.Get-BloodHoundData
+    - Invoke-Bloodhound
+    - Get-BloodHoundData
   selection3:
     winlog.event_data.CommandLine|contains|all:
     - ' -JsonFolder '
