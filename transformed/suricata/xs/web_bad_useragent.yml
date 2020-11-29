@@ -12,7 +12,7 @@ detection:
     - badtunnel
     - nmap
     - gobuster
-    - winlog.event_data.SPOOFED
+    - SPOOFED
 falsepositives:
 - Unknown
 fields:

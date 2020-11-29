@@ -5,7 +5,7 @@ detection:
   condition: selection
   selection:
     Message|contains:
-    - winlog.event_data.New-LocalUser
+    - New-LocalUser
     winlog.event_id: 4104
 falsepositives:
 - Legitimate user creation

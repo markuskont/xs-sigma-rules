@@ -6,7 +6,7 @@ description: Detects the use of PSAttack PowerShell hack tool
 detection:
   condition: all of them
   keyword:
-  - winlog.event_data.PS ATTACK!!!
+  - PS ATTACK!!!
   selection:
     winlog.event_id: 4103
 falsepositives:

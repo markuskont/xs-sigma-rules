@@ -6,7 +6,7 @@ description: Detects logons using NTLM to hosts that are potentially not part of
 detection:
   condition: selection
   selection:
-    TargetName: TERMSRV*
+    winlog.event_data.TargetName: TERMSRV*
     winlog.event_id: 8001
 falsepositives:
 - Host connections to valid domains, exclude these.

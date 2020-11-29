@@ -4,7 +4,7 @@ description: Detects known sensitive file extensions accessed on a network share
 detection:
   condition: selection
   selection:
-    RelativeTargetName:
+    winlog.event_data.RelativeTargetName:
     - '*.pst'
     - '*.ost'
     - '*.msg'

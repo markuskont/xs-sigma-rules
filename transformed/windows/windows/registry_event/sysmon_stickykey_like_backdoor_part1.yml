@@ -18,7 +18,7 @@ detection:
     - '*\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\DisplaySwitch.exe\Debugger'
 falsepositives:
 - Unlikely
-id: 5c6c1fd2-7699-4abe-a119-ee2ec9163dda
+id: e2709522-1795-47d7-8c98-e98c7ee90906
 level: critical
 logsource:
   category: registry_event

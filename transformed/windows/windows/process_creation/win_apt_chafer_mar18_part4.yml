@@ -11,7 +11,7 @@ detection:
     - '*\Service.exe i'
     - '*\Service.exe u'
     - '*\microsoft\Taskbar\autoit3.exe'
-    - winlog.event_data.C:\wsc.exe*
+    - C:\wsc.exe*
   selection_process2:
     winlog.event_data.Image: '*\Windows\Temp\DB\\*.exe'
   selection_process3:
@@ -30,12 +30,12 @@ detection:
     winlog.event_id: 13
   selection_service:
     TaskName:
-    - winlog.event_data.SC Scheduled Scan
-    - winlog.event_data.UpdatMachine
+    - SC Scheduled Scan
+    - UpdatMachine
     winlog.event_id: 4698
 falsepositives:
 - Unknown
-id: 737cff4c-cf6f-4644-99a7-2260d985a36b
+id: 7aa74c17-cc08-4c84-8838-3faf59a8a3fb
 level: critical
 logsource:
   category: process_creation

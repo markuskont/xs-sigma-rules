@@ -10,7 +10,7 @@ detection:
   selection:
   - winlog.event_data.TargetObject: HKLM\SYSTEM\CurrentControlSet\Control\Session
       Manager\AppCertDlls
-  - NewName: HKLM\SYSTEM\CurentControlSet\Control\Session Manager\AppCertDlls
+  - winlog.event_data.NewName: HKLM\SYSTEM\CurentControlSet\Control\Session Manager\AppCertDlls
 falsepositives:
 - Unkown
 fields:

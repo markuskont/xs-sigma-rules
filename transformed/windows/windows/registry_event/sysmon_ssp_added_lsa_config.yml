@@ -10,9 +10,8 @@ detection:
   - winlog.event_data.Image: C:\Windows\syswow64\MsiExec.exe
   selection_registry:
     winlog.event_data.TargetObject:
-    - winlog.event_data.HKLM\System\CurrentControlSet\Control\Lsa\Security Packages
-    - winlog.event_data.HKLM\System\CurrentControlSet\Control\Lsa\OSConfig\Security
-      Packages
+    - HKLM\System\CurrentControlSet\Control\Lsa\Security Packages
+    - HKLM\System\CurrentControlSet\Control\Lsa\OSConfig\Security Packages
 falsepositives:
 - Unlikely
 id: eeb30123-9fbd-4ee8-aaa0-2e545bbed6dc

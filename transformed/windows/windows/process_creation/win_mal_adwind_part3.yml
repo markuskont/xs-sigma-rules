@@ -8,7 +8,7 @@ detection:
     winlog.event_data.Details: '%AppData%\Roaming\Oracle\bin\\*'
     winlog.event_data.TargetObject: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run*
     winlog.event_id: 13
-id: ccc0f078-2e6b-42bf-85f3-f006712fe5cb
+id: d4eaf9d8-1328-4881-bd51-679edae34ac2
 level: high
 logsource:
   product: windows

@@ -9,8 +9,8 @@ detection:
   - winlog.event_data.Description: Microsoft Malware Protection Command Line Utility
   selection2:
     winlog.event_data.CommandLine|contains|all:
+    - DownloadFile
     - url
-    - winlog.event_data.DownloadFile
 falsepositives:
 - Unknown
 fields:

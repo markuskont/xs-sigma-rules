@@ -9,7 +9,7 @@ detection:
     - '*\AppData\Roaming\Oracle\bin\java*.exe'
     - '*\Retrive*.vbs'
     winlog.event_id: 11
-id: e058c37e-4098-4fcf-8695-4ea53087c1f4
+id: 7b62567a-9b79-49d9-bd81-9339024678a9
 level: high
 logsource:
   product: windows

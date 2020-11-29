@@ -25,8 +25,8 @@ detection:
     - '0x1FFFFF'
   selection1:
     winlog.event_data.CallTrace:
+    - C:\Windows\SYSTEM32\ntdll.dll+*|C:\Windows\System32\KERNELBASE.dll+*|UNKNOWN(*)
     - '*UNKNOWN(*)|UNKNOWN(*)'
-    - winlog.event_data.C:\Windows\SYSTEM32\ntdll.dll+*|C:\Windows\System32\KERNELBASE.dll+*|UNKNOWN(*)
   selection2:
     winlog.event_data.CallTrace: '*UNKNOWN*'
 falsepositives:

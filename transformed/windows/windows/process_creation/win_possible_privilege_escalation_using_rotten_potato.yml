@@ -10,8 +10,8 @@ detection:
     winlog.event_data.Image|endswith: \rundll32.exe
   selection:
     ParentUser:
-    - winlog.event_data.NT AUTHORITY\NETWORK SERVICE
-    - winlog.event_data.NT AUTHORITY\LOCAL SERVICE
+    - NT AUTHORITY\NETWORK SERVICE
+    - NT AUTHORITY\LOCAL SERVICE
     winlog.event_data.User: NT AUTHORITY\SYSTEM
 enrichment:
 - EN_0001_cache_sysmon_event_id_1_info

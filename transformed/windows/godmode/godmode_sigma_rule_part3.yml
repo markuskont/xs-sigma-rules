@@ -7,15 +7,15 @@ detection:
   condition: 1 of them
   selection:
     winlog.event_data.ServiceName|contains:
+    - WCESERVICE
+    - WCE SERVICE
     - winexesvc
+    - DumpSvc
     - pwdump
     - gsecdump
     - cachedump
-    - winlog.event_data.WCESERVICE
-    - winlog.event_data.WCE SERVICE
-    - winlog.event_data.DumpSvc
     winlog.event_id: 7045
-id: d56322aa-45d7-4791-9ce9-28cb6bc33fed
+id: 47331850-f063-44bc-a7b8-2e6635641396
 level: high
 logsource:
   product: windows

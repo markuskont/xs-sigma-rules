@@ -8,31 +8,31 @@ detection:
   selection_file_creation:
     winlog.event_data.TargetFilename|contains:
     - .dmp
-    - winlog.event_data.Desktop\how
-    - winlog.event_data.Desktop\decrypt
+    - Desktop\how
+    - Desktop\decrypt
     winlog.event_id: 11
   selection_registry_modifications:
     winlog.event_data.TargetObject|contains:
+    - UserInitMprLogonScript
     - \CurrentVersion\Image File Execution Options\
-    - winlog.event_data.UserInitMprLogonScript
     winlog.event_id:
     - 12
     - 13
   selection_registry_run:
     winlog.event_data.Details|contains:
+    - AppData
     - \Users\Public\
     - \Temp\
     - powershell
     - wscript
     - cscript
-    - winlog.event_data.AppData
     winlog.event_data.TargetObject|contains:
     - \Microsoft\Windows\CurrentVersion\Run\
     - \Microsoft\Windows\CurrentVersion\RunOnce\
     winlog.event_id:
     - 12
     - 13
-id: e29d2dbc-3d08-4116-813a-1c0af4b7be28
+id: b415cba8-5c71-4130-921d-c4f2fddd2aca
 level: high
 logsource:
   product: windows

@@ -8,7 +8,7 @@ detection:
   selection:
   - winlog.event_data.EventType: CreateKey
     winlog.event_data.TargetObject: HKLM\SYSTEM\CurrentControlSet\Control\MiniNt
-  - NewName: HKLM\SYSTEM\CurrentControlSet\Control\MiniNt
+  - winlog.event_data.NewName: HKLM\SYSTEM\CurrentControlSet\Control\MiniNt
 falsepositives:
 - Unkown
 fields:

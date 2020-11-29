@@ -10,10 +10,10 @@ detection:
   condition: selection_dll and not filter_legit
   filter_legit:
     winlog.event_data.Image|endswith:
+    - BackgroundTaskHost.exe
     - devenv.exe
     - iexplore.exe
-    - winlog.event_data.BackgroundTaskHost.exe
-    - winlog.event_data.MicrosoftEdge.exe
+    - MicrosoftEdge.exe
   selection_dll:
     winlog.event_data.ImageLoaded|endswith: MicrosoftAccountTokenProvider.dll
     winlog.event_id: 7

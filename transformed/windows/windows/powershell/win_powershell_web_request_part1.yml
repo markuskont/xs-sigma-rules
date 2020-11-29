@@ -8,15 +8,15 @@ detection:
   condition: selection
   selection:
     winlog.event_data.CommandLine|contains:
+    - Invoke-WebRequest
     - 'iwr '
     - 'wget '
     - 'curl '
-    - winlog.event_data.Invoke-WebRequest
-    - winlog.event_data.Net.WebClient
-    - winlog.event_data.Start-BitsTransfer
+    - Net.WebClient
+    - Start-BitsTransfer
 falsepositives:
 - Use of Get-Command and Get-Help modules to reference Invoke-WebRequest and Start-BitsTransfer.
-id: 6003ff21-363a-4be5-b1d8-2fbf69545939
+id: 23d0cfd0-3202-4ed0-b240-94e3421bb762
 level: medium
 logsource:
   category: process_creation

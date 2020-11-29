@@ -8,7 +8,7 @@ detection:
   condition: selection
   selection:
     Accesses: '*WriteData*'
-    RelativeTargetName: '*ScheduledTasks.xml'
+    winlog.event_data.RelativeTargetName: '*ScheduledTasks.xml'
     winlog.event_data.ShareName: \\*\SYSVOL
     winlog.event_id: 5145
 falsepositives:

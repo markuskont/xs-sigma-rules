@@ -8,7 +8,7 @@ detection:
   condition: selection
   selection:
     Accesses: '*WriteData*'
-    RelativeTargetName: atsvc
+    winlog.event_data.RelativeTargetName: atsvc
     winlog.event_data.ShareName: \\*\IPC$
     winlog.event_id: 5145
 falsepositives:

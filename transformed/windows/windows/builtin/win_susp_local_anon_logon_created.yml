@@ -6,7 +6,7 @@ description: Detects the creation of suspicious accounts simliar to ANONYMOUS LO
 detection:
   condition: selection
   selection:
-    SAMAccountName: '*ANONYMOUS*LOGON*'
+    winlog.event_data.SAMAccountName: '*ANONYMOUS*LOGON*'
     winlog.event_id: 4720
 falsepositives:
 - Unknown

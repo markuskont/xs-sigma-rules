@@ -12,7 +12,7 @@ detection:
     winlog.event_data.TargetFilename:
     - '*ds7002.lnk*'
     winlog.event_id: 11
-id: 9fdf077c-bd41-4726-87db-9ee7270872ce
+id: 6b87dac5-5e2f-4282-bb25-a7df6d849b85
 level: high
 logsource:
   product: windows

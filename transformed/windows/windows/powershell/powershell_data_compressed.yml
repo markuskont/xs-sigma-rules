@@ -10,7 +10,7 @@ detection:
     keywords|contains|all:
     - -Recurse
     - '|'
-    - winlog.event_data.Compress-Archive
+    - Compress-Archive
     winlog.event_id: 4104
 falsepositives:
 - highly likely if archive ops are done via PS

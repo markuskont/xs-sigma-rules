@@ -15,7 +15,7 @@ fields:
 - winlog.event_data.Image
 - winlog.event_data.DestinationIp
 - winlog.event_data.DestinationPort
-id: 08a401b6-fae1-499a-aa83-9ad0e97a966e
+id: 2d3aa0f0-5d99-4b4d-a57e-c717b5feacf2
 level: high
 logsource:
   category: dns_query

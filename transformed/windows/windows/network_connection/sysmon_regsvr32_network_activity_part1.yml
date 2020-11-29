@@ -15,7 +15,7 @@ fields:
 - winlog.event_data.Image
 - winlog.event_data.DestinationIp
 - winlog.event_data.DestinationPort
-id: 03b471e8-e806-4748-bac6-b431311828ec
+id: 897ffed0-58f9-4346-813c-fdbb7ce55382
 level: high
 logsource:
   category: network_connection

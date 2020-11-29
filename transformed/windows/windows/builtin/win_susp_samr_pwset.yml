@@ -11,7 +11,7 @@ detection:
   passwordchanged_filter:
     PasswordLastSet: null
   samrpipe:
-    RelativeTargetName: samr
+    winlog.event_data.RelativeTargetName: samr
     winlog.event_id: 5145
   timeframe: 15s
 id: 7818b381-5eb1-4641-bea5-ef9e4cfb5951

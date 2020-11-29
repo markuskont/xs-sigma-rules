@@ -7,7 +7,7 @@ detection:
   condition: selection
   selection:
     winlog.event_data.Image:
-    - winlog.event_data.C:\users\\*.exe
+    - C:\users\\*.exe
     winlog.event_data.ParentImage:
     - '*\WINWORD.EXE'
     - '*\EXCEL.EXE'

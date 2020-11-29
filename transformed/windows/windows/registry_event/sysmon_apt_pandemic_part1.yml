@@ -16,7 +16,7 @@ fields:
 - winlog.event_data.Image
 - winlog.event_data.User
 - winlog.event_data.TargetObject
-id: c399e8d5-9829-43c4-8153-410ba5347930
+id: c48e3c62-da85-452f-a910-016a39990f15
 level: critical
 logsource:
   category: registry_event

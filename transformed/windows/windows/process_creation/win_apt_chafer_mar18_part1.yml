@@ -7,12 +7,12 @@ detection:
   condition: 1 of them
   selection_service:
     winlog.event_data.ServiceName:
-    - winlog.event_data.SC Scheduled Scan
-    - winlog.event_data.UpdatMachine
+    - SC Scheduled Scan
+    - UpdatMachine
     winlog.event_id: 7045
 falsepositives:
 - Unknown
-id: ab017094-c960-47a3-ab74-1e925f7f79cd
+id: 4febc5c4-1cee-42b7-a523-91b9cac0738a
 level: critical
 logsource:
   product: windows

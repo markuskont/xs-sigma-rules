@@ -7,9 +7,9 @@ detection:
     winlog.event_data.SubjectDomainName: Window Manager
   filter2:
     winlog.event_data.SubjectUserName:
+    - NT AUTHORITY*
     - '*$'
-    - winlog.event_data.NT AUTHORITY*
-    - winlog.event_data.MSOL_*
+    - MSOL_*
   selection:
     winlog.event_data.Properties:
     - '*Replicating Directory Changes All*'

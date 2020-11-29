@@ -6,23 +6,23 @@ detection:
   condition: selection
   selection:
     winlog.event_data.Image:
+    - C:\PerfLogs\\*
+    - C:\$Recycle.bin\\*
+    - C:\Intel\Logs\\*
+    - C:\Users\Default\\*
+    - C:\Users\Public\\*
+    - C:\Users\NetworkService\\*
+    - C:\Windows\Fonts\\*
+    - C:\Windows\Debug\\*
+    - C:\Windows\Media\\*
+    - C:\Windows\Help\\*
+    - C:\Windows\addins\\*
+    - C:\Windows\repair\\*
+    - C:\Windows\security\\*
     - '*\RSA\MachineKeys\\*'
-    - winlog.event_data.C:\PerfLogs\\*
-    - winlog.event_data.C:\$Recycle.bin\\*
-    - winlog.event_data.C:\Intel\Logs\\*
-    - winlog.event_data.C:\Users\Default\\*
-    - winlog.event_data.C:\Users\Public\\*
-    - winlog.event_data.C:\Users\NetworkService\\*
-    - winlog.event_data.C:\Windows\Fonts\\*
-    - winlog.event_data.C:\Windows\Debug\\*
-    - winlog.event_data.C:\Windows\Media\\*
-    - winlog.event_data.C:\Windows\Help\\*
-    - winlog.event_data.C:\Windows\addins\\*
-    - winlog.event_data.C:\Windows\repair\\*
-    - winlog.event_data.C:\Windows\security\\*
-    - winlog.event_data.C:\Windows\system32\config\systemprofile\\*
-    - winlog.event_data.C:\Windows\Tasks\\*
-    - winlog.event_data.C:\Windows\System32\Tasks\\*
+    - C:\Windows\system32\config\systemprofile\\*
+    - C:\Windows\Tasks\\*
+    - C:\Windows\System32\Tasks\\*
 falsepositives:
 - Unknown
 id: 7a38aa19-86a9-4af7-ac51-6bfe4e59f254

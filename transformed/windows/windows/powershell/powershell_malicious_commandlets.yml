@@ -6,7 +6,7 @@ description: Detects Commandlet names from well-known PowerShell exploitation fr
 detection:
   condition: keywords and not false_positives
   false_positives:
-  - winlog.event_data.Get-SystemDriveInfo
+  - Get-SystemDriveInfo
   keywords:
     Message:
     - '*Invoke-DllInjection*'

@@ -19,7 +19,7 @@ fields:
 - winlog.event_data.CommandLine
 - winlog.event_data.ParentCommandLine
 - winlog.event_data.Details
-id: d51d05bf-99d0-4843-b156-7c89cd13e2e7
+id: 8f8253b3-f341-418e-8794-38f2217b263e
 level: high
 logsource:
   category: registry_event

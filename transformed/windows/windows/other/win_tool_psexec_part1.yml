@@ -20,7 +20,7 @@ fields:
 - winlog.event_data.ParentCommandLine
 - winlog.event_data.ServiceName
 - winlog.event_data.ServiceFileName
-id: 1b8bb6f6-ad90-4959-a27c-b371783139fd
+id: d634340d-e90c-4de9-a407-0292f16ea942
 level: low
 logsource:
   product: windows

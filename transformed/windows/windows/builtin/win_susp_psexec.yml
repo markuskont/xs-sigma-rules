@@ -8,14 +8,14 @@ description: detects execution of psexec or paexec with renamed service name, th
 detection:
   condition: selection1 and not selection2
   selection1:
-    RelativeTargetName:
+    winlog.event_data.RelativeTargetName:
     - '*-stdin'
     - '*-stdout'
     - '*-stderr'
     winlog.event_data.ShareName: \\*\IPC$
     winlog.event_id: 5145
   selection2:
-    RelativeTargetName: PSEXESVC*
+    winlog.event_data.RelativeTargetName: PSEXESVC*
     winlog.event_data.ShareName: \\*\IPC$
     winlog.event_id: 5145
 falsepositives:

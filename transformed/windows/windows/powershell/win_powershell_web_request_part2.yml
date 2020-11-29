@@ -7,16 +7,16 @@ detection:
   condition: selection
   selection:
     winlog.event_data.ScriptBlockText|contains:
+    - Invoke-WebRequest
     - 'iwr '
     - 'wget '
     - 'curl '
-    - winlog.event_data.Invoke-WebRequest
-    - winlog.event_data.Net.WebClient
-    - winlog.event_data.Start-BitsTransfer
+    - Net.WebClient
+    - Start-BitsTransfer
     winlog.event_id: 4104
 falsepositives:
 - Use of Get-Command and Get-Help modules to reference Invoke-WebRequest and Start-BitsTransfer.
-id: 8d1f396f-d411-467b-9b30-2ff548a9c27e
+id: 30446ed1-8d0c-451c-a3b0-f21b9888f6c6
 level: medium
 logsource:
   product: windows

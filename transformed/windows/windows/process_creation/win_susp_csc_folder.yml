@@ -7,9 +7,9 @@ detection:
   condition: selection and not filter
   filter:
     winlog.event_data.ParentImage:
+    - C:\Program Files*
     - '*\sdiagnhost.exe'
     - '*\w3wp.exe'
-    - winlog.event_data.C:\Program Files*
   selection:
     winlog.event_data.CommandLine:
     - '*\AppData\\*'

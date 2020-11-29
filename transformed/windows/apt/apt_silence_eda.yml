@@ -7,18 +7,18 @@ detection:
     winlog.event_data.ScriptBlockText|contains|all:
     - set type=$LookupType`nserver
     - $Command | nslookup 2>&1 | Out-String
+    - New-RandomDNSField
     - '[Convert]::ToString($SYNOptions, 16)'
     - $Session.Dead = $True
     - $Session["Driver"] -eq
-    - winlog.event_data.New-RandomDNSField
   empire:
     winlog.event_data.ScriptBlockText|contains|all:
+    - System.Diagnostics.Process
+    - Stop-Computer
+    - Restart-Computer
+    - Exception in execution
     - $cmdargs
-    - winlog.event_data.System.Diagnostics.Process
-    - winlog.event_data.Stop-Computer
-    - winlog.event_data.Restart-Computer
-    - winlog.event_data.Exception in execution
-    - winlog.event_data.Close-Dnscat2Tunnel
+    - Close-Dnscat2Tunnel
 falsepositives:
 - Unknown
 id: 3ceb2083-a27f-449a-be33-14ec1b7cc973

@@ -12,9 +12,9 @@ detection:
   selection2:
     winlog.event_data.Details: DWORD (0x00000001)
     winlog.event_data.TargetObject:
-    - winlog.event_data.HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend
-    - winlog.event_data.HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender
-    - winlog.event_data.HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender
+    - HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender
 falsepositives:
 - Administrator actions
 id: fe34868f-6e0e-4882-81f6-c43aa8f15b62

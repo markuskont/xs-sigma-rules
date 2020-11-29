@@ -8,10 +8,10 @@ detection:
   selection1:
     winlog.event_data.CommandLine|contains|all:
     - bitsadmin /transfer
-    - winlog.event_data.CSIDL_APPDATA
+    - CSIDL_APPDATA
   selection2:
     winlog.event_data.CommandLine|contains:
-    - winlog.event_data.CSIDL_SYSTEM_DRIVE
+    - CSIDL_SYSTEM_DRIVE
   selection3:
     winlog.event_data.CommandLine|contains:
     - \msf.ps1
@@ -22,17 +22,17 @@ detection:
     - ' -nop -w hidden -c $m=new-object net.webclient;$m'
     - -noninteractive -executionpolicy bypass whoami
     - -noninteractive -executionpolicy bypass netstat -a
-    - winlog.event_data.L3NlcnZlc
+    - L3NlcnZlc
   selection4:
     winlog.event_data.Image|endswith:
     - \adobe\Adobe.exe
     - \oracle\local.exe
     - \revshell.exe
     - infopagesbackup\ncat.exe
+    - CSIDL_SYSTEM\cmd.exe
     - \programdata\oracle\java.exe
+    - CSIDL_COMMON_APPDATA\comms\comms.exe
     - \Programdata\VMware\Vmware.exe
-    - winlog.event_data.CSIDL_SYSTEM\cmd.exe
-    - winlog.event_data.CSIDL_COMMON_APPDATA\comms\comms.exe
 falsepositives:
 - Unknown
 id: 3711eee4-a808-4849-8a14-faf733da3612

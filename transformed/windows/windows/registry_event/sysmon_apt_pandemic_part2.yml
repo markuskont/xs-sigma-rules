@@ -16,7 +16,7 @@ fields:
 - winlog.event_data.Image
 - winlog.event_data.User
 - winlog.event_data.TargetObject
-id: d7001424-1117-40b9-9e95-f6e9c8ae03bb
+id: d2d1ad59-d0dc-4b16-8f8d-a5ae9566726c
 level: critical
 logsource:
   category: process_creation

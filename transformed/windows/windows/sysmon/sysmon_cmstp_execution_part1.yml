@@ -21,7 +21,7 @@ fields:
 - winlog.event_data.CommandLine
 - winlog.event_data.ParentCommandLine
 - winlog.event_data.Details
-id: 7daa9ae9-ae62-4db6-bffa-9baf12308cfa
+id: 3c6d1e55-a25c-45c9-bfc9-ddc8cff830f0
 level: high
 logsource:
   product: windows

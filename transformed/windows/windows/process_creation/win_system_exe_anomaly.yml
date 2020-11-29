@@ -6,14 +6,14 @@ detection:
   condition: selection and not filter
   filter:
     winlog.event_data.Image:
+    - C:\Windows\System32\\*
+    - C:\Windows\system32\\*
+    - C:\Windows\SysWow64\\*
+    - C:\Windows\SysWOW64\\*
+    - C:\Windows\explorer.exe
+    - C:\Windows\winsxs\\*
+    - C:\Windows\WinSxS\\*
     - \SystemRoot\System32\\*
-    - winlog.event_data.C:\Windows\System32\\*
-    - winlog.event_data.C:\Windows\system32\\*
-    - winlog.event_data.C:\Windows\SysWow64\\*
-    - winlog.event_data.C:\Windows\SysWOW64\\*
-    - winlog.event_data.C:\Windows\explorer.exe
-    - winlog.event_data.C:\Windows\winsxs\\*
-    - winlog.event_data.C:\Windows\WinSxS\\*
   selection:
     winlog.event_data.Image:
     - '*\svchost.exe'

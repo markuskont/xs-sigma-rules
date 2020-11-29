@@ -10,7 +10,7 @@ detection:
   - winlog.event_data.TargetObject:
     - '*\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_Dlls'
     - '*\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_Dlls'
-  - NewName:
+  - winlog.event_data.NewName:
     - '*\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_Dlls'
     - '*\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_Dlls'
 falsepositives:

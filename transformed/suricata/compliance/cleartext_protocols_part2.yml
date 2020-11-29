@@ -32,7 +32,7 @@ detection:
     - 2
 falsepositives:
 - unknown
-id: c2f8627d-e430-400d-9737-27e183bb5e2b
+id: c22677b1-222b-40b9-b9b5-9cba40a2ae0a
 level: low
 logsource:
   product: suricata

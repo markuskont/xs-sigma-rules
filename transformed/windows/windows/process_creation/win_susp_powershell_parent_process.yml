@@ -35,7 +35,7 @@ detection:
     - \nginx.exe
     - \php-cgi.exe
     - \jbosssvc.exe
-    - winlog.event_data.MicrosoftEdgeSH.exe
+    - MicrosoftEdgeSH.exe
   - winlog.event_data.ParentImage|contains: tomcat
   selection_powershell:
   - winlog.event_data.CommandLine|contains:

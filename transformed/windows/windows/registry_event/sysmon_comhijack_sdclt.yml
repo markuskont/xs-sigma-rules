@@ -8,7 +8,7 @@ detection:
     winlog.event_data.EventType:
     - winlog.event_data.SetValue
     winlog.event_data.TargetObject:
-    - winlog.event_data.HKCU\Software\Classes\Folder\shell\open\command\DelegateExecute
+    - HKCU\Software\Classes\Folder\shell\open\command\DelegateExecute
 falsepositives:
 - unknown
 id: 07743f65-7ec9-404a-a519-913db7118a8d

@@ -12,7 +12,7 @@ detection:
     - dir %TEMP%\\*.exe
 falsepositives:
 - Unknown
-id: 0af9395d-859b-4d90-926e-8aec89884590
+id: 16e6b153-f839-4835-adfd-6a08f0f4a183
 level: critical
 logsource:
   category: process_creation

@@ -4,7 +4,7 @@ description: Raw disk access using illegitimate tools, possible defence evasion
 detection:
   condition: selection and not filter_1 and not filter_2
   filter_1:
-    Device|contains: floppy
+    winlog.event_data.Device|contains: floppy
   filter_2:
   - winlog.event_data.Image|endswith:
     - \wmiprvse.exe

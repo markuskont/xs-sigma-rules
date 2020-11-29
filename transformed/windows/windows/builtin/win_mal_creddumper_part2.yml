@@ -28,7 +28,7 @@ detection:
   - winlog.event_data.ImagePath|re: ((\\\\.*\\.*|.*\\)([{]?[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}[}])?\.(exe|scr|cpl|bat|js|cmd|vbs).*)
 falsepositives:
 - Legitimate Administrator using credential dumping tool for password recovery
-id: bd5c97eb-62c7-454c-a2c5-05ce47deaaa6
+id: 8071a89e-cc68-4a85-ba91-62b29b2dd152
 level: high
 logsource:
   product: windows
