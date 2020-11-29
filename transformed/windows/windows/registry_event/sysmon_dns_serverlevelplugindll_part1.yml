@@ -18,7 +18,7 @@ fields:
 - winlog.event_data.Image
 - winlog.event_data.User
 - winlog.event_data.TargetObject
-id: 1d745e21-864a-429f-b908-e3a4c38c3986
+id: 971d4989-04b0-458c-a9c2-41cb14edfb77
 level: high
 logsource:
   category: registry_event

@@ -18,7 +18,7 @@ detection:
   - winlog.event_data.ImagePath|re: \String\]\s*\$VerbosePreference
 falsepositives:
 - Unknown
-id: a7d92ca1-3d6b-448b-8abb-3bc4910fff8c
+id: 5a311c30-1f46-4d43-afa2-33a897ecc01d
 level: high
 logsource:
   product: windows

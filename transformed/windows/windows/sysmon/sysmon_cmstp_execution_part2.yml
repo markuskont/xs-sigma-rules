@@ -24,7 +24,7 @@ fields:
 - winlog.event_data.CommandLine
 - winlog.event_data.ParentCommandLine
 - winlog.event_data.Details
-id: 39f2799a-a657-4347-bb12-932c131adceb
+id: 61c2a179-8d1a-4cf2-9de3-52408c881e41
 level: high
 logsource:
   category: process_creation

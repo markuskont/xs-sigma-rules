@@ -8,7 +8,7 @@ detection:
     winlog.event_id: 7
 falsepositives:
 - unknown
-id: 6bed8f46-6454-4a54-bc45-2e5ce21ee7f3
+id: 447dfbff-e8f7-47a6-9210-7f845bce51b7
 level: high
 logsource:
   product: windows

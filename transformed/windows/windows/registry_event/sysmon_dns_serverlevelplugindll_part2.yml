@@ -18,7 +18,7 @@ fields:
 - winlog.event_data.Image
 - winlog.event_data.User
 - winlog.event_data.TargetObject
-id: c5228195-9074-45f3-91b1-dda96bebacf2
+id: 220c742b-8816-4389-9702-52321cc923d7
 level: high
 logsource:
   category: process_creation

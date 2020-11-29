@@ -12,7 +12,7 @@ detection:
     winlog.event_id: 13
 falsepositives:
 - Unknown
-id: 360b2c0a-d7dd-4d07-8997-e3a6ea4516ef
+id: a16d3631-0e9c-4e66-98e0-018d7f0eee9c
 level: critical
 logsource:
   product: windows

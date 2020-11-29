@@ -15,7 +15,7 @@ detection:
     - :\Program Files\
 falsepositives:
 - unknown
-id: 817847da-bc5c-496b-aa82-5ae984b48ff2
+id: 94768962-1a6e-4cc1-9671-ab4db2a8dbe6
 level: high
 logsource:
   category: process_creation

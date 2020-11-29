@@ -19,7 +19,7 @@ detection:
     - '*\winlogon.exe'
 falsepositives:
 - Unlikely
-id: bb5d43c2-bf71-40a4-9457-19e874ffb7d2
+id: 9a3e507f-385a-4ee8-9859-78b7585844eb
 level: critical
 logsource:
   category: process_creation

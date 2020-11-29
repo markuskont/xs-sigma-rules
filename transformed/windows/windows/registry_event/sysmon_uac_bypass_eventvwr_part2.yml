@@ -14,7 +14,7 @@ falsepositives:
 fields:
 - winlog.event_data.CommandLine
 - winlog.event_data.ParentCommandLine
-id: 8ac35236-8654-4e57-ac31-28f983bfde97
+id: 79fde585-31ff-44d8-ab37-592f81d438a2
 level: critical
 logsource:
   category: process_creation

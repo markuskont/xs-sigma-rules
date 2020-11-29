@@ -16,7 +16,7 @@ detection:
     winlog.event_id: 4104
 falsepositives:
 - Use of Get-Command and Get-Help modules to reference Invoke-WebRequest and Start-BitsTransfer.
-id: 378954d2-4347-4f5c-9ed2-b40750a0ebe9
+id: 8249dde7-6c69-4e70-83d2-ae46294c1ab5
 level: medium
 logsource:
   product: windows

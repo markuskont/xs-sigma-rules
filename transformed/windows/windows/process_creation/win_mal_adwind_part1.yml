@@ -9,7 +9,7 @@ detection:
     winlog.event_data.CommandLine:
     - '*\AppData\Roaming\Oracle*\java*.exe *'
     - '*cscript.exe *Retrive*.vbs *'
-id: b3ffd761-9e76-4cf6-b6ce-eba4a616cb55
+id: 7fa8145c-9b0a-4294-9a32-6eba26c4797a
 level: high
 logsource:
   category: process_creation

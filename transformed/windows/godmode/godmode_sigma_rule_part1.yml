@@ -72,7 +72,7 @@ detection:
   selection_whoami:
     winlog.event_data.Image|contains: \whoami.exe
     winlog.event_data.User: NT AUTHORITY\SYSTEM
-id: e769c2dd-fb28-43df-a01a-96bc8628e029
+id: f3afe875-f64d-4878-a66a-48ec04687479
 level: high
 logsource:
   category: process_creation

@@ -12,8 +12,8 @@ falsepositives:
 - Dumping lsass memory for forensic investigation purposes by legitimate incident
   responder or forensic invetigator
 fields:
+- TargetFileName
 - winlog.ComputerName
-- file.path
 id: 5e3d3601-0662-4af0-b1d2-36a05e90c40a
 level: medium
 logsource:

@@ -10,7 +10,7 @@ detection:
     winlog.event_id: 4799
 falsepositives:
 - Administrators that use checkadmin.exe tool to enumerate local administrators
-id: 21c99966-8b8e-4684-bbf7-44e20af83947
+id: 507881b9-30e3-4b9e-b1ba-4d23efa9c520
 level: high
 logsource:
   product: windows
