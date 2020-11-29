@@ -15,7 +15,7 @@ detection:
     - gsecdump
     - cachedump
     winlog.event_id: 7045
-id: 47331850-f063-44bc-a7b8-2e6635641396
+id: ebd42bc4-2fc4-4a7b-9b83-f92b29f44a86
 level: high
 logsource:
   product: windows

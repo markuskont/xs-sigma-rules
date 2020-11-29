@@ -14,7 +14,7 @@ detection:
   timeframe: 1m
 falsepositives:
 - Unknown
-id: 3eec9eef-cb63-4651-98c9-8af9d528161f
+id: 224c05c5-a86b-464f-8a6e-e68842888de2
 level: medium
 logsource:
   category: process_creation

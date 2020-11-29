@@ -29,7 +29,7 @@ detection:
     - ddd2db1127632a2a52943a2fe516a2e7d05d70d2
 falsepositives:
 - unknown
-id: ba1d0a7a-d423-4c0f-b9a0-8e88fe48a030
+id: 8009df17-e43c-4cfb-af40-0f88db328333
 level: high
 logsource:
   category: process_creation

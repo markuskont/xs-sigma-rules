@@ -24,7 +24,7 @@ fields:
 - winlog.event_data.ParentCommandLine
 - winlog.event_data.ServiceName
 - winlog.event_data.ServiceFileName
-id: 90e4dad1-9466-4f8f-82f8-4a5a40528d47
+id: aefe942b-5c0e-4870-96da-9330202f3075
 level: low
 logsource:
   category: process_creation

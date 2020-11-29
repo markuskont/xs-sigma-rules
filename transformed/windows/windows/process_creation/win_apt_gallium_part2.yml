@@ -17,7 +17,7 @@ detection:
   condition: c2_selection
 falsepositives:
 - unknown
-id: 4690b618-7fd3-407a-80d9-8d4a81a84b21
+id: ebeb9fdd-20ee-4582-9dd9-64a683f82a46
 level: high
 logsource:
   product: windows

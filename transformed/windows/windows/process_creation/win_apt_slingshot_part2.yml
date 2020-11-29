@@ -14,7 +14,7 @@ detection:
     winlog.event_id: 4701
 falsepositives:
 - Unknown
-id: a355045c-159a-45ca-88de-89a72d618cf5
+id: c75b828b-b903-435a-ad12-53e542aca354
 level: medium
 logsource:
   definition: 'Requirements: Audit Policy : Audit Other Object Access Events > Success'

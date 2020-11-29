@@ -19,7 +19,7 @@ detection:
     - reg query HKEY_CURRENT_USER\Software\\*\PuTTY\Sessions\
 falsepositives:
 - Administrators that use checkadmin.exe tool to enumerate local administrators
-id: 54ecdcb6-ca5e-471b-ae4c-77ba8544fddb
+id: a9f7bfe4-1b5e-458f-9a45-7f6fa8a1a624
 level: high
 logsource:
   category: process_creation

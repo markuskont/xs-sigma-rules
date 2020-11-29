@@ -29,7 +29,7 @@ fields:
 - winlog.event_data.SubjectDomainName
 - winlog.event_data.SubjectUserName
 - winlog.event_data.ServiceFileName
-id: 5aa78c50-08c9-4dff-9750-2bfcde61f4b8
+id: 6bf19322-2964-43a5-8204-459a7482c386
 level: critical
 logsource:
   product: windows

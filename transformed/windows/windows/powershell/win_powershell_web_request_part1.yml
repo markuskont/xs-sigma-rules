@@ -16,7 +16,7 @@ detection:
     - Start-BitsTransfer
 falsepositives:
 - Use of Get-Command and Get-Help modules to reference Invoke-WebRequest and Start-BitsTransfer.
-id: 23d0cfd0-3202-4ed0-b240-94e3421bb762
+id: ce632e4b-b893-4d10-95c8-87b26c209206
 level: medium
 logsource:
   category: process_creation

@@ -12,7 +12,7 @@ detection:
     winlog.event_data.Imphash: 4a07f944a83e8a7c2525efa35dd30e2f
 falsepositives:
 - Unknown
-id: a7635858-38c8-435c-9792-82fcb82be29f
+id: f26c788d-0f32-4220-ac3c-93b64de083c1
 level: high
 logsource:
   category: process_creation

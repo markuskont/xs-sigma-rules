@@ -22,7 +22,7 @@ fields:
 - winlog.ComputerName
 - winlog.event_data.User
 - winlog.event_data.CommandLine
-id: 71abe5d4-986e-4f3f-9443-6a93e52d4b6d
+id: 88d5f5bb-f334-48fa-98e8-82af906978f9
 level: high
 logsource:
   category: process_creation

@@ -12,7 +12,7 @@ detection:
     winlog.event_id: 7045
 falsepositives:
 - Unknown
-id: 4febc5c4-1cee-42b7-a523-91b9cac0738a
+id: 3b368d08-0a25-4a91-9a52-03bd52f890ef
 level: critical
 logsource:
   product: windows

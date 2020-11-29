@@ -9,7 +9,7 @@ detection:
     winlog.event_data.Description|contains: st2stager
 falsepositives:
 - unknown
-id: 5d873bff-80f2-49fb-b596-2ace45a53c06
+id: c13bccc8-84f0-4267-80e9-929894b83b88
 level: high
 logsource:
   category: process_creation

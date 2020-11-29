@@ -17,7 +17,7 @@ detection:
     - Microsoft(C) Registerserver
 falsepositives:
 - Very Unlikely
-id: 337b6d8e-73c5-4425-b04f-4acd3e1731cb
+id: 1dc51fe5-e337-429b-b865-91c9284be661
 level: critical
 logsource:
   category: process_creation

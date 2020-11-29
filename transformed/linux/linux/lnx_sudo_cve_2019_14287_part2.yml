@@ -10,7 +10,7 @@ detection:
     - '#*4294967295'
 falsepositives:
 - Unlikely
-id: 748b5faa-9aae-4ec5-88c3-ccaaeeb015dd
+id: d9d4129e-4dfb-4da0-b660-dbc60671ff55
 level: critical
 logsource:
   product: linux

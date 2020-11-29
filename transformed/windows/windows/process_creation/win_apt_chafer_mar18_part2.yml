@@ -12,7 +12,7 @@ detection:
     winlog.event_id: 4698
 falsepositives:
 - Unknown
-id: 8fb96631-605d-43df-9fec-88de72265b5b
+id: f784a200-6020-44a7-bfec-2255ab18a299
 level: critical
 logsource:
   product: windows

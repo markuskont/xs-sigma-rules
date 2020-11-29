@@ -27,7 +27,7 @@ detection:
     - 5904
 falsepositives:
 - unknown
-id: 031d3a19-0036-434f-b531-7e3a831cf939
+id: c0266395-28c5-45eb-9b08-85762c5a40b7
 level: low
 logsource:
   product: netflow
