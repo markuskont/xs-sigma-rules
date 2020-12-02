@@ -52,6 +52,5 @@ tags:
 - attack.t1087.002
 - attack.lateral_movement
 - attack.t1021.002
-- attack.t1077
 - attack.s0039
 title: Net.exe Execution

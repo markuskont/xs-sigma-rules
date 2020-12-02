@@ -29,7 +29,7 @@ fields:
 - winlog.event_data.SubjectDomainName
 - winlog.event_data.SubjectUserName
 - winlog.event_data.ServiceFileName
-id: 9121f1eb-e21c-4f1a-b70f-cbe4e3b40717
+id: 843544a7-56e0-4dcc-a44f-5cc266dd989f
 level: critical
 logsource:
   product: windows
@@ -42,7 +42,6 @@ references:
 service: sysmon
 tags:
 - attack.privilege_escalation
-- attack.t1134
 - attack.t1134.001
 - attack.t1134.002
 title: Meterpreter or Cobalt Strike Getsystem Service Installation

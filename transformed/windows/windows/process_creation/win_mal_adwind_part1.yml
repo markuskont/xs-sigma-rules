@@ -9,7 +9,7 @@ detection:
     winlog.event_data.CommandLine:
     - '*\AppData\Roaming\Oracle*\java*.exe *'
     - '*cscript.exe *Retrive*.vbs *'
-id: 7fa8145c-9b0a-4294-9a32-6eba26c4797a
+id: 1fac1481-2dbc-48b2-9096-753c49b4ecd5
 level: high
 logsource:
   category: process_creation
@@ -24,5 +24,4 @@ tags:
 - attack.execution
 - attack.t1059.005
 - attack.t1059.007
-- attack.t1064
 title: Adwind RAT / JRAT

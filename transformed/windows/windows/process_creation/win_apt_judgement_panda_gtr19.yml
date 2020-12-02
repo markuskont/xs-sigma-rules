@@ -32,9 +32,7 @@ tags:
 - attack.lateral_movement
 - attack.g0010
 - attack.credential_access
-- attack.t1003
 - attack.t1003.001
 - attack.exfiltration
-- attack.t1002
 - attack.t1560.001
 title: Judgement Panda Exfil Activity

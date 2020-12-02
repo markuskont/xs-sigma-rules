@@ -26,8 +26,6 @@ service: system
 tags:
 - attack.lateral_movement
 - attack.execution
-- attack.t1077
 - attack.t1021.002
-- attack.t1035
 - attack.t1569.002
 title: smbexec.py Service Installation

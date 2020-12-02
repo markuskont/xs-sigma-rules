@@ -28,5 +28,4 @@ status: experimental
 tags:
 - attack.exfiltration
 - attack.t1560
-- attack.t1002
 title: Data Compressed - Powershell

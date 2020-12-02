@@ -30,6 +30,5 @@ references:
 status: experimental
 tags:
 - attack.persistence
-- attack.t1137
 - attack.t1137.006
 title: Microsoft Office Add-In Loading

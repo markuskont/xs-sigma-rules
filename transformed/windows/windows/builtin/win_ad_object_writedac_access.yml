@@ -24,6 +24,5 @@ service: security
 status: experimental
 tags:
 - attack.defense_evasion
-- attack.t1222
 - attack.t1222.001
 title: AD Object WriteDAC Access

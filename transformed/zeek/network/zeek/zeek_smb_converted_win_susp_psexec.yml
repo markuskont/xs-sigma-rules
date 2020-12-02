@@ -27,6 +27,5 @@ references:
 service: smb_files
 tags:
 - attack.lateral_movement
-- attack.t1077
 - attack.t1021.002
 title: Suspicious PsExec Execution - Zeek

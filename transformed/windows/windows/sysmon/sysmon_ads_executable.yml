@@ -30,7 +30,6 @@ service: sysmon
 status: experimental
 tags:
 - attack.defense_evasion
-- attack.t1027
 - attack.s0139
 - attack.t1564.004
 title: Executable in ADS

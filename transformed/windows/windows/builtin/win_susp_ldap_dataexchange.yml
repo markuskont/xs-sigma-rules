@@ -28,7 +28,6 @@ references:
 service: security
 status: experimental
 tags:
-- attack.t1071
 - attack.t1001.003
 - attack.command_and_control
 title: Suspicious LDAP-Attributes Used

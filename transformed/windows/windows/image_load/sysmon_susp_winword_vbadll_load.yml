@@ -28,6 +28,5 @@ references:
 status: experimental
 tags:
 - attack.execution
-- attack.t1204
 - attack.t1204.002
 title: VBA DLL Loaded Via Microsoft Word

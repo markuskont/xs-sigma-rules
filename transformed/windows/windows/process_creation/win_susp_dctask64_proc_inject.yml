@@ -31,5 +31,4 @@ status: experimental
 tags:
 - attack.defense_evasion
 - attack.t1055.001
-- attack.t1055
 title: ZOHO Dctask64 Process Injection

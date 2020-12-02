@@ -10,7 +10,7 @@ detection:
     winlog.event_data.Imphash: 09D278F9DE118EF09163C6140255C690
 falsepositives:
 - Very unlikely
-id: 16c31fe5-5169-4ba0-888c-cb1a5968ed8c
+id: 2704ab9e-afe2-4854-a3b1-c0706d035dc
 level: critical
 logsource:
   category: process_creation
@@ -22,6 +22,5 @@ references:
 - https://unit42.paloaltonetworks.com/actors-still-exploiting-sharepoint-vulnerability/
 tags:
 - attack.credential_access
-- attack.t1003
 - attack.t1003.001
 title: Dumpert Process Dumper

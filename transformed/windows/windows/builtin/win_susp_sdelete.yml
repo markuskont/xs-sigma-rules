@@ -29,9 +29,7 @@ status: experimental
 tags:
 - attack.impact
 - attack.defense_evasion
-- attack.t1107
 - attack.t1070.004
-- attack.t1066
 - attack.t1027.005
 - attack.t1485
 - attack.t1553.002

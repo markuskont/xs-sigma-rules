@@ -11,7 +11,7 @@ detection:
     winlog.event_data.ImagePath|contains: tap0901
 falsepositives:
 - Legitimate OpenVPN TAP insntallation
-id: a86adc0e-ebe8-471a-96b9-7e1f712594d8
+id: 8e4cf0e5-aa5d-4dc3-beff-dc2691774571
 level: medium
 logsource:
   product: windows

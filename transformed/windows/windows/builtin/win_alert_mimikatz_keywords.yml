@@ -28,7 +28,6 @@ modified: 2019/10/11
 product: windows
 tags:
 - attack.s0002
-- attack.t1003
 - attack.lateral_movement
 - attack.credential_access
 - car.2013-07-001

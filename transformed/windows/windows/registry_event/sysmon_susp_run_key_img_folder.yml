@@ -35,6 +35,5 @@ references:
 status: experimental
 tags:
 - attack.persistence
-- attack.t1060
 - attack.t1547.001
 title: New RUN Key Pointing to Suspicious Folder

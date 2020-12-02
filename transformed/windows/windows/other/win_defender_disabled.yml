@@ -29,6 +29,5 @@ service: windefend
 status: stable
 tags:
 - attack.defense_evasion
-- attack.t1089
 - attack.t1562.001
 title: Windows Defender Threat Detection Disabled

@@ -23,5 +23,4 @@ status: experimental
 tags:
 - attack.defense_evasion
 - attack.t1562.001
-- attack.t1089
 title: AWS CloudTrail Important Change

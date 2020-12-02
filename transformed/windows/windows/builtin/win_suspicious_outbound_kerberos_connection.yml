@@ -28,6 +28,5 @@ service: security
 status: experimental
 tags:
 - attack.lateral_movement
-- attack.t1208
 - attack.t1558.003
 title: Suspicious Outbound Kerberos Connection

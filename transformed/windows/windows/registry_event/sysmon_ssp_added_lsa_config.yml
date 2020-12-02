@@ -27,6 +27,5 @@ references:
 status: experimental
 tags:
 - attack.persistence
-- attack.t1101
 - attack.t1547.005
 title: Security Support Provider (SSP) Added to LSA Configuration

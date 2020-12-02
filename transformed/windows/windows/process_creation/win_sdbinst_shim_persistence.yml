@@ -26,5 +26,4 @@ tags:
 - attack.persistence
 - attack.privilege_escalation
 - attack.t1546.011
-- attack.t1138
 title: Possible Shim Database Persistence via sdbinst.exe

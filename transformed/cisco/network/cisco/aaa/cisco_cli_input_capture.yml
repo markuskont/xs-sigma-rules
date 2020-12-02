@@ -25,6 +25,5 @@ service: aaa
 status: experimental
 tags:
 - attack.credential_access
-- attack.t1139
 - attack.t1552.003
 title: Cisco Show Commands Input

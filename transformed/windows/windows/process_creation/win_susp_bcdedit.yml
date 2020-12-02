@@ -24,5 +24,4 @@ tags:
 - attack.t1070
 - attack.persistence
 - attack.t1542.003
-- attack.t1067
 title: Possible Ransomware or Unauthorized MBR Modifications

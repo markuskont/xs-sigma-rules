@@ -32,7 +32,7 @@ detection:
     winlog.event_id:
     - 12
     - 13
-id: d1b4cc47-5854-4e70-9ecb-23fa369ee3b5
+id: def6caac-a999-4fc9-8800-cfeff700bafd
 level: high
 logsource:
   product: windows

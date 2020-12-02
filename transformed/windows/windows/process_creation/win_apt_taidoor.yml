@@ -28,6 +28,5 @@ references:
 status: experimental
 tags:
 - attack.execution
-- attack.t1055
 - attack.t1055.001
 title: TAIDOOR RAT DLL Load

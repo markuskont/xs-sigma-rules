@@ -35,7 +35,6 @@ service: dce_rpc
 status: experimental
 tags:
 - attack.discovery
-- attack.t1087
 - attack.t1087.002
 - attack.t1082
 title: Domain User Enumeration Network Recon 01

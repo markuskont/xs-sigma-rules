@@ -19,7 +19,6 @@ product: windows
 service: sysmon
 status: experimental
 tags:
-- attack.t1084
 - attack.persistence
 - attack.t1546.003
 title: WMI Event Subscription

@@ -17,7 +17,7 @@ detection:
     - Microsoft(C) Registerserver
 falsepositives:
 - Very Unlikely
-id: 9bfb20d4-f14f-4bd5-99d1-9aad77444ff7
+id: 10152a7b-b566-438f-a33c-390b607d1cf1
 level: critical
 logsource:
   category: process_creation
@@ -29,5 +29,4 @@ references:
 tags:
 - attack.defense_evasion
 - attack.t1218.010
-- attack.t1117
 title: Empire Monkey

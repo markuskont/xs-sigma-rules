@@ -18,6 +18,5 @@ product: windows
 tags:
 - attack.persistence
 - attack.privilege_escalation
-- attack.t1050
 - attack.t1543.003
 title: Suspicious Driver Load from Temp

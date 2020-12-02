@@ -31,10 +31,7 @@ tags:
 - attack.discovery
 - attack.credential_access
 - attack.collection
-- attack.t1087
 - attack.t1087.001
-- attack.t1003
-- attack.t1081
 - attack.t1552.001
 - attack.t1005
 title: Cisco Collect Data

@@ -28,6 +28,5 @@ service: auditd
 status: experimental
 tags:
 - attack.defense_evasion
-- attack.t1054
 - attack.t1562.006
 title: Auditing Configuration Changes on Linux Host

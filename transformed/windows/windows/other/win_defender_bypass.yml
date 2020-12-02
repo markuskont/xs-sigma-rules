@@ -28,6 +28,5 @@ references:
 service: security
 tags:
 - attack.defense_evasion
-- attack.t1089
 - attack.t1562.001
 title: Windows Defender Exclusion Set

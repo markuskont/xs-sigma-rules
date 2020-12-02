@@ -28,8 +28,6 @@ tags:
 - attack.t1189
 - attack.execution
 - attack.t1204.002
-- attack.t1204
 - attack.defense_evasion
 - attack.t1036.005
-- attack.t1036
 title: Flash Player Update from Suspicious Location

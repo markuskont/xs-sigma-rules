@@ -28,7 +28,7 @@ detection:
   - winlog.event_data.ImagePath|re: ((\\\\.*\\.*|.*\\)([{]?[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}[}])?\.(exe|scr|cpl|bat|js|cmd|vbs).*)
 falsepositives:
 - Legitimate Administrator using credential dumping tool for password recovery
-id: d72b18a7-8b37-4017-bb4d-f77d05cc2547
+id: 4976aa50-8f41-45c6-8b15-ab3fc10e7ab7
 level: high
 logsource:
   product: windows
@@ -41,13 +41,11 @@ service: security
 tags:
 - attack.credential_access
 - attack.execution
-- attack.t1003
 - attack.t1003.001
 - attack.t1003.002
 - attack.t1003.004
 - attack.t1003.005
 - attack.t1003.006
-- attack.t1035
 - attack.t1569.002
 - attack.s0005
 title: Credential Dumping Tools Service Execution

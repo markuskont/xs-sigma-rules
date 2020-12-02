@@ -25,5 +25,4 @@ status: experimental
 tags:
 - attack.credential_access
 - attack.t1003.003
-- attack.t1003
 title: DIT Snapshot Viewer Use

@@ -18,7 +18,7 @@ fields:
 - winlog.event_data.Image
 - winlog.event_data.User
 - winlog.event_data.TargetObject
-id: 220c742b-8816-4389-9702-52321cc923d7
+id: e61e8a88-59a9-451c-874e-70fcc9740e94
 level: high
 logsource:
   category: process_creation
@@ -30,7 +30,6 @@ references:
 status: experimental
 tags:
 - attack.defense_evasion
-- attack.t1073
 - attack.t1574.002
 - attack.t1112
 title: DNS ServerLevelPluginDll Install

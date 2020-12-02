@@ -27,6 +27,5 @@ references:
 status: experimental
 tags:
 - attack.defense_evasion
-- attack.t1085
 - attack.t1218.011
 title: Suspicious Control Panel DLL Load

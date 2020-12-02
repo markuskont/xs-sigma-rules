@@ -27,5 +27,4 @@ status: experimental
 tags:
 - attack.privilege_escalation
 - attack.t1548.002
-- attack.t1088
 title: Bypass UAC via Fodhelper.exe

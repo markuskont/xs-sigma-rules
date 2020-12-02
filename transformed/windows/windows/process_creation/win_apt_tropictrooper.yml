@@ -19,6 +19,5 @@ references:
 status: stable
 tags:
 - attack.execution
-- attack.t1059
 - attack.t1059.001
 title: TropicTrooper Campaign November 2018

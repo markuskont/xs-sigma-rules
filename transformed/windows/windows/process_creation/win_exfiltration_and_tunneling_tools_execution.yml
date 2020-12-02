@@ -23,7 +23,6 @@ status: experimental
 tags:
 - attack.exfiltration
 - attack.command_and_control
-- attack.t1043
 - attack.t1041
 - attack.t1572
 - attack.t1071.001

@@ -44,7 +44,6 @@ references:
 service: security
 status: experimental
 tags:
-- attack.t1089
 - attack.defense_evasion
 - attack.t1562.001
 title: Suspicious Driver Loaded By User

@@ -26,6 +26,4 @@ status: experimental
 tags:
 - attack.collection
 - attack.t1560.001
-- attack.exfiltration
-- attack.t1002
 title: Rar with Password or Compression Level

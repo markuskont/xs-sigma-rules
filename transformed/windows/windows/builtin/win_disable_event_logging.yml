@@ -35,6 +35,5 @@ references:
 service: security
 tags:
 - attack.defense_evasion
-- attack.t1054
 - attack.t1562.002
 title: Disabling Windows Event Auditing

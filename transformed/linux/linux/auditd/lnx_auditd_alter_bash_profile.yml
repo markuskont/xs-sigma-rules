@@ -29,7 +29,6 @@ service: auditd
 status: experimental
 tags:
 - attack.s0003
-- attack.t1156
 - attack.persistence
 - attack.t1546.004
 title: Edit of .bash_profile and .bashrc

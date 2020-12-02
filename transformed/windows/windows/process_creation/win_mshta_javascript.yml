@@ -26,6 +26,5 @@ references:
 status: experimental
 tags:
 - attack.defense_evasion
-- attack.t1170
 - attack.t1218.005
 title: Mshta JavaScript Execution

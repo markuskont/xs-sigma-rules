@@ -21,7 +21,7 @@ fields:
 - winlog.event_data.CommandLine
 - winlog.event_data.ParentCommandLine
 - winlog.event_data.Details
-id: cd9aae0f-aae8-40bb-a354-52e9f9b608c5
+id: 9d26fede-b526-4413-b069-6e24b6d071cb
 level: high
 logsource:
   product: windows
@@ -35,7 +35,6 @@ status: stable
 tags:
 - attack.defense_evasion
 - attack.execution
-- attack.t1191
 - attack.t1218.003
 - attack.g0069
 - car.2019-04-001

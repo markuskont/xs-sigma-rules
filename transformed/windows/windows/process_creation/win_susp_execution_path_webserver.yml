@@ -33,5 +33,4 @@ status: experimental
 tags:
 - attack.persistence
 - attack.t1505.003
-- attack.t1100
 title: Execution in Webserver Root Folder

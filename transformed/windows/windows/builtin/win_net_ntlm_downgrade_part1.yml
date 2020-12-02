@@ -12,7 +12,7 @@ detection:
     winlog.event_id: 13
 falsepositives:
 - Unknown
-id: a16d3631-0e9c-4e66-98e0-018d7f0eee9c
+id: d67572a0-e2ec-45d6-b8db-c100d14b8fba
 level: critical
 logsource:
   product: windows
@@ -24,7 +24,6 @@ references:
 service: sysmon
 tags:
 - attack.defense_evasion
-- attack.t1089
 - attack.t1562.001
 - attack.t1112
 title: NetNTLM Downgrade Attack

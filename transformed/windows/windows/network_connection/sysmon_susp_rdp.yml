@@ -44,6 +44,5 @@ status: experimental
 tags:
 - attack.lateral_movement
 - attack.t1021.001
-- attack.t1076
 - car.2013-07-002
 title: Suspicious Outbound RDP Connections

@@ -25,5 +25,4 @@ status: experimental
 tags:
 - attack.defense_evasion
 - attack.t1218
-- attack.execution
 title: Application Whitelisting Bypass via Dxcap.exe

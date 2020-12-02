@@ -28,8 +28,6 @@ status: experimental
 tags:
 - attack.command_and_control
 - attack.t1071.001
-- attack.t1043
 - attack.exfiltration
 - attack.t1567.002
-- attack.t1048
 title: APT40 Dropbox Tool User Agent

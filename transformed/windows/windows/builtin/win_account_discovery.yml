@@ -37,6 +37,5 @@ service: security
 status: experimental
 tags:
 - attack.discovery
-- attack.t1087
 - attack.t1087.002
 title: AD Privileged Users or Groups Reconnaissance

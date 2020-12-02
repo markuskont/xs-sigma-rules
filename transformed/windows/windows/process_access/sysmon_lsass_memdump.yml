@@ -26,6 +26,5 @@ status: experimental
 tags:
 - attack.credential_access
 - attack.t1003.001
-- attack.t1003
 - attack.s0002
 title: LSASS Memory Dump

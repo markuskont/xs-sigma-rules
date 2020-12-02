@@ -22,6 +22,5 @@ references:
 status: experimental
 tags:
 - attack.initial_access
-- attack.t1193
 - attack.t1566.001
 title: Windows Registry Trust Record Modification

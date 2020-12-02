@@ -27,6 +27,5 @@ references:
 status: experimental
 tags:
 - attack.persistence
-- attack.t1023
 - attack.t1547.009
 title: Suspicious desktop.ini Action

@@ -26,6 +26,5 @@ service: security
 status: experimental
 tags:
 - attack.lateral_movement
-- attack.t1076
 - attack.t1021.001
 title: Denied Access To Remote Desktop

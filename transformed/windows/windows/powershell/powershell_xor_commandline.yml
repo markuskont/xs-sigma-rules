@@ -25,5 +25,4 @@ status: experimental
 tags:
 - attack.execution
 - attack.t1059.001
-- attack.t1086
 title: Suspicious XOR Encoded PowerShell Command Line

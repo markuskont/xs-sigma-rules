@@ -49,9 +49,7 @@ references:
 service: dce_rpc
 tags:
 - attack.execution
-- attack.t1035
 - attack.t1047
-- attack.t1053
 - attack.t1053.002
 - attack.t1569.002
 title: MITRE BZAR Indicators for Execution

@@ -36,6 +36,5 @@ references:
 service: security
 tags:
 - attack.defense_evasion
-- attack.t1089
 - attack.t1562.001
 title: Weak Encryption Enabled and Kerberoast

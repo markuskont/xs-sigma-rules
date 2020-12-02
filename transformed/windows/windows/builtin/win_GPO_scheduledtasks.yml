@@ -29,6 +29,5 @@ service: security
 tags:
 - attack.persistence
 - attack.lateral_movement
-- attack.t1053
 - attack.t1053.005
 title: Persistence and Execution at Scale via GPO Scheduled Task

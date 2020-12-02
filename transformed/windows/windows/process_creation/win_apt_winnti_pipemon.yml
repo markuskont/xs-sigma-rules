@@ -27,6 +27,5 @@ status: experimental
 tags:
 - attack.defense_evasion
 - attack.t1574.002
-- attack.t1073
 - attack.g0044
 title: Winnti Pipemon Characteristics

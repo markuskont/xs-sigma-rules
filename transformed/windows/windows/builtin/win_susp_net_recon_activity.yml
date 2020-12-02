@@ -35,9 +35,7 @@ service: security
 status: experimental
 tags:
 - attack.discovery
-- attack.t1087
 - attack.t1087.002
-- attack.t1069
 - attack.t1069.002
 - attack.s0039
 title: Reconnaissance Activity

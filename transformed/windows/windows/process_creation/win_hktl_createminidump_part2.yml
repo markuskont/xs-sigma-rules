@@ -10,7 +10,7 @@ detection:
     winlog.event_id: 11
 falsepositives:
 - Unknown
-id: e91c34a3-a4d2-4543-bb87-72553592ad1b
+id: 36d88494-1d43-4dc0-b3fa-35c8fea0cb02
 level: high
 logsource:
   product: windows
@@ -22,5 +22,4 @@ service: sysmon
 tags:
 - attack.credential_access
 - attack.t1003.001
-- attack.t1003
 title: CreateMiniDump Hacktool

@@ -16,7 +16,7 @@ detection:
     winlog.event_id: 4104
 falsepositives:
 - Use of Get-Command and Get-Help modules to reference Invoke-WebRequest and Start-BitsTransfer.
-id: 8249dde7-6c69-4e70-83d2-ae46294c1ab5
+id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd92
 level: medium
 logsource:
   product: windows
@@ -31,5 +31,4 @@ status: experimental
 tags:
 - attack.execution
 - attack.t1059.001
-- attack.t1086
 title: Windows PowerShell Web Request

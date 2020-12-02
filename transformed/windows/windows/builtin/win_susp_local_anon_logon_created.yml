@@ -23,7 +23,6 @@ service: security
 status: experimental
 tags:
 - attack.persistence
-- attack.t1136
 - attack.t1136.001
 - attack.t1136.002
 title: Suspicious Windows ANONYMOUS LOGON Local Account Created

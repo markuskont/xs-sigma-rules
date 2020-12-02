@@ -9,7 +9,7 @@ detection:
   condition: 1 of them
   selection1:
     winlog.event_data.CommandLine: '*cyzfc.dat, PointFunctionCall'
-id: 69d225f9-e4c9-481d-9b10-399940484a7f
+id: 7453575c-a747-40b9-839b-125a0aae32af
 level: high
 logsource:
   category: process_creation
@@ -22,5 +22,4 @@ status: stable
 tags:
 - attack.execution
 - attack.t1218.011
-- attack.t1085
 title: Unidentified Attacker November 2018

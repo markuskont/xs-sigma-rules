@@ -10,7 +10,7 @@ detection:
     winlog.event_id: 4799
 falsepositives:
 - Administrators that use checkadmin.exe tool to enumerate local administrators
-id: 507881b9-30e3-4b9e-b1ba-4d23efa9c520
+id: 74ad4314-482e-4c3e-b237-3f7ed3b9caf1
 level: high
 logsource:
   product: windows
@@ -27,11 +27,8 @@ tags:
 - attack.t1012
 - attack.defense_evasion
 - attack.t1036.004
-- attack.t1036
 - attack.t1027
 - attack.execution
 - attack.t1053.005
-- attack.t1053
 - attack.t1059.001
-- attack.t1086
 title: Operation Wocao Activity

@@ -15,7 +15,7 @@ fields:
 - winlog.event_data.Image
 - winlog.event_data.DestinationIp
 - winlog.event_data.DestinationPort
-id: 5044b111-1b55-4bc1-b906-805ee4eb204b
+id: c7e91a02-d771-4a6d-a700-42587e0b10f9
 level: high
 logsource:
   category: network_connection
@@ -30,8 +30,6 @@ status: experimental
 tags:
 - attack.execution
 - attack.t1559.001
-- attack.t1175
 - attack.defense_evasion
 - attack.t1218.010
-- attack.t1117
 title: Regsvr32 Network Activity

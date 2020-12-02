@@ -9,7 +9,7 @@ detection:
     - '*\AppData\Roaming\Oracle\bin\java*.exe'
     - '*\Retrive*.vbs'
     winlog.event_id: 11
-id: 90e7444d-dfc6-430b-b640-1b90d14f31bf
+id: 1fac1481-2dbc-48b2-9096-753c49b4ecd6
 level: high
 logsource:
   product: windows
@@ -25,5 +25,4 @@ tags:
 - attack.execution
 - attack.t1059.005
 - attack.t1059.007
-- attack.t1064
 title: Adwind RAT / JRAT

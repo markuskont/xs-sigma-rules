@@ -32,7 +32,6 @@ references:
 status: experimental
 tags:
 - attack.persistence
-- attack.t1060
 - attack.t1547.001
 - capec.270
 title: Registry Persistence via Explorer Run Key

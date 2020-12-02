@@ -28,6 +28,4 @@ status: experimental
 tags:
 - attack.defense_evasion
 - attack.t1218.008
-- attack.execution
-- attack.t1218
 title: Application Whitelisting Bypass via DLL Loaded by odbcconf.exe

@@ -19,7 +19,7 @@ detection:
     - '*\winlogon.exe'
 falsepositives:
 - Unlikely
-id: 9a3e507f-385a-4ee8-9859-78b7585844eb
+id: baca5663-583c-45f9-b5dc-ea96a22ce66f
 level: critical
 logsource:
   category: process_creation
@@ -31,7 +31,6 @@ references:
 tags:
 - attack.privilege_escalation
 - attack.persistence
-- attack.t1015
 - attack.t1546.008
 - car.2014-11-003
 - car.2014-11-008

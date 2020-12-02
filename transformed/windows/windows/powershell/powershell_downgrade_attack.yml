@@ -26,5 +26,4 @@ tags:
 - attack.defense_evasion
 - attack.execution
 - attack.t1059.001
-- attack.t1086
 title: PowerShell Downgrade Attack

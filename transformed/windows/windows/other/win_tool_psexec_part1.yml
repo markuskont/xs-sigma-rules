@@ -20,7 +20,7 @@ fields:
 - winlog.event_data.ParentCommandLine
 - winlog.event_data.ServiceName
 - winlog.event_data.ServiceFileName
-id: 9a194333-cf1e-48ee-b297-61191136f1c9
+id: 42c575ea-e41e-41f1-b248-8093c3e82a8c
 level: low
 logsource:
   product: windows
@@ -34,7 +34,6 @@ service: system
 status: experimental
 tags:
 - attack.execution
-- attack.t1035
 - attack.t1569.002
 - attack.s0029
 title: PsExec Tool Execution

@@ -25,7 +25,6 @@ tags:
 - attack.privilege_escalation
 - attack.persistence
 - attack.defense_evasion
-- attack.t1183
 - attack.t1546.012
 - car.2013-01-002
 title: Registry Persistence Mechanisms

@@ -25,6 +25,5 @@ service: security
 status: experimental
 tags:
 - attack.lateral_movement
-- attack.t1077
 - attack.t1021.002
 title: Access to ADMIN$ Share

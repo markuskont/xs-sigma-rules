@@ -24,6 +24,5 @@ service: security
 status: experimental
 tags:
 - attack.execution
-- attack.t1086
 - attack.t1059.001
 title: Remote PowerShell Sessions

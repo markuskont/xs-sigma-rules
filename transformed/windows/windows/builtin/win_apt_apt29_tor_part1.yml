@@ -22,7 +22,7 @@ fields:
 - winlog.ComputerName
 - winlog.event_data.User
 - winlog.event_data.CommandLine
-id: afc41fff-31a7-4f0d-b0ae-d91d57aacbfe
+id: c069f460-2b87-4010-8dcf-e45bab3626ec
 level: high
 logsource:
   category: process_creation
@@ -36,6 +36,5 @@ service: system
 tags:
 - attack.persistence
 - attack.g0016
-- attack.t1050
 - attack.t1543.003
 title: APT29 Google Update Service Install

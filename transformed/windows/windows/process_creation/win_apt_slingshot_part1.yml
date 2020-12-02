@@ -11,7 +11,7 @@ detection:
     - '*schtasks* /delete *Defrag\ScheduledDefrag*'
 falsepositives:
 - Unknown
-id: b3ce29cc-8938-4f3c-8bfa-a89044d4c8c5
+id: 958d81aa-8566-4cea-a565-59ccd4df2814
 level: medium
 logsource:
   category: process_creation

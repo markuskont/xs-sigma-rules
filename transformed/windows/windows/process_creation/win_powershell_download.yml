@@ -25,7 +25,6 @@ logsource:
 product: windows
 status: experimental
 tags:
-- attack.t1086
 - attack.execution
 - attack.t1059.001
 title: PowerShell Download from URL

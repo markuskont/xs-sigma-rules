@@ -32,6 +32,4 @@ tags:
 - attack.defense_evasion
 - attack.t1548.002
 - attack.t1218.003
-- attack.t1191
-- attack.t1088
 title: Bypass UAC via CMSTP

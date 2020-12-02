@@ -24,10 +24,7 @@ status: experimental
 tags:
 - attack.defense_evasion
 - attack.impact
-- attack.t1107
 - attack.t1070.004
-- attack.t1488
 - attack.t1561.001
-- attack.t1487
 - attack.t1561.002
 title: Cisco File Deletion

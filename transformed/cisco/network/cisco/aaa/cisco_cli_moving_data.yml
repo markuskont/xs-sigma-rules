@@ -32,6 +32,5 @@ tags:
 - attack.exfiltration
 - attack.t1074
 - attack.t1105
-- attack.t1002
 - attack.t1560.001
 title: Cisco Stage Data

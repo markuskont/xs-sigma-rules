@@ -20,10 +20,7 @@ status: experimental
 tags:
 - attack.exfiltration
 - attack.t1048.001
-- attack.t1048
 - attack.command_and_control
 - attack.t1071.004
-- attack.t1071
 - attack.t1132.001
-- attack.t1132
 title: DNS Exfiltration and Tunneling Tools Execution

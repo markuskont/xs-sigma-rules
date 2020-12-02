@@ -21,7 +21,6 @@ references:
 service: auditd
 status: experimental
 tags:
-- attack.t1136
 - attack.t1136.001
 - attack.persistence
 title: Creation Of An User Account

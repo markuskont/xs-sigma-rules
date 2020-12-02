@@ -24,7 +24,6 @@ status: experimental
 tags:
 - attack.execution
 - attack.t1059.001
-- attack.t1086
 - attack.command_and_control
 - attack.t1104
 - attack.t1105

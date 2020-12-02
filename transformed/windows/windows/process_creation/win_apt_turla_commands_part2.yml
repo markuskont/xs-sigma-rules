@@ -14,7 +14,7 @@ detection:
   timeframe: 1m
 falsepositives:
 - Unknown
-id: 3e8016d6-670b-4f0e-bc0f-cd56ad532e17
+id: c601f20d-570a-4cde-a7d6-e17f99cb8ee4
 level: medium
 logsource:
   category: process_creation
@@ -29,7 +29,6 @@ tags:
 - attack.execution
 - attack.t1059
 - attack.lateral_movement
-- attack.t1077
 - attack.t1021.002
 - attack.discovery
 - attack.t1083

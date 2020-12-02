@@ -20,6 +20,5 @@ service: security
 status: stable
 tags:
 - attack.defense_evasion
-- attack.t1009
 - attack.t1027.001
 title: Failed Code Integrity Checks

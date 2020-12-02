@@ -23,7 +23,6 @@ service: security
 status: experimental
 tags:
 - attack.lateral_movement
-- attack.t1075
 - attack.s0002
 - attack.t1550.002
 title: Successful Overpass the Hash Attempt

@@ -21,5 +21,4 @@ status: experimental
 tags:
 - attack.persistence
 - attack.t1546.003
-- attack.t1084
 title: WMI Backdoor Exchange Transport Agent

@@ -25,6 +25,4 @@ references:
 tags:
 - attack.credential_access
 - attack.t1555
-- attack.t1003
-- attack.t1503
 title: SecurityXploded Tool

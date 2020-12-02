@@ -27,6 +27,5 @@ product: windows
 service: system
 tags:
 - attack.discovery
-- attack.t1087
 - attack.t1087.002
 title: Enumeration via the Global Catalog

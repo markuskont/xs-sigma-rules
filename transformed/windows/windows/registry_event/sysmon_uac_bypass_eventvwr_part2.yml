@@ -14,7 +14,7 @@ falsepositives:
 fields:
 - winlog.event_data.CommandLine
 - winlog.event_data.ParentCommandLine
-id: 79fde585-31ff-44d8-ab37-592f81d438a2
+id: 7c81fec3-1c1d-43b0-996a-46753041b2e3
 level: critical
 logsource:
   category: process_creation
@@ -28,7 +28,6 @@ status: experimental
 tags:
 - attack.defense_evasion
 - attack.privilege_escalation
-- attack.t1088
 - attack.t1548.002
 - car.2019-04-001
 title: UAC Bypass via Event Viewer

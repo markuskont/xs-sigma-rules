@@ -8,7 +8,7 @@ detection:
     winlog.event_data.Details: '%AppData%\Roaming\Oracle\bin\\*'
     winlog.event_data.TargetObject: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run*
     winlog.event_id: 13
-id: 11e40469-d220-4d19-8a28-3f1b9d806a0e
+id: 1fac1481-2dbc-48b2-9096-753c49b4ecd7
 level: high
 logsource:
   product: windows
@@ -24,5 +24,4 @@ tags:
 - attack.execution
 - attack.t1059.005
 - attack.t1059.007
-- attack.t1064
 title: Adwind RAT / JRAT

@@ -27,6 +27,5 @@ service: security
 tags:
 - attack.lateral_movement
 - attack.persistence
-- attack.t1077
 - attack.t1021.002
 title: Remote Service Activity via SVCCTL Named Pipe

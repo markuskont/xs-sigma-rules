@@ -27,5 +27,4 @@ status: experimental
 tags:
 - attack.defense_evasion
 - attack.t1218.010
-- attack.t1117
 title: Regsvr32 Flags Anomaly

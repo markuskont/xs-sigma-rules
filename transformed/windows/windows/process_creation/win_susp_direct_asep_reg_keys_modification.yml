@@ -40,5 +40,4 @@ status: experimental
 tags:
 - attack.persistence
 - attack.t1547.001
-- attack.t1060
 title: Direct Autorun Keys Modification

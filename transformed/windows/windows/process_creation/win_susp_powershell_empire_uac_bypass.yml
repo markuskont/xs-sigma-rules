@@ -27,6 +27,5 @@ tags:
 - attack.defense_evasion
 - attack.privilege_escalation
 - attack.t1548.002
-- attack.t1088
 - car.2019-04-001
 title: Empire PowerShell UAC Bypass

@@ -29,5 +29,4 @@ tags:
 - attack.persistence
 - attack.privilege_escalation
 - attack.t1546.008
-- attack.t1015
 title: Suspicious Debugger Registration Cmdline

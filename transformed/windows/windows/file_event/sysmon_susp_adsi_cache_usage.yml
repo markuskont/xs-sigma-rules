@@ -30,7 +30,6 @@ references:
 - https://github.com/fox-it/LDAPFragger
 status: experimental
 tags:
-- attack.t1071
 - attack.t1001.003
 - attack.command_and_control
 title: Suspicious ADSI-Cache Usage By Unknown Tool

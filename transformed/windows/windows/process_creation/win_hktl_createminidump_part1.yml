@@ -12,7 +12,7 @@ detection:
     winlog.event_data.Imphash: 4a07f944a83e8a7c2525efa35dd30e2f
 falsepositives:
 - Unknown
-id: 3b0fc770-f055-49de-a070-68f72439d7ed
+id: 36d88494-1d43-4dc0-b3fa-35c8fea0cb01
 level: high
 logsource:
   category: process_creation
@@ -23,5 +23,4 @@ references:
 tags:
 - attack.credential_access
 - attack.t1003.001
-- attack.t1003
 title: CreateMiniDump Hacktool

@@ -31,5 +31,4 @@ tags:
 - attack.execution
 - attack.t1059.005
 - attack.t1059.007
-- attack.t1064
 title: WSF/JSE/JS/VBA/VBE File Execution

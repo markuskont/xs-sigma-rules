@@ -28,9 +28,7 @@ status: experimental
 tags:
 - attack.g0010
 - attack.execution
-- attack.t1086
 - attack.t1059.001
-- attack.t1053
 - attack.t1053.005
 - attack.t1027
 title: Turla Group Commands May 2020

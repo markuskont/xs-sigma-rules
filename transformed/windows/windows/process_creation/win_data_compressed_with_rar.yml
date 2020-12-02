@@ -31,8 +31,6 @@ references:
 - https://eqllib.readthedocs.io/en/latest/analytics/1ec33c93-3d0b-4a28-8014-dbdaae5c60ae.html
 status: experimental
 tags:
-- attack.exfiltration
-- attack.t1002
 - attack.collection
 - attack.t1560.001
 title: Data Compressed - rar.exe

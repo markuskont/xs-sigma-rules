@@ -8,7 +8,7 @@ detection:
   - '* -u#*'
 falsepositives:
 - Unlikely
-id: 418ab6a3-ceb2-4773-9aea-ffda7f4d0c21
+id: f74107df-b6c6-4e80-bf00-4170b6581757
 level: critical
 logsource:
   product: linux

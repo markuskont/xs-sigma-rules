@@ -22,6 +22,5 @@ references:
 status: experimental
 tags:
 - attack.defense_evasion
-- attack.t1117
 - attack.t1218.010
 title: BlueMashroom DLL Load

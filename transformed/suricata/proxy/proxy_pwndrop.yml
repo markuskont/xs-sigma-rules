@@ -28,8 +28,6 @@ status: experimental
 tags:
 - attack.command_and_control
 - attack.t1071.001
-- attack.t1043
 - attack.t1102.001
 - attack.t1102.003
-- attack.t1102
 title: PwnDrp Access

@@ -14,7 +14,7 @@ fields:
 - winlog.event_data.CommandLine
 - winlog.event_data.ParentCommandLine
 - winlog.event_data.Details
-id: 37d3cb5e-513a-4cdb-b7ab-25fde05efbbd
+id: 9d26fede-b526-4413-b069-6e24b6d07230
 level: high
 logsource:
   category: process_creation
@@ -27,10 +27,8 @@ status: stable
 tags:
 - attack.defense_evasion
 - attack.t1218.003
-- attack.t1191
 - attack.execution
 - attack.t1559.001
-- attack.t1175
 - attack.g0069
 - attack.g0080
 - car.2019-04-001

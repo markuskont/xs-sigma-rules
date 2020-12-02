@@ -29,8 +29,6 @@ status: experimental
 tags:
 - attack.credential_access
 - attack.defense_evasion
-- attack.t1130
 - attack.t1553.004
-- attack.t1145
 - attack.t1552.004
 title: Cisco Crypto Commands

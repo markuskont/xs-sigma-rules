@@ -23,5 +23,4 @@ status: experimental
 tags:
 - attack.defense_evasion
 - attack.t1070.003
-- attack.t1146
 title: Clear PowerShell History

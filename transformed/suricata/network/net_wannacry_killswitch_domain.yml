@@ -14,7 +14,7 @@ detection:
     - ''
 falsepositives:
 - Analyst testing
-id: c64c5175-5189-431b-a55e-6d9882158251
+id: c64c5175-5189-431b-a55e-6d98821582b7
 level: high
 logsource:
   category: dns

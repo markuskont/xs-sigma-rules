@@ -9,7 +9,7 @@ detection:
     winlog.event_data.TargetObject: HKU\\*\mscfile\shell\open\command
 falsepositives:
 - unknown
-id: 7fabb6c0-b03d-4f68-a059-adda3e359845
+id: 7c81fec3-1c1d-43b0-996a-46753041b2e2
 level: critical
 logsource:
   category: registry_event
@@ -23,7 +23,6 @@ status: experimental
 tags:
 - attack.defense_evasion
 - attack.privilege_escalation
-- attack.t1088
 - attack.t1548.002
 - car.2019-04-001
 title: UAC Bypass via Event Viewer

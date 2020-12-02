@@ -18,6 +18,5 @@ references:
 - http://www.securityfocus.com/infocus/1633
 tags:
 - attack.impact
-- attack.t1499
 - attack.t1499.004
 title: Apache Segmentation Fault

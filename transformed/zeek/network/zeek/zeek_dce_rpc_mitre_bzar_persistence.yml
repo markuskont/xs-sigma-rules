@@ -37,6 +37,5 @@ references:
 service: dce_rpc
 tags:
 - attack.persistence
-- attack.t1004
 - attack.t1547.004
 title: MITRE BZAR Indicators for Persistence

@@ -20,7 +20,6 @@ references:
 - https://www.eideon.com/2018-03-02-THL03-WMIBackdoors/
 status: experimental
 tags:
-- attack.t1084
 - attack.t1546.003
 - attack.persistence
 title: WMI Persistence - Command Line Event Consumer

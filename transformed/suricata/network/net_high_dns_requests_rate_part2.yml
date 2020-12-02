@@ -10,7 +10,7 @@ detection:
   timeframe: 1m
 falsepositives:
 - Legitimate high DNS requests rate to domain name which should be added to whitelist
-id: 8508f73d-36af-4cbf-b990-5b2b0d287771
+id: b4163085-4001-46a3-a79a-55d8bbbc7a9f
 level: medium
 logsource:
   category: firewall
@@ -20,9 +20,7 @@ product: suricata
 status: experimental
 tags:
 - attack.exfiltration
-- attack.t1048
 - attack.t1048.003
 - attack.command_and_control
-- attack.t1071
 - attack.t1071.004
 title: High DNS Requests Rate

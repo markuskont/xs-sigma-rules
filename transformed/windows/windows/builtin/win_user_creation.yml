@@ -27,6 +27,5 @@ service: security
 status: experimental
 tags:
 - attack.persistence
-- attack.t1136
 - attack.t1136.001
 title: Local User Creation

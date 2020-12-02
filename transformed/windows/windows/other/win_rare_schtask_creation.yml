@@ -20,7 +20,6 @@ service: taskscheduler
 status: experimental
 tags:
 - attack.persistence
-- attack.t1053
 - attack.s0111
 - attack.t1053.005
 title: Rare Scheduled Task Creations

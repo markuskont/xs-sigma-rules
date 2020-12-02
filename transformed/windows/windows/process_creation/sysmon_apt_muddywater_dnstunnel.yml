@@ -25,6 +25,5 @@ references:
 status: experimental
 tags:
 - attack.command_and_control
-- attack.t1071
 - attack.t1071.004
 title: DNS Tunnel Technique from MuddyWater

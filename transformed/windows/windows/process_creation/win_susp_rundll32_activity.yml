@@ -35,7 +35,5 @@ references:
 status: experimental
 tags:
 - attack.defense_evasion
-- attack.execution
 - attack.t1218.011
-- attack.t1085
 title: Suspicious Rundll32 Activity

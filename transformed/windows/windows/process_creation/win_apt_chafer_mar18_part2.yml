@@ -12,7 +12,7 @@ detection:
     winlog.event_id: 4698
 falsepositives:
 - Unknown
-id: 524143df-3a87-42e0-ab29-77ffd630a8ce
+id: 53ba33fd-3a50-4468-a5ef-c583635cfaf7
 level: critical
 logsource:
   product: windows
@@ -25,14 +25,11 @@ service: security
 tags:
 - attack.persistence
 - attack.g0049
-- attack.t1053
 - attack.t1053.005
 - attack.s0111
-- attack.t1050
 - attack.t1543.003
 - attack.defense_evasion
 - attack.t1112
 - attack.command_and_control
-- attack.t1071
 - attack.t1071.004
 title: Chafer Activity

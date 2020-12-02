@@ -33,6 +33,5 @@ service: security
 status: experimental
 tags:
 - attack.credential_access
-- attack.t1003
 - attack.t1003.006
 title: Active Directory Replication from Non Machine Account

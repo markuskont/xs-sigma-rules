@@ -22,7 +22,6 @@ product: windows
 service: security
 tags:
 - attack.defense_evasion
-- attack.t1070
 - attack.t1070.001
 - car.2016-04-002
 title: Security Eventlog Cleared

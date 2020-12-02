@@ -33,7 +33,6 @@ references:
 - https://github.com/p3nt4/PowerShdll
 status: experimental
 tags:
-- attack.t1086
 - attack.t1059.001
 - attack.execution
 title: In-memory PowerShell

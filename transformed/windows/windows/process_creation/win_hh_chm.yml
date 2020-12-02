@@ -27,6 +27,4 @@ status: experimental
 tags:
 - attack.defense_evasion
 - attack.t1218.001
-- attack.execution
-- attack.t1223
 title: HH.exe Execution

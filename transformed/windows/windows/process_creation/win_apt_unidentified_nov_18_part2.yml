@@ -12,7 +12,7 @@ detection:
     winlog.event_data.TargetFilename:
     - '*ds7002.lnk*'
     winlog.event_id: 11
-id: 08a5c8db-73fa-4482-8dbe-cfae504a1135
+id: 7453575c-a747-40b9-839b-125a0aae32b0
 level: high
 logsource:
   product: windows
@@ -26,5 +26,4 @@ status: stable
 tags:
 - attack.execution
 - attack.t1218.011
-- attack.t1085
 title: Unidentified Attacker November 2018

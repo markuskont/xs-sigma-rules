@@ -34,7 +34,4 @@ status: experimental
 tags:
 - attack.collection
 - attack.t1560.001
-- attack.exfiltration
-- attack.t1020
-- attack.t1002
 title: Suspicious Compression Tool Parameters

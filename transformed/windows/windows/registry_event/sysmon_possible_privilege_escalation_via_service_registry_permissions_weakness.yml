@@ -30,6 +30,5 @@ references:
 status: experimental
 tags:
 - attack.privilege_escalation
-- attack.t1058
 - attack.t1574.011
 title: Possible Privilege Escalation via Service Permissions Weakness

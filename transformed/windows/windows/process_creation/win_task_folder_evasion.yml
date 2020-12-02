@@ -36,6 +36,4 @@ tags:
 - attack.persistence
 - attack.execution
 - attack.t1574.002
-- attack.t1059
-- attack.t1064
 title: Tasks Folder Evasion

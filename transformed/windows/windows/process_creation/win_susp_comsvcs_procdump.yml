@@ -33,5 +33,4 @@ tags:
 - attack.t1218.011
 - attack.credential_access
 - attack.t1003.001
-- attack.t1003
 title: Process Dump via Comsvcs DLL

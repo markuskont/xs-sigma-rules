@@ -27,6 +27,5 @@ service: dns
 status: experimental
 tags:
 - attack.command_and_control
-- attack.t1102
 - attack.t1102.002
 title: Telegram Bot API Request

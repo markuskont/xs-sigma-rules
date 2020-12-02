@@ -34,6 +34,5 @@ tags:
 - attack.t1036
 - attack.credential_access
 - attack.t1003.001
-- attack.t1003
 - car.2013-05-009
 title: Suspicious Use of Procdump

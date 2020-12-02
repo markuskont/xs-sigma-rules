@@ -23,5 +23,4 @@ status: experimental
 tags:
 - attack.defense_evasion
 - attack.t1218
-- attack.execution
 title: Devtoolslauncher.exe Executes Specified Binary
