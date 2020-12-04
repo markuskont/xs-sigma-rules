@@ -21,5 +21,5 @@ references:
 status: experimental
 tags:
 - attack.persistence
-- attack.t1122
+- attack.t1546.015
 title: Windows Registry Persistence COM Key Linking

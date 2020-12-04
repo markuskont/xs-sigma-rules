@@ -33,5 +33,5 @@ references:
 status: experimental
 tags:
 - attack.defense_evasion
-- attack.t1500
+- attack.t1027.004
 title: Suspicious Csc.exe Source File Folder

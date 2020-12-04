@@ -38,6 +38,6 @@ service: http
 status: experimental
 tags:
 - attack.persistence
-- attack.t1100
+- attack.t1505.003
 - attack.t1505.003
 title: Webshell ReGeorg Detection Via Web Logs

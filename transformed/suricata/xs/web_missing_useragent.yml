@@ -24,6 +24,6 @@ references:
 service: http
 status: experimental
 tags:
-- attack.t1066
 - attack.defense_evasion
+- attack.t1027.005
 title: Missing User-Agent String

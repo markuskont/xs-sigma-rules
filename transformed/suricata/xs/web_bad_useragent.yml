@@ -32,8 +32,8 @@ service: http
 status: experimental
 tags:
 - attack.t1190
-- attack.t1063
 - attack.t1046
 - attack.initial_access
 - attack.discovery
+- attack.t1518.001
 title: Malicious or Suspicious User-Agent String

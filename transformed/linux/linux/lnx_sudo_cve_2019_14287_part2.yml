@@ -24,5 +24,5 @@ status: experimental
 tags:
 - attack.privilege_escalation
 - attack.t1068
-- attack.t1169
+- attack.t1548.003
 title: Sudo Privilege Escalation CVE-2019-14287
