@@ -6,18 +6,11 @@ on:
       - '*'
 
 jobs:
-
-  build:
-    name: Build binary
+  release:
     runs-on: ubuntu-latest
     steps:
-
-    - name: Check out repo
-      uses: actions/checkout@v2
-
-    - name: Upload Linux binary to release
-      uses: svenstaro/upload-release-action@v2
-      with:
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
-        tag: ${{ github.ref }}
-        overwrite: true
+      - uses: avakar/tag-and-release@v1
+        with:
+          tag_name: ${{ ... }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
